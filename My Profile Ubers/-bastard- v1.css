@@ -1,0 +1,150 @@
+/* New Profile Look */
+
+
+
+div#MainContent,
+div.Module div.Content,
+div.Module > h3
+{
+	background	: transparent;
+	border		: 0;
+	box-shadow	: none;
+}
+
+div.Module
+{
+	margin		: 10px;
+	background	: transparent;
+	border		: 1px solid deepskyblue;
+}
+
+div.Module > h3
+{
+	text-align	: center;
+	font-variant	: small-caps;
+	text-shadow	: 0px 0px 10px aqua;
+	color		: aqua;
+}
+
+div.Module > h3 a
+{
+	text-shadow	: 0px 0px 10px;
+}
+
+a
+{
+	color		: seagreen;
+}
+
+a:hover
+{
+	color		: deepskyblue;
+	text-shadow	: 0px 0px 10px;
+	text-decoration	: underline;
+}
+
+div#PostsListModule article p
+{
+	color		: cadetblue;
+}
+
+table tr:nth-child(even)
+{
+	background	: transparent;
+}
+
+div#CoreStrip
+{
+	margin-top	: 20px;
+	padding		: 0px;
+	background	: transparent;
+}
+
+div#Footer, div#TopBanner
+{
+	display		: none;
+}
+
+body
+{
+	background	: url('http://sleekupload.com/uploads_png/15/lolbg_test_2.png') black fixed repeat-x;
+}
+
+div#PostsListModule article blockquote, div#PostsListModule article pre
+{
+	background	: transparent;
+	border		: 1px dotted lightseagreen;
+}
+
+div#PostsListModule > div.Content > ul > li:not(:nth-child(1))
+{
+	border-top	: 0;
+}
+
+ul#NavigatorPanes article
+{
+	background	: transparent;
+	border		: 0;
+	border-top	: 0;
+}
+
+ul#NavigatorPanes > li
+{
+	background	: rgba(0,0,0,0.9);
+}
+
+ul#NavigatorPanes > h4
+{
+	background	: transparent;
+	border		: 0;
+}
+
+#NavigatorTabs li:hover, #NavigatorTabs li.ActiveTab
+{
+	background	: 0;
+	border		: 0
+}
+
+#NavigatorTabs li
+{
+	border		: 0;
+	box-shadow	: none;
+	background	: transparent;
+}
+
+#NavigatorTabs img:hover
+{
+	opacity		: 1;
+}
+
+#NavigatorTabs img
+{
+	opacity		: 0.5;
+}
+
+div#PointsMeterTooltip
+{
+	background	: rgba(0,0,0,0.9);
+	border		: 0;
+}
+
+#PostsListModule > div > ul > li:hover p
+{
+	color		: rgb(145, 208, 210);
+	text-shadow	: 0px 0px 10px;
+}
+
+div#TopLeft
+{
+	position	: fixed;
+	top		: 0;
+	left		: 0;
+	z-index		: -1;
+}
+
+div#BottomRight
+{
+	position	: fixed;
+	right		: 0;
+	z-index		: -1;
+}

@@ -1,0 +1,154 @@
+/*************************/
+/* Profile Toggle System */
+/*************************/
+
+.row-toggle,
+.row {
+	display: none;
+}
+
+.row-toggle:checked + .row {
+	display: flex;
+}
+
+.row-toggle:checked + .row + .row-toggle-label {
+	display: none;
+}
+
+
+/***************/
+/* Base Layout */
+/***************/
+
+body
+{
+	background : url('http://logandougall.ca/Modules/GB-Priv/Ring-A-Ding/uberstyles/randomizer.php') fixed;
+	background-size : 100% 100%;
+}
+
+#Wrapper,
+#ColumnGrid {
+	width: 100%;
+	font-size: initial;
+}
+
+.ContentColumn {
+	flex: 1;
+}
+
+.ContentColumn:first-child
+{
+	margin-left : 15px;
+}
+
+/* FOOTER */
+
+#FooterWrapper,
+#FooterWrapper #FooterLinks div {
+	margin: 0;
+}
+
+#FooterWrapper {
+	background: rgba(0,0,0,.8);
+	margin-bottom : -5em;
+}
+
+/***/
+
+#banner-row
+{
+	height : 70vh;
+	flex-direction : column;
+	align-items : center;
+	justify-content : center;
+}
+
+#IdentityModule
+{
+	width : 100%;
+	position : relative;
+	z-index : 1;
+}
+
+#IdentityModule:after
+{
+	content : '';
+	position : absolute;
+	width : 100%;
+	height : 100%;
+	top : 0;
+	-webkit-filter : blur(3px);
+	background : url('http://logandougall.ca/Modules/GB-Priv/Ring-A-Ding/uberstyles/randomizer.php') fixed;
+	background-size : 100% 100%;
+	z-index : -1;
+}
+
+#IdentityModule .Content
+{
+	background : rgba(255,255,255,.2);
+
+	display : flex;
+	align-items : center;
+	justify-content : center;
+}
+
+#IdentityModule .MemberLink .Tooltip
+{
+	display : block;
+	margin-left : 1em;
+	font : bold 20px 'Verdana';
+}
+
+.label-container
+{
+	background : black;
+	padding : 10px;
+}
+
+.row-toggle-label
+{
+	cursor : pointer;
+}
+
+#network-col {
+	flex: 0 1 10%;
+}
+
+#MainContentHeader,
+#network-col .PageNavigation,
+#HeaderWrapper.Fixed,
+#IdentityModule > h3,
+#IdentityModule .UserTitle,
+#IdentityModule .Upic
+{
+	display: none !important;
+}
+
+#network-col h3 {
+	text-align: center;
+}
+
+#network-col .Avatar {
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 0 5px black;
+}
+
+#network-col .Offline {
+	border: 2px solid #AAA;
+}
+
+#network-col .Online {
+	border: 2px solid #0F6;
+}
+
+#network-col img {
+	margin: 0;
+}
+
+/* FIX */
+
+#Wrapper
+{
+	background : transparent;
+}

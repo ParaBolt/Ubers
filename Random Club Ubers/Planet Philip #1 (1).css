@@ -1,0 +1,638 @@
+div#Navigator:after
+{
+	display		: block;
+	content		: 'Uberstyle Under Construction!';
+}
+
+/*******************/
+/*Part of This Code*/
+/*   is made by    */
+/*    Quinsicut    */
+/*******************/
+
+/*************************/
+/* Adds Extra HTML Codes */
+/*************************/
+
+spoiler, sp
+{
+	content:url('http://ilikestargateswebsite.webs.com/CSS/spoilerwhite.png')
+}
+
+spoiler:hover, sp:hover
+{
+	content:normal;
+}
+
+
+overline, o
+{
+	text-decoration:overline;
+}
+
+
+hl, highlight
+{
+	color:black;
+	background-color:#ffff00;
+}
+
+hl.cyan, highlight.cyan
+{
+	background-color:cyan;
+}
+
+hl.lime, highlight.lime
+{
+	background-color:lime;
+}
+
+hl.orange, highlight.orange
+{
+	background-color:orange;
+}
+
+/************************************************************************/
+/*               Image Original Size On Click - ALPHA                   */
+/*                                                                      */
+/*       This feature is not functional in more than one image          */
+/* So, You only should use this feature ONCE PER POST AND PAGE COMBINED */
+/************************************************************************/
+div#imgos a
+{
+	text-transform: uppercase;
+color: #FF4E4E;
+border: 2px solid #FF4E4E;
+}
+
+div#imgos a:hover
+{
+	border: 2px solid #FD70E1 !important;
+color: #FD70E1 !important;
+}
+
+
+div#imgos img
+{
+	max-width:none;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+div#imgos
+{
+	transition:All 2s ease;
+-webkit-transition:All 2s ease;
+-moz-transition:All 2s ease;
+-o-transition:All 2s ease;
+transform: scale(0);
+-webkit-transform: scale(0);
+-moz-transform:  scale(0);
+-o-transform:  scale(0);
+-ms-transform:  scale(0);
+    background-color: rgba(0, 0, 0, 0.498039);
+    position:fixed;
+	z-index:9999;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+}
+
+div#imgos:target
+{
+	transform: scale(1);
+-webkit-transform: scale(1);
+-moz-transform:  scale(1);
+-o-transform:  scale(1);
+-ms-transform:  scale(1);
+}
+
+
+/* HTML Source:-
+
+<a href="#imgos"><img src="imagename" width="50%"/></a>
+
+<div id="imgos"><center><a href="#">Close</a><br /><img src="imagename"/></center></div>
+
+*/
+
+#tpm__sShoutbox > div > h3 > a
+{
+	visibility:hidden;
+}
+
+#tpm__sShoutbox > div > h3 > a:after
+{
+	visibility:visible !important;
+	content:'Shitbox';
+}
+
+
+
+/***********************/
+/* Ring-A-Ding's Codes */
+/***********************/
+
+/**********/
+/* Layout */
+/**********/
+
+
+div.EquiCol
+{
+	width		: 320px;
+}
+
+div#ThinCol
+{
+	width		: 90px;
+}
+
+div#WideCol
+{
+	width		: 879px;
+}
+
+div#IdentityModule .Content,
+div#BlurbModule .Content,
+div#StatsModule .Content
+{
+	height		: 200px;
+}
+
+div#BlurbText
+{
+	height		: 180px;
+	overflow-y	: hidden;
+}
+
+div#BlurbText:hover
+{
+	overflow-y	: scroll;
+}
+
+div#TopBanner,
+div#Footer,
+div#SubdomainMenus,
+div#SectionLinks,
+div#SiteSearch,
+div#ImportantLinks
+{
+	display		: none;
+}
+
+
+/***********/
+/* Content */
+/***********/
+
+
+
+body
+{
+	background	: #1B1B1B;
+	color		: #999999;
+}
+
+div#CoreStrip
+{
+	margin-top	: 10px;
+	padding		: 20px;
+	background	: #1B1B1B;
+	border		: 1px solid #333333;
+}
+
+div#MainContent,
+div.Module > h3,
+div.Module div.Content,
+div#PostAddFormRequesterModule,
+div#PostsListModule,
+div#PostsListModule div.Content > ul > li,
+div#PostsListModule div.PostHeader,
+div#PostsListModule article,
+div#PostsListModule blockquote,
+ul#NavigatorPanes article,
+ul#NavigatorPanes h4
+{
+	background	: transparent;
+	border		: 0;
+	box-shadow	: none;
+}
+
+ul#NavigatorPanes > li
+{
+	background	: #1B1B1B;
+}
+
+div.Module,
+div#PostsListModule div.Content > ul > li,
+ul#NavigatorPanes > li
+{
+	border		: 1px solid #333333;
+}
+
+div.Module:hover,
+div#PostsListModule div.Content > ul > li:hover,
+ul#NavigatorPanes > li:hover
+{
+	border		: 1px solid #0063FF;
+}
+
+div.Module > h3, div#PostsListModule div.PostHeader
+{
+	border-bottom	: 1px solid #333333;
+}
+
+div#PostsListModule footer
+{
+	border-top	: 1px solid #333333;
+	padding-top	: 15px;
+}
+
+div#PostsListModule div.PostHeader a
+{
+	color		: white;
+}
+
+div#PostsListModule div.PostHeader a:hover
+{
+	color		: #0063FF;
+}
+
+div#PostsListModule article a
+{
+	color		: white;
+}
+
+div#PostsListModule article a:hover
+{
+	text-decoration : underline;
+}
+
+div#PostsListModule article blockquote
+{
+	background	: #151515 !important;
+	border		: 1px solid #333333;
+}
+
+div#PostsListModule article blockquote p strong
+{
+	color		: #00AAFF;
+}
+
+div#PostsListModule ul.PostStamps li
+{
+	border		: 1px solid;
+	background	: none;
+	color		: #0063FF;
+}
+
+div#PostsListModule ul.PostStamps li:hover
+{
+	border		: 1px solid;
+	background	: none;
+	color		: lightseagreen;
+}
+
+
+
+/******************************************/
+/* Team Members Module, Leadership Module */
+/******************************************/
+
+
+
+#LeadershipModule h3,
+#LeadershipModule .Owner > a,
+#LeadershipModule li > a,
+#LeadershipModule dt,
+#TeamMembersListModule h3,
+#TeamMembersListModule .Member > a,
+#TeamMembersListModule thead,
+#TeamMembersListModule td:nth-of-type(2),
+#TeamMembersListModule td:nth-of-type(3)
+{
+	display			: none;
+}
+
+#TeamMembersListModule td,
+#TeamMembersListModule table,
+#TeamMembersListModule tr
+{
+	border			: 0 !important;
+	background		: transparent !important;
+}
+
+#LeadershipModule li
+{
+	margin			: 0px;
+	margin-top		: 10px;
+}
+
+#LeadershipModule ul
+{
+	padding			: 0px;
+}
+
+#LeadershipModule dd,
+#LeadershipModule dl
+{
+	margin			: 0px;
+}
+
+#LeadershipModule .Content:before
+{
+	content			: "Leaders";
+}
+
+#TeamMembersListModule .Content:before
+{
+	content			: "Members";
+}
+
+#LeadershipModule .Content:before, #TeamMembersListModule .Content:before
+{
+	display			: block;
+	margin-bottom		: 15px;
+	text-align		: center;
+	font-weight		: bold;
+	font-size		: 14px;
+}
+
+.LevelBar,
+.OnlineIndicator
+{
+	display			: none;
+}
+
+.AvatarWrapper.Online img
+{
+	border			: 2px solid #00AAFF;
+	border-radius		: 99px;
+}
+
+.AvatarWrapper.Offline img
+{
+	border			: 2px solid #999999;
+	border-radius		: 99px;
+}
+
+.AvatarWrapper img:hover
+{
+	border			: 2px solid white;
+	box-shadow		: none !important;
+}
+
+div.AvatarWrapper img.Avatar
+{
+	margin-left		: 7px;
+}
+
+
+
+/****************/
+/* Stats Module */
+/****************/
+
+
+
+#StatsModule dt
+{
+	margin-top		: 15px;
+	border-bottom		: 1px solid seagreen;
+	color			: greenyellow;
+}
+
+#StatsModule dd
+{
+	color			: burlywood;
+}
+
+#IdentityModule article
+{
+	padding-top		: 40px;
+}
+
+
+
+/**********************/
+/* Post Form Launcher */
+/**********************/
+
+
+
+#PostAddFormRequesterModule .ModalLauncher,
+#PostAddFormModule button
+{
+	width			: 98%;
+	border			: 1px solid #333333 !important;
+	border-radius		: 0;
+	outline			: 0 !important;
+	box-shadow		: none !important;
+	color			: #999999 !important;
+}
+
+#PostAddFormRequesterModule .ModalLauncher:hover,
+#PostAddFormModule button:hover
+{
+	color			: #00AAFF !important;
+	border			: 1px solid #0033FF !important;
+}
+
+
+
+/*********/
+/* Modal */
+/*********/
+
+
+
+#Modal
+{
+	border			: 0;
+	box-shadow		: none;
+	background		: #1B1B1B;
+}
+
+#PostAddFormModule,
+#PostEditFormModule,
+#PostQuoteFormModule
+{
+	border			: 0 !important;
+}
+
+#PostAddFormModule fieldset,
+#PostEditFormModule fieldset,
+#PostQuoteFormModule fieldset
+{
+	border			: 1px solid #333333;
+	background		: #151515;
+}
+
+#PostAddFormModule legend,
+#PostEditFormModule legend,
+#PostQuoteFormModule legend
+{
+	text-align		: center;
+	color			: #999999;
+}
+
+.InputHelp,
+#PostAddFormModule legend sup,
+#PostEditFormModule legend sup,
+#PostQuoteFormModule legend sup
+{
+	display			: none;
+}
+
+textarea
+{
+	resize			: none;
+	border			: none;
+	background		: black;
+	color			: white;
+}
+
+textarea:focus
+{
+	box-shadow		: 0px 0px 10px white inset;
+	outline			: 0;
+}
+
+.markItUpHeader li
+{
+	background		: #BBBBBB !important;
+	border			: 2px solid #333333 !important;
+	border-radius		: 99px;
+	padding			: 5px;
+}
+
+.markItUpHeader li:hover
+{
+	border			: 2px solid #002277 !important;
+	background		: #00AAFF !important;
+}
+
+.Submit
+{
+	background		: none !important;
+	border			: 0 !important;
+}
+
+
+
+/******************/
+/* Owner's Avatar */
+/******************/
+
+
+
+/*div.AvatarMiddle a[href="http://gamebanana.com/members/1291525"] img
+{
+	content			: url('http://i.cubeupload.com/sub5Im.png');
+}*/
+
+
+
+/***********************/
+/* GB Logo Replacement */
+/***********************/
+
+
+
+#Logo a img
+{
+	content			: url('http://i.cubeupload.com/EZgqC6.png');
+}
+
+
+
+/***********************/
+/* Page Title and Menu */
+/***********************/
+
+
+
+#PageTitle, #TitleBreadcrumb
+{
+	text-align		: center;
+	font-variant		: small-caps;
+}
+
+#PageTitle
+{
+	font-size		: 80px !important;
+	line-height		: 100px !important;
+}
+
+#TitleBreadcrumb
+{
+	font-size		: 20px !important;
+}
+
+#DropdownMenuSubNavigator > ul
+{
+	width			: 12%;
+	margin			: auto;
+}
+
+
+
+/*************/
+/* Shout Box */
+/*************/
+
+
+
+#tpm__sShoutbox #shout table
+{
+	border		: 0;
+}
+
+#tpm__sShoutbox #shout table td
+{
+	border		: none;
+	background	: none;
+	padding		: 10px;
+}
+
+#tpm__sShoutbox #shout .Module
+{
+	border		: none !important;
+}
+
+
+
+/**************/
+/* Scroll Bar */
+/**************/
+
+
+
+::-webkit-scrollbar
+{
+	width		: 5px;
+}
+
+::-webkit-scrollbar-track
+{
+	background	: #2B2B2B;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background	: #3b3b3b;
+}
+
+div#PostsListModule article p img
+{
+	height		: 50%;
+	width		: 50%;
+}
+
+#shout tr
+{
+	background	: none;
+}

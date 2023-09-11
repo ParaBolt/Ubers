@@ -1,0 +1,287 @@
+div#Navigator:after
+{
+	display		: block;
+	content		: 'Uberstyle Under Construction!';
+}
+
+/*******************/
+/*Part of This Code*/
+/*   is made by    */
+/*    Quinsicut    */
+/*******************/
+
+/*************************/
+/* Adds Extra HTML Codes */
+/*************************/
+
+spoiler, sp
+{
+	content:url('http://ilikestargateswebsite.webs.com/CSS/spoilerwhite.png')
+}
+
+spoiler:hover, sp:hover
+{
+	content:normal;
+}
+
+
+overline, o
+{
+	text-decoration:overline;
+}
+
+
+hl, highlight
+{
+	color:black;
+	background-color:#ffff00;
+}
+
+hl.cyan, highlight.cyan
+{
+	background-color:cyan;
+}
+
+hl.lime, highlight.lime
+{
+	background-color:lime;
+}
+
+hl.orange, highlight.orange
+{
+	background-color:orange;
+}
+
+/************************************************************************/
+/*               Image Original Size On Click - ALPHA                   */
+/*                                                                      */
+/*       This feature is not functional in more than one image          */
+/* So, You only should use this feature ONCE PER POST AND PAGE COMBINED */
+/************************************************************************/
+div#imgos a
+{
+	text-transform: uppercase;
+color: #FF4E4E;
+border: 2px solid #FF4E4E;
+}
+
+div#imgos a:hover
+{
+	border: 2px solid #FD70E1 !important;
+color: #FD70E1 !important;
+}
+
+
+div#imgos img
+{
+	max-width:none;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+div#imgos
+{
+	transition:All 2s ease;
+-webkit-transition:All 2s ease;
+-moz-transition:All 2s ease;
+-o-transition:All 2s ease;
+transform: scale(0);
+-webkit-transform: scale(0);
+-moz-transform:  scale(0);
+-o-transform:  scale(0);
+-ms-transform:  scale(0);
+    background-color: rgba(0, 0, 0, 0.498039);
+    position:fixed;
+	z-index:9999;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+}
+
+div#imgos:target
+{
+	transform: scale(1);
+-webkit-transform: scale(1);
+-moz-transform:  scale(1);
+-o-transform:  scale(1);
+-ms-transform:  scale(1);
+}
+
+
+/* HTML Source:-
+
+<a href="#imgos"><img src="imagename" width="50%"/></a>
+
+<div id="imgos"><center><a href="#">Close</a><br /><img src="imagename"/></center></div>
+
+*/
+
+#tpm__sShoutbox > div > h3 > a
+{
+	visibility:hidden;
+}
+
+#tpm__sShoutbox > div > h3 > a:after
+{
+	visibility:visible !important;
+	content:'Shitbox';
+}
+
+
+
+/***********************/
+/* Ring-A-Ding's Codes */
+/***********************/
+
+div#Wrapper,
+div#ColumnGrid
+{
+	width		: auto;
+}
+
+div.ThinCol
+{
+	width		: 90px;
+}
+
+div.WideCol
+{
+	width		: 820px;
+}
+
+div.MedCol
+{
+	width		: 300px;
+}
+
+div.EquiCol
+{
+	width		: 610px;
+}
+
+div.LoneColumn
+{
+	width		: 1229px;
+}
+
+div#IdentityModule > h3,
+div#StatsModule > h3
+{
+	display		: none;
+}
+
+div#StatsModule
+{
+	margin-top	: 0;
+	border-top	: 0;
+}
+
+div#IdentityModule
+{
+	margin-bottom	: 0;
+	border-bottom	: 0;
+}
+
+div#StatsModule div.Content
+{
+	border-top	: 0;
+}
+
+div#IdentityModule div.Content
+{
+	border-bottom	: 0;
+}
+
+
+div#IdentityModule
+{
+	position	: relative;
+}
+
+div#IdentityModule h1
+{
+	position	: absolute;
+	top		: 7px;
+	left		: 168px;
+	visibility	: hidden;
+}
+
+div#IdentityModule h1 > img
+{
+	visibility	: visible;
+}
+
+div#IdentityModule > div.Content > article > p
+{
+	margin		: 0;
+}
+
+#Club_Profile #LeadershipModule h3,
+#Club_Profile #LeadershipModule .Owner > a,
+#Club_Profile #LeadershipModule li > a,
+#Club_Profile #LeadershipModule dt,
+#Club_Profile #TeamMembersListModule thead,
+#Club_Profile #TeamMembersListModule td:nth-of-type(2),
+#Club_Profile #TeamMembersListModule div.AvatarWrapper
+{
+	display		: none;
+}
+
+#Club_Profile #TeamMembersListModule td,
+#Club_Profile #TeamMembersListModule table,
+#Club_Profile #TeamMembersListModule tr
+{
+	border			: 0;
+	background		: transparent;
+}
+
+#Club_Profile #LeadershipModule li
+{
+	margin			: 0;
+	margin-top		: 10px;
+}
+
+#Club_Profile #LeadershipModule ul
+{
+	padding			: 0;
+}
+
+#Club_Profile #LeadershipModule dd,
+#Club_Profile #LeadershipModule dl
+{
+	margin			: 0;
+}
+
+#Club_Profile #LeadershipModule
+{
+	margin-bottom		: 20px;
+}
+
+#LeadershipModule div.Content::-webkit-scrollbar
+{
+	display			: none;
+}
+
+#Club_Profile #LeadershipModule div.Content
+{
+	height			: 245px;
+	overflow		: overlay;
+}
+
+#Club_Profile #LeadershipModule .Content:before
+{
+	content			: "Leaders";
+}
+
+#Club_Profile #LeadershipModule .Content:before
+{
+	display			: block;
+	margin-bottom		: 15px;
+	padding-bottom		: 5px;
+	border-bottom		: 1px solid #333333;
+	text-align		: center;
+	font-weight		: bold;
+	font-size		: 14px;
+}

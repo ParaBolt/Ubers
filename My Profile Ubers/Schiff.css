@@ -1,0 +1,652 @@
+/* https://web.archive.org/web/20150815171830/http://gamebanana.com:80/members/884411 */
+
+@font-face
+{
+	font-family	: 'JHTitles';
+	src		: url('http://files.gamebanana.com/bitpit/jh_titles.ttf');
+}
+
+@font-face
+{
+	font-family	: 'AgencyFB Wide';
+	src		: url('http://files.gamebanana.com/bitpit/agencyfbboldwide.ttf');
+}
+
+@keyframes flash
+{
+	from
+	{
+		opacity	: .4;
+	}
+
+	to
+	{
+		opacity	: 1;
+	}
+}
+
+@-webkit-keyframes wink
+{
+	0%, 35%, 50%, 65%, 100%
+	{
+		text-shadow	: 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 10px deepskyblue, 0 0 10px deepskyblue, 0 0 10px deepskyblue;
+	}
+
+	40%, 60%
+	{
+		text-shadow	: 0 0 10px, 0 0 10px, 0 0 10px;
+	}
+}
+
+body
+{
+	background	: black url('http://images.vfl.ru/ii/1426008380/6ef31c8c/8034782.jpg') center fixed no-repeat;
+	background-size	: cover;
+	font-family	: 'AgencyFB Wide';
+	color		: white;
+}
+
+body,
+#RemindersPane ul#Reminders li p,
+#ActivityPane #ActivityCalendar ul .ActivityDay.SelectedDay
+{
+	cursor		: url('http://files.gamebanana.com/bitpit/dmz-neon-blue-arrow.png'), default !important;
+}
+
+legend sup,
+.TooltipTrigger,
+.SpoilerTrigger,
+#MedalsModule li,
+#UnlocksModule li div,
+#PostsListModule .PostStamps li:hover
+{
+	cursor		: url('http://files.gamebanana.com/bitpit/dmz-neon-blue-help.png'), help !important;
+}
+
+a,
+label,
+button,
+select,
+.ButtonLike,
+.Module h3 > img,
+#NavigatorTabs li,
+.MaximizeMinimizeButton,
+.UsernameSuggestionList li,
+#GamesPane .GamesList .Game,
+#GamesPane .AlphabetIndex li,
+#ProfileToolsWrapperModule .Module h3,
+#DonationFormModule .PaypalDonateIcon,
+.AdvancedListSettingsModule fieldset legend,
+#ActivityPane #ActivityCalendar ul .ActivityDay,
+#AddToWatchlistFormModule fieldset#AreasToWatch legend
+{
+	cursor		: url('http://files.gamebanana.com/bitpit/dmz-neon-blue-link.png'), pointer !important;
+}
+
+#NavigatorTabs span:nth-child(2),
+#AdStrip,
+#BtfLeaderboardRow,
+#AdsByCurseBanner,
+.InputHelp,
+#IsAnonymous
+{
+	display		: none;
+}
+
+.Module > h3,
+.Module .Content,
+.Module > .LogMessages,
+#PageTitleWrapper,
+#DropdownMenuSubNavigator,
+#DropdownMenuSubNavigator li.TitleOnly,
+#DropdownMenuSubNavigator .sf-menu > li,
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry,
+#DropdownMenuSubNavigator .sf-menu ul > li
+{
+	background	: transparent;
+}
+
+a,
+#ActivityPane #ActivityCalendar ul .ActivityDay,
+#ActivityPane #ActivityCalendar button
+{
+	color		: skyblue;
+	transition	: all 1s ease-in-out;
+}
+
+a:hover,
+#ActivityPane #ActivityCalendar ul .ActivityDay:hover,
+#ActivityPane #ActivityCalendar button:hover
+{
+	color		: deepskyblue;
+	transition	: all .2s ease-in-out;
+}
+
+#ActivityPane #ActivityCalendar ul .ActivityDay.SelectedDay,
+#ActivityPane #ActivityCalendar ul .ActivityDay.SelectedDay:hover
+{
+	color : white !important;
+}
+
+#Wrapper
+{
+	width		: auto;
+}
+
+#MainContentHeader,
+#MainContent
+{
+	width		: 1000px;
+	margin		: 10px auto;
+}
+
+#FooterWrapper
+{
+	margin		: 0;
+	margin-bottom	: -20px;
+	background	: linear-gradient(to top, rgb(0,96,128), deepskyblue);
+	box-shadow	: 0 0 20px deepskyblue;
+	padding		: 10px;
+}
+
+#HeaderWrapper
+{
+	padding		: 20px;
+	background	: black;
+	box-shadow	: 0 0 10px 5px black;
+	text-align	: center;
+}
+
+#GamebananaTab a
+{
+	white-space	: pre-wrap;
+	height		: 20px;
+	overflow	: hidden;
+	color		: white;
+	text-shadow	: 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue;
+}
+
+#GamebananaTab a:hover
+{
+	text-shadow	: 0 0 5px, 0 0 5px;
+}
+
+#GamebananaTab a::before
+{
+	font		: 30px 'JHTitles';
+ 	content		: "GAMEBANANA\A\A";
+}
+
+#NavigatorTabs li
+{
+
+	background	: transparent;
+	transition	: all 1s ease-in-out;
+}
+
+#NavigatorTabs li.TabHasUpdates
+{
+	border		: 0;
+	border-radius	: 10px;
+	animation	: flash .3s linear infinite alternate;
+}
+
+#NavigatorTabs li:hover,
+#NavigatorTabs li.ActiveTab
+{
+	background	: deepskyblue;
+	border-radius	: 10px;
+	transition	: all .3s ease-in-out;
+}
+
+#NavigatorTabs li.TabHasUpdates:hover,
+#NavigatorTabs li.TabHasUpdates.ActiveTab
+{
+	animation	: none;
+}
+
+#NavigatorPanes
+{
+	text-align	: initial;
+}
+
+#NavigatorPanes > li
+{
+	background	: rgba(0,0,0,.9);
+	border		: 1px dashed deepskyblue;
+	border-radius	: 10px;
+}
+
+#NavigatorPanes > li > h4
+{
+	text-align	: center;
+	text-shadow	: 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue;
+}
+
+#NavigatorPanes > li > div > h5
+{
+	color			: cyan;
+	border-bottom-color	: rgba(0,192,255,.7);
+}
+
+
+.Module
+{
+	background	: rgba(0,0,0,.5);
+	border-radius	: 10px;
+	box-shadow	: 0 0 10px black;
+}
+
+#MainContentHeader
+{
+	text-align	: center;
+}
+
+#PageTitleWrapper h1
+{
+	font-variant	: small-caps;
+	font-size	: 50px;
+	animation	: wink 2s linear infinite;
+}
+
+#DropdownMenuSubNavigator
+{
+	border		: 0;
+	font-size : 14px;
+	font-variant : small-caps;
+}
+
+#DropdownMenuSubNavigator > ul
+{
+	width		: 75%;
+	margin		: auto;
+	background	: linear-gradient(deepskyblue, rgb(0,96,128), deepskyblue);
+	border-radius	: 0 0 99px 99px;
+}
+
+#DropdownMenuSubNavigator li.TitleOnly,
+#DropdownMenuSubNavigator li a,
+div.GenericPreviewListModule li a
+{
+	color		: white;
+	text-shadow : 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue;
+}
+
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry a
+{
+	color		: white;
+	text-shadow : 0 0 5px cyan, 0 0 5px cyan, 0 0 5px cyan;
+}
+
+#DropdownMenuSubNavigator li.TitleOnly:hover
+{
+	background	: linear-gradient(skyblue, rgb(67,103,117), skyblue);
+	border-radius	: 0 0 15px 15px;
+	text-shadow	: 0 0 5px skyblue, 0 0 5px skyblue, 0 0 5px skyblue, 0 0 5px skyblue;
+}
+
+#DropdownMenuSubNavigator ul ul
+{
+	margin-top	: 5px;
+	background	: rgba(0,0,0,.5);
+	box-shadow	: 0 0 10px black;
+	border		: 1px dashed deepskyblue;
+	border-radius	: 10px;
+	text-align	: initial;
+}
+
+#DropdownMenuSubNavigator li a:hover,
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry a:hover,
+div.GenericPreviewListModule li a:hover
+{
+	background	: transparent;
+	text-shadow	: 0 0 5px, 0 0 5px;
+	color		: white;
+}
+
+.Modal div.Module
+{
+	box-shadow	: none;
+}
+
+.Module > h3
+{
+	font		: 20px 'JHTitles';
+	text-shadow	: 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue;
+	box-shadow	: 0 1px deepskyblue, 0 10px 10px -7px deepskyblue;
+	text-align	: center;
+	border		: 0;
+}
+
+.Module > h3 a
+{
+	color		: white;
+	text-shadow	: 0 0 5px cyan, 0 0 5px cyan, 0 0 5px cyan;
+}
+
+.Module > h3 a:hover
+{
+	text-shadow	: 0 0 5px, 0 0 5px;
+}
+
+dt
+{
+	color		: white;
+	font-size	: 14px;
+	font-variant	: small-caps;
+	text-transform	: capitalize;
+	border		: 0;
+	text-shadow	: 0 0 5px cyan, 0 0 5px cyan, 0 0 5px cyan;
+}
+
+dt:after
+{
+	content		: "";
+	display		: block;
+	height		: 2px;
+	background	: linear-gradient(to right, deepskyblue, transparent);
+}
+
+dl
+{
+	text-shadow	: 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue;
+}
+
+table tr,
+#PostsListModule .Content > ul > li,
+div.GenericPreviewListModule li
+{
+	border-bottom-color	: rgba(0,128,192,.5);
+}
+
+table tr:last-child,
+#PostsListModule .Content > ul > li:last-child,
+div.GenericPreviewListModule li:last-child
+{
+	border		: 0;
+}
+
+.PreviewImage
+{
+	opacity		: .8;
+}
+
+a:hover .PreviewImage
+{
+	opacity		: 1;
+	box-shadow	: 0 0 5px deepskyblue;
+}
+
+.tooltipster-default
+{
+	background	: rgba(0,0,0,.7);
+	border		: 1px dashed deepskyblue;
+	border-radius	: 10px;
+}
+
+#PostsListModule article blockquote,
+#PostsListModule article pre
+{
+	opacity		: 1;
+	border		: 1px dashed deepskyblue;
+	padding		: 7px 7px 0;
+}
+
+#PostsListModule ul.PostStamps
+{
+	padding		: 5px;
+	text-align	: right
+}
+
+#PostsListModule ul.PostStamps li,
+.StampsForm label,
+div.FullStampsDisplay li.Stamp div
+{
+	background	: transparent;
+	font-size	: 11px;
+	color		: deepskyblue;
+	border-radius	: 99px;
+	padding		: 2px 4px;
+	box-shadow	: 0 0 0 1.5px, 0 0 10px;
+}
+
+#PostsListModule ul.PostStamps li:hover,
+.StampsForm label:hover
+{
+	color		: white;
+}
+
+div.StampsForm label
+{
+	padding		: 2px 8px;
+	margin		: 4px 2px;
+}
+
+button
+{
+	font		: small-caps 14px 'AgencyFB Wide';
+	background	: transparent;
+	border		: 0;
+	box-shadow	: 0 0 0 1.5px deepskyblue, 0 0 20px 2px deepskyblue;
+	color		: white;
+	text-shadow	: 0 0 1px deepskyblue, 0 0 1px deepskyblue, 0 0 1px deepskyblue, 0 0 5px deepskyblue, 0 0 10px deepskyblue, 0 0 30px deepskyblue;
+}
+ 
+.Modal .CloseModal
+{
+	box-shadow	: 0 0 0 1.5px red, 0 0 20px 2px red;
+	color		: white;
+	text-shadow	: 0 0 1px red, 0 0 1px red, 0 0 1px red, 0 0 5px red, 0 0 10px red, 0 0 30px red;
+}
+ 
+button:hover, .Modal .CloseModal:hover
+{
+	border		: 0;
+	box-shadow	: 0 0 0 1.5px, 0 0 20px 2px;
+	color		: white !important;
+	text-shadow	: 0 0 1px, 0 0 10px, 0 0 30px;
+}
+
+#PostsListModule .PostTools li,
+div.markItUpHeader ul li
+{
+	margin		: 2px;
+}
+
+.ButtonLike,
+div.markItUpHeader ul li
+{
+	background	: linear-gradient(deepskyblue, rgb(0,96,128), deepskyblue);
+	border		: 0;
+	box-shadow	: 0 0 10px deepskyblue;
+}
+ 
+.ButtonLike:hover,
+div.markItUpHeader ul li:hover
+{
+	background	: linear-gradient(white, rgb(96,96,96), white);
+	border		: 0;
+	box-shadow	: 0 0 10px 1px white;
+}
+ 
+.ButtonLike img,
+.markItUpHeader ul li a
+{
+	filter		: brightness(5);
+	-o-filter	: brightness(5);
+	-ms-filter	: brightness(5);
+	-moz-filter	: brightness(5);
+	-webkit-filter	: brightness(5);
+}
+ 
+.ButtonLike:hover img,
+.markItUpHeader ul li:hover a
+{
+	filter		: brightness(0);
+	-o-filter	: brightness(0);
+	-ms-filter	: brightness(0);
+	-moz-filter	: brightness(0);
+	-webkit-filter	: brightness(0);
+}
+
+textarea,
+input
+{
+	border		: 1px dotted;
+	outline		: 0;
+	color		: deepskyblue;
+}
+
+textarea:hover,
+input:hover,
+#SiteSearch fieldset input:hover
+{
+	border		: 1px dotted;
+	color		: cyan;
+}
+
+textarea:focus,
+input:focus,
+#SiteSearch fieldset input:focus
+{
+	border		: 1px dotted;
+	color		: white;
+}
+
+ul#ImportantLinks
+{
+	bottom		: 110px;
+}
+ 
+ul#ImportantLinks a
+{
+	transform	: rotate(-90deg);
+	margin-bottom	: 70px;
+	margin-right	: -35px;
+	color		: white;
+	border		: 0;
+}
+ 
+ul#ImportantLinks a:hover
+{
+	box-shadow	: 0 0 0 1.5px, 0 0 20px 2px;
+	text-shadow	: 0 0 1px, 0 0 1px, 0 0 1px, 0 0 5px, 0 0 10px, 0 0 30px;
+	border		: 0 !important;
+	color		: white !important;
+}
+ 
+a#AddIdeaLink
+{
+	box-shadow	: 0 0 0 1.5px yellow, 0 0 20px 2px yellow;
+	text-shadow	: 0 0 5px yellow, 0 0 5px yellow, 0 0 5px yellow;
+}
+ 
+a#AddBugLink
+{
+	box-shadow	: 0 0 0 1.5px red, 0 0 20px 2px red;
+}
+ 
+a#AddTicketLink
+{
+	box-shadow	: 0 0 0 1.5px deepskyblue, 0 0 20px 2px deepskyblue;
+}
+
+.RedColor,
+a#AddBugLink
+{
+	color		: white;
+	text-shadow	: 0 0 5px red, 0 0 5px red, 0 0 5px red;
+}
+ 
+.BlueColor,
+a#AddTicketLink
+{
+	color		: white;
+	text-shadow	: 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue;
+}
+ 
+.GreenColor
+{
+	color		: white;
+	text-shadow	: 0 0 5px lime, 0 0 5px lime, 0 0 5px lime;
+}
+ 
+.OrangeColor
+{
+	color		: white;
+	text-shadow	: 0 0 5px orange, 0 0 5px orange, 0 0 5px orange;
+}
+ 
+.GreyColor
+{
+	color		: white;
+	text-shadow	: 0 0 5px grey, 0 0 5px grey, 0 0 5px grey;
+}
+ 
+.PurpleColor
+{
+	color		: white;
+	text-shadow	: 0 0 5px purple, 0 0 5px purple, 0 0 5px purple;
+}
+
+::-webkit-scrollbar
+{
+	width		: 10px;
+}
+ 
+::-webkit-scrollbar-track
+{
+	box-shadow	: 0 0 0px 2px deepskyblue inset;
+}
+ 
+::-webkit-scrollbar-thumb
+{
+	background	: deepskyblue;
+}
+
+.Avatar img
+{
+	margin		: 0;
+}
+
+.Avatar.Offline
+{
+	border		: 2px solid gray;
+}
+
+.Avatar.Online
+{
+	border		: 2px solid cyan;
+}
+
+.LessThan5minsOld
+{
+	text-decoration	: none;
+	color		: rgb(0,255,128);
+}
+
+.LessThan30minsOld
+{
+	color		: aquamarine;
+}
+
+.LessThan1HourOld
+{
+	color		: lightseagreen;
+}
+
+.LessThan4HoursOld
+{
+	color		: mediumseagreen;
+}
+
+.OlderThan1Day
+{
+	color		: darkseagreen;
+}
+
+#PostsListModule footer,
+thead
+{
+	color		: turquoise;
+}

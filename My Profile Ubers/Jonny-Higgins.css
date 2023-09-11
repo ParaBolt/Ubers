@@ -1,0 +1,211 @@
+@font-face
+{
+	font-family	: IM;
+	src		: url(http://files.gamebanana.com/bitpit/maiden.ttf);
+}
+
+body
+{
+	background	: #080808 url(http://files.gamebanana.com/bitpit/staycalm.png) center top no-repeat;
+}
+
+.Module > h3,
+#NavigatorPanes > li > h4,
+.PageNavigation,
+button,
+button:hover
+{
+	background 	: #680b00;
+	background 	: linear-gradient(#680b00, #260000);
+	border 		: 1px solid black;
+}
+
+
+#PostsListModule .PostHeader
+{
+	background 	: #680b00;
+	background 	: linear-gradient(#680b00, #320000);
+	border 		: 1px solid black;    
+}
+
+.Module > h3
+{
+	font 		: bold 20px 'IM';
+	text-shadow	: 1px 1px 0 black;
+	margin-bottom	: 0;
+	text-align	: center;
+}
+
+#NetworkLinks,
+#CoreStrip,
+#TitleBreadcrumb,
+#PageTitleWrapper,
+#DropdownMenuSubNavigator,
+.Module .Content,
+.Module > .LogMessages
+{
+	background	: rgba(0,0,0,.5);
+}
+
+.Module .Content,
+.Module > .LogMessages
+{
+	border-radius	: 0 0 10px 10px;
+	margin-left	: 0;
+}
+
+button
+{
+	width		: 98%;
+	margin		: auto;
+	padding		: 5px;
+	text-transform	: uppercase;
+	font-weight	: bold;
+}
+
+button:hover
+{
+	color		: white;
+	border-color	: white;
+}
+
+.PostTools button,
+.Toolbar button,
+.ViewModeButtons button,
+#PreviousDay
+{
+	width		: initial;
+}
+
+#PostsListModule .PostTools li
+{
+	border		: 2px outset black;
+	padding		: 0;
+	background	: #222;
+}
+
+#PostsListModule .PostTools input
+{
+	vertical-align	: bottom;
+}
+
+#PostsListModule ul.PostStamps li,
+div.FullStampsDisplay li.Stamp div
+{
+	background	: rgba(255,0,0,.2);
+	border		: 1px solid rgba(0,0,0,0);
+	border-radius	: 5px;
+	font-size	: 10px;
+	padding		: 3px;
+}
+
+#PostsListModule ul.PostStamps li:hover,
+div.FullStampsDisplay li.Stamp div:hover
+{
+	border		: 1px solid #680b00;
+}
+
+#PostsListModule article blockquote
+{
+	background	: #080808;
+	border		: 5px solid #080808;
+	border-left	: 5px solid #680b00;
+}
+
+#PostsListModule article blockquote blockquote,
+.MemberLink[href*="208425"] img
+{
+	display		: none;
+}
+
+#PostsListModule .Content > ul > li,
+.Modal .Contents,
+#NavigatorPanes > li > div
+{
+	background	: linear-gradient(rgba(255,255,255,.05), rgba(255,255,255,0));
+}
+
+.Modal
+{
+	border		: 1px solid rgba(255,0,0,.3);
+	background	: #080808;
+	padding		: 0;
+}
+
+#NavigatorPanes > li > h4
+{
+	padding		: 10px;
+}
+
+#DropdownMenuSubNavigator
+{
+	border-bottom	: 0;
+}
+
+#DropdownMenuSubNavigator ul ul
+{
+	background	: black;
+}
+
+#DropdownMenuSubNavigator li.TitleOnly,
+#DropdownMenuSubNavigator ul ul li:not(:last-child) a
+{
+	margin-bottom	: 1px;
+}
+
+#NavigatorTabs li,
+#DropdownMenuSubNavigator li.TitleOnly,
+#DropdownMenuSubNavigator li a
+{
+	border		: 1px solid rgba(128,128,128,.3);
+	background	: #111;
+	outline		: 1px solid black;
+}
+
+#NavigatorTabs li,
+#DropdownMenuSubNavigator li.TitleOnly,
+#DropdownMenuSubNavigator > ul > li > a
+{
+	margin-right	: 5px;
+}
+
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry
+{
+	padding		: 0;
+}
+
+#NavigatorTabs li.TabHasUpdates,
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry a
+{
+	border		: 1px solid rgba(128,128,128,.3);
+	background	: #020;
+	box-shadow	: none;
+}
+
+#NavigatorTabs li:hover,
+#NavigatorTabs li.ActiveTab,
+#DropdownMenuSubNavigator li.TitleOnly:hover,
+#DropdownMenuSubNavigator li a:hover,
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry a:hover
+{
+	background	: #260000;
+	border		: 1px solid #680b00;
+}
+
+table tr:nth-child(even)
+{
+	background	: #080808;
+}
+
+.MemberLink[href*="208425"]::before
+{
+	content		:'Jonny Higgins';
+	font		: 20px bold 'IM';
+	color		: #E2E2E2;
+	text-shadow	: 0 0 10px red, 0 0 10px red;
+}
+
+div#tpm__sTradingCards
+{
+	margin-top	: 15px;
+}

@@ -1,0 +1,26 @@
+?>
+
+<?= $d["_aModules"]["_sIdentity"] ?>
+
+<div class='row'>
+	<a href='http://gamebanana.com'>
+		<img src='http://i.imgur.com/JKNVhxH.png'></img>
+	</a>
+</div>
+
+<div class='row'>
+	<a href='http://gamebanana.com/members/1346699'>
+		<img src='http://i.imgur.com/mhIcLRJ.png'></img>
+	</a>
+</div>
+
+<div class='row'>
+	<a href='http://gamebanana.com/members/submissions/maps/1346699'>
+		<img src='http://i.imgur.com/S6BNNPH.png'></img>
+	</a>
+	<a href='http://gamebanana.com/members/submissions/skins/1346699'>
+		<img src='http://i.imgur.com/QeAkgNP.png'></img>
+	</a>
+</div>
+
+<?

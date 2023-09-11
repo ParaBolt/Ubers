@@ -1,0 +1,88 @@
+@font-face
+{
+	font-family	: 'Kingthings Christmas';
+	src		: url('http://www.fontsaddict.com/fontface/kingthings-christmas.ttf');
+}
+
+@font-face
+{
+	font-family	: 'Raleway';
+	font-style	: normal;
+	font-weight	: 600;
+	src		: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(http://fonts.gstatic.com/s/raleway/v9/xkvoNo9fC8O2RDydKj12byEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+	unicode-range	: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face
+{
+	font-family	: 'Raleway';
+	font-style	: normal;
+	font-weight	: 900;
+	src		: local('Raleway Heavy'), local('Raleway-Heavy'), url(http://fonts.gstatic.com/s/raleway/v9/PKCRbVvRfd5n7BTjtGiFZCEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+	unicode-range	: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+#ImgModule div.Content img
+{
+	max-width	: 100%;
+}
+
+#Logo
+{
+	background	: url('http://files.gamebanana.com/bitpit/xmaslogo_2.gif');
+}
+
+#Logo a img
+{
+	visibility	: hidden;
+}
+
+#PageTitle
+{
+	font		: 100px 'Kingthings Christmas';
+	color		: white;
+	text-shadow	: 5px 0 20px red, -5px 0 20px lime, 0 5px 20px lime, 0 -5px 20px red;
+}
+
+body
+{
+	background	: url('http://files.gamebanana.com/bitpit/snowman_and_santa_night_background.jpg') fixed no-repeat;
+	background-size	: cover;
+}
+
+body *,
+textarea.markItUpEditor,
+div#PostsListModule article span.LabelStat.Date,
+ul.UsernameSuggestionList li
+{
+	font-family		: 'Raleway';
+	font-weight		: 600;
+}
+
+.Module > h3
+{
+	font-weight		: 900;
+	font-size		: 18px;
+	letter-spacing		: 0.1em;
+}
+
+.Module > h3,
+.Module div.Content
+{
+	background	: transparent;
+}
+
+.Module,
+.tooltipster-default
+{
+	background	: rgba(0,0,0,0.7);
+	box-shadow	: 0 0 10px black;
+}
+
+.pokemanz
+{
+	position	: fixed;
+	top		: 0px;
+	right		: 0px;
+	z-index		: 1;
+}

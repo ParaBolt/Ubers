@@ -1,0 +1,36 @@
+?>
+ 
+<div class='row' id='row-one'>
+
+	<h1 id='page-title'>707340</h1>
+
+	<?= $d["_aModules"]["_sIdentity"] ?>
+
+	<div class='Module' id='ContactModule'>
+		<h3>Steam</h3>
+		<div class='Content'>
+			<a href='http://steamcommunity.com/id/wheatleys/'>http://steamcommunity.com/id/wheatleys/</a>
+		</div>
+	</div>
+
+	<?= $d["_aModules"]["_sCoreStats"] ?>
+ 
+</div>
+ 
+<div class='row' id='row-two'>
+ 
+	<input type='radio' name='tab' id='tab-one' checked='true' />
+	<label for='tab-one'>Maps</label>
+	<div class='tab'>
+        	<?= $d["_aModules"]["_sMapSubmissions"] ?>
+	</div>
+ 
+	<input type='radio' name='tab' id='tab-two' />
+	<label for='tab-two'>Messages</label>
+	<div class='tab'>
+	        <?= $d["_aModules"]["_sPostsList"] ?>
+	</div>
+ 
+</div>
+ 
+<?

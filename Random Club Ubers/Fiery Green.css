@@ -1,0 +1,462 @@
+/***********/
+/* @ Rules */
+/***********/
+
+
+
+@font-face
+{
+	font-family		: 'Nosifer';
+	font-style		: normal;
+	font-weight		: 400;
+	src			: local('Nosifer'), local('Nosifer-Regular'), url(http://fonts.gstatic.com/s/nosifer/v4/fwXLs672oucg0HdjY9ErAg.woff) format('woff');
+}
+
+
+
+/****************/
+/* Remove Stuff */
+/****************/
+
+
+
+div#TopBanner,
+div#Footer,
+div#SubdomainMenus,
+div#SectionLinks,
+div#SiteSearch,
+div#ImportantLinks
+{
+	display		: none !important;
+}
+
+
+
+/**********/
+/* Layout */
+/**********/
+
+
+
+div.EquiCol
+{
+	width		: 325px;
+}
+
+div#ThinCol
+{
+	width		: 100px;
+}
+
+div#WideCol
+{
+	width		: 885px;
+}
+
+div#IdentityModule div.Content,
+div#BlurbModule div.Content,
+div#StatsModule div.Content
+{
+	height		: 200px;
+}
+
+div#IdentityModule div.Content article
+{
+	margin-top	: 40px;
+}
+
+div#StatsModule div.Content article
+{
+	margin-top	: 20px;
+}
+
+div#BlurbText
+{
+	height		: 180px;
+	overflow-y	: hidden;
+}
+
+div#BlurbText:hover
+{
+	overflow-y	: scroll;
+}
+
+
+
+/********/
+/* Body */
+/********/
+
+
+
+body
+{
+	background		: url('http://fc08.deviantart.net/fs71/f/2012/113/9/0/fiery_flower___hdr_render_by_thargor6-d4xbva9.jpg') fixed no-repeat !important;
+	background-size		: cover !important;
+}
+
+
+
+/*******************/
+/* GB Logo Changes */
+/*******************/
+
+
+
+div#Logo
+{
+	float			: right;
+}
+
+
+div#Logo a img
+{
+	content			: url('http://i.cubeupload.com/EZgqC6.png');
+}
+
+div#Logo p
+{
+	height			: 1.2em;
+	overflow		: hidden;
+}
+
+div#Logo p::before
+{
+	content			: "The Online Abode of Raving Idiots\A";
+	white-space		: pre-wrap;
+}
+
+
+
+/********************/
+/* Page Title Edits */
+/********************/
+
+
+
+h2#PageTitle
+{
+	padding-top		: 50px;
+	font-family		: 'Nosifer';
+	font-variant		: small-caps;
+	font-size		: 50px;
+	line-height		: 0;
+	text-align		: center;
+	text-shadow		: 0px 5px 20px green, 0px -5px 20px cyan, 0px 5px 20px green, 0px -5px 20px cyan;
+}
+
+div#TitleBreadcrumb
+{ 
+	font-family		: 'Nosifer';
+	font-variant		: small-caps;
+	font-size		: 25px !important;
+	text-align		: center;
+}
+
+
+
+/****************/
+/* Avatar Edits */
+/****************/
+
+
+
+html#Club_Profile div.AvatarWrapper div.AvatarTop,
+html#Club_Profile div.AvatarWrapper div.AvatarBase,
+html#Club_Profile div.AvatarWrapper img.LevelBar
+{
+	display			: none;
+}
+
+html#Club_Profile div.AvatarWrapper.Online img.Avatar
+{
+	border			: 2px solid #00AAFF;
+	border-radius		: 99px;
+}
+
+html#Club_Profile div.AvatarWrapper.Offline img.Avatar
+{
+	border			: 2px solid #999999;
+	border-radius		: 99px;
+}
+
+html#Club_Profile div.AvatarWrapper img.Avatar:hover
+{
+	border			: 2px solid white;
+	box-shadow		: none !important;
+}
+
+
+
+/*************************/
+/* Global Module Styling */
+/*************************/
+
+
+
+div#MainContent,
+div.Module > h3,
+div.Module div.Content,
+div#PostAddFormRequesterModule,
+div#PostsListModule,
+div#PostsListModule div.PostHeader,
+div#PostsListModule article
+{
+	background		: none;
+	border			: none;
+	box-shadow		: none;
+}
+
+div.Module,
+div#PostsListModule > h3,
+div#PostsListModule div.Content > ul > li
+{ 
+
+	background		: rgba(0,0,0,0.8);
+	border			: 1px solid rgb(32,64,96);
+	box-shadow		: none;
+}
+
+div.Module > h3
+{
+	border-bottom		: 1px solid rgb(32,64,96);
+	color			: rgb(32,64,96);
+	font-family		: 'Calibri Bold';
+	text-align		: center;
+	text-transform		: uppercase;
+}
+
+
+
+/************/
+/* Shoutbox */
+/************/
+
+
+
+div#shout table,
+div#shout tr,
+div#shout td
+{
+	background		: transparent;
+	border			: 0;
+}
+
+
+
+/******************************************/
+/* Team Members Module, Leadership Module */
+/******************************************/
+
+
+
+div#LeadershipModule h3,
+div#LeadershipModule dd.Owner > a,
+div#LeadershipModule li > a,
+div#LeadershipModule dt,
+html#Club_Profile div#TeamMembersListModule h3,
+html#Club_Profile div#TeamMembersListModule td.Member > a,
+html#Club_Profile div#TeamMembersListModule thead,
+html#Club_Profile div#TeamMembersListModule td:nth-of-type(2),
+html#Club_Profile div#TeamMembersListModule td:nth-of-type(3)
+{
+	display			: none;
+}
+
+div#LeadershipModule li
+{
+	margin			: 0;
+	margin-top		: 10px;
+}
+
+div#LeadershipModule ul
+{
+	padding			: 0;
+}
+
+div#LeadershipModule dd,
+div#LeadershipModule dl
+{
+	margin			: 0;
+}
+
+html#Club_Profile div#TeamMembersListModule td,
+html#Club_Profile div#TeamMembersListModule table,
+html#Club_Profile div#TeamMembersListModule tr
+{
+	border			: 0;
+	background		: transparent;
+}
+
+div#LeadershipModule div.AvatarWrapper img.Avatar,
+html#Club_Profile div#TeamMembersListModule div.AvatarWrapper img.Avatar
+{
+	margin-left		: 10px;
+}
+
+div#LeadershipModule .Content:before
+{
+	content			: "Leaders";
+}
+
+html#Club_Profile div#TeamMembersListModule .Content:before
+{
+	content			: "Members";
+}
+
+div#LeadershipModule .Content:before,
+html#Club_Profile div#TeamMembersListModule .Content:before
+{
+	display			: block;
+	margin-bottom		: 15px;
+	padding-bottom		: 5px;
+	border-bottom		: 1px solid rgb(32,64,96);
+	font-size		: 14px;
+	font-weight		: bold;
+	text-align		: center;
+}
+
+
+
+/*****************/
+/* Member Titles */
+/*****************/
+
+
+
+#PostsListModule .Poster a[href*="1244443"]:after		/* Ring-A-Ding Rampage */
+{
+	content			: " (Freakjob)";
+}
+
+#PostsListModule .Poster a[href*="1235118"]:after		/* Teh Thrasher */
+{
+	content			: " (MetalGoof)";
+}
+
+#PostsListModule .Poster a[href*="1291525"]:after		/* Emilio */
+{
+	content			: " (A-Rated Asshole)";
+}
+
+#PostsListModule .Poster a[href*="1320279"]:after		/* Clener74 */
+{
+	content			: " (BreadCums)";
+}
+
+#PostsListModule .Poster a[href*="1332419"]:after		/* Raul! */
+{
+	content			: " (CreepyGuy)";
+}
+
+#PostsListModule .Poster a[href*="1298547"]:after		/* Quinsicut */
+{
+	content			: " (Loves Dicks)";
+}
+
+#PostsListModule .Poster a[href*="1370489"]:after		/* Sammeh */
+{
+	content			: " (Fuckface)";
+}
+
+#PostsListModule .Poster a[href*="1253092"]:after		/* R E X */
+{
+	content			: " (You Don't Say?)";
+}
+
+
+
+/*************************/
+/* Waiting to be Cleaned */
+/*************************/
+
+
+p
+{
+	color			: red;
+	font-family		: 'Century Gothic';
+	font-size		: 12px;
+}
+
+body article blockquote
+{
+	opacity			: 1.0;
+	font-style		: normal;
+	margin			: 10px;
+	font-size		: 11px;
+	padding			: 0px;
+	border			: 1px dashed blueviolet !important;
+	background		: rgba(128,128,128,0.1) !important;
+}
+
+body article blockquote p
+{
+	color			: orange;
+}
+
+#PostsListModule .PostTools
+{
+	float			: right;
+}
+
+/* Posting Module Edits */
+
+#Modal .Content
+{
+	background		: none !important;
+	box-shadow		: none !important;
+	border			: none !important;
+}
+
+#Modal
+{
+	background		: rgba(0,8,16,0.9);
+	border			: 1px solid cyan;
+	box-shadow		: 0px 0px 15px cyan inset, 0px 0px 15px cyan;
+}
+
+#Modal fieldset
+{
+	border			: 1px solid aquamarine;
+	background		: none;
+}
+
+.markItUpEditor
+{
+	background		: rgba(0,0,0,0.5);
+	color			: yellowgreen;
+}
+
+.InputHelp
+{
+	display			: none;
+}
+
+fieldset > legend > sup
+{
+	background		: none;
+	border			: 1px solid blueviolet;
+	color			: blueviolet !important;
+}
+
+fieldset legend
+{
+	position		: relative;
+	color			: dodgerblue;
+}
+
+/******/
+
+div.Module, div#PostsListModule > h3, div#PostsListModule div.Content > ul > li {
+background-color: #00a8ff;
+background: url(/web/20130809143042/http://files.gamebanana.com/Club/uberstyles/images/linear_bg_2.png);
+background-repeat: repeat-x;
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000000), to(#111111));
+background: -webkit-linear-gradient(top, #000000, #111111);
+background: -moz-linear-gradient(top, #000000, #111111);
+background: -ms-linear-gradient(top, #000000, #111111);
+background: -o-linear-gradient(top, #000000, #111111);
+border: green;
+border-radius: 16px;
+box-shadow: 0px 0px 10px #00ff18 inset;
+}

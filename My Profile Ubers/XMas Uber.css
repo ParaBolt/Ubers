@@ -1,0 +1,292 @@
+/*********/
+/* FONTS */
+/*********/
+
+@font-face
+{
+	font-family		: 'Kringley Christmas';
+	src			: url('http://www.fontsaddict.com/fontface/kringley-christmas.ttf');
+}
+
+/*************/
+/* MAIN BODY */
+/*************/
+
+body
+{
+	background		: url('http://www.webdesignhot.com/wp-content/uploads/2013/11/Green-Christmas-Background-with-Snowflakes.jpg') fixed;
+	/* https://www.colourbox.com/preview/3128166-christmas-red-seamless-pattern-with-gold-and-white-snowflakes-vector.jpg */
+	background-size		: cover;
+	padding			: 0;
+}
+
+div#Wrapper
+{
+	width			: auto;
+}
+
+#Wrapper section
+{
+	background		: rgba(0,0,0,0.5);
+	box-shadow		: 0 0 10px black;
+}
+
+div#TopBanner,
+div#FooterBanner
+{
+	display			: none;
+}
+
+#HeaderWrapper
+{
+	background		: rgb(24,8,8);
+}
+
+#FooterWrapper
+{
+	margin			: 0;
+}
+
+#ColumnGrid
+{
+	margin			: auto;
+}
+
+#SectionLinks
+{
+	background		: transparent;
+}
+
+#DropdownMenuSubNavigator
+{
+	background		: transparent;
+	text-align		: center;
+}
+
+/***********/
+/* GB LOGO */
+/***********/
+
+#Logo
+{
+	background		: url('http://files.gamebanana.com/bitpit/xmaslogo_2.gif');
+}
+
+#Logo a img
+{
+	visibility		: hidden;
+}
+
+/**************/
+/* PAGE TITLE */
+/**************/
+
+#PageTitle
+{
+	font			: 80px normal 'Kringley Christmas', 'Happy Monkey';
+	text-shadow		: 0 0 10px red, 0 0 10px red, 0 0 50px red, 0 0 100px red;
+	color			: white;
+}
+
+/*********/
+/* FONTS */
+/*********/
+
+body *,
+.markItUpEditor,
+#PointsModule .Score,
+#PostsListModule article .LabelStat.Date,
+.UsernameSuggestionList li
+{
+	font-family		: Lucida Sans Unicode;
+}
+
+button
+{
+	font-family		: Lucida Sans Unicode !important;
+	text-transform		: uppercase !important;
+}
+
+/*********/
+/* LINKS */
+/*********/
+
+a,
+div#TitleBreadcrumb a,
+li.ActivityDay,
+.GenericSuperfish ul.sf-menu a,
+#SiteSearch #SearchableGames ul .Game,
+#SectionLinks .MasterGamesList .Game
+{
+	color			: rgb(0,224,128);
+	transition		: all 1s ease-in-out;
+}
+
+a:hover,
+div#TitleBreadcrumb a:hover,
+li.ActivityDay:hover,
+.GenericSuperfish ul.sf-menu a:hover,
+#SiteSearch #SearchableGames ul .Game:hover,
+#SectionLinks .MasterGamesList .Game:hover
+{
+	color			: rgb(255,255,128);
+	text-shadow		: 0 0 10px;
+	transition		: all 0.1s ease-in-out
+}
+
+/***********/
+/* MODULES */
+/***********/
+
+.Module
+{
+	box-shadow		: 0 0 10px rgb(64,16,16);
+}
+
+.Module > h3
+{
+	background		: linear-gradient(rgb(64,16,16),rgb(32,8,8));
+	border-bottom		: 1px solid rgb(64,16,16);
+	color			: rgb(224,160,160);
+}
+
+.Module div.Content,
+.Module .LogMessages,
+#NavigatorPanes article,
+#MasterLog,
+.PageNavigation,
+.GenericSuperfish ul.sf-menu li,
+.GenericSuperfish ul.sf-menu ul li,
+#SiteSearch #SearchableGames ul,
+#SectionLinks .MasterGamesList,
+#SectionLinks .MasterGamesList .AlphabetCategory,
+#ImportantLinks li
+{
+	background		: rgb(24,8,8);
+}
+
+/**********/
+/* COLORS */
+/**********/
+
+div.Module div.Content,
+body article
+{
+	color			: rgb(160,224,160);
+}
+
+dt
+{
+	color			: rgb(0,224,128);
+	border-bottom-color	: rgb(224,224,128);
+}
+
+/*********************/
+/* POSTS MODULE LITE */
+/*********************/
+
+#PostsListModule footer,
+#PostsListModule .Avatar,
+#PostsListModule .Upic,
+.AffiliatedStudio,
+#PostsListModule div.PostHeader div.Poster small,
+.LabelState
+{
+	display		: none;
+}
+
+#PostsListModule .MemberLink .Tooltip
+{
+	display		: block;
+}
+
+#PostsListModule div.PostHeader, #PostsListModule .PostTools
+{
+	padding		: 0;
+	display		: inline-block;
+	width		: 49%;
+}
+
+#PostsListModule article
+{
+	padding-top	: 0;
+}
+
+#PostsListModule article .LabelStat.Date
+{
+	font-size	: 10px;
+	padding-bottom	: 10px;
+}
+
+#PostsListModule article p
+{
+	margin		: 0;
+	padding		: 2px 10px;
+	font-size	: 13px;
+}
+
+#PostsListModule > div.Content > ul > li
+{
+	padding		: 10px;
+	border-bottom	: 1px solid rgba(255,64,64,0.1);
+}
+
+.PostTools ul > li > img
+{
+	visibility	: hidden;
+	width		: 8px;
+}
+
+div#PostsListModule div.PostTools li
+{
+	border		: none;
+	box-shadow	: none;
+}
+
+li[title="Edit post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/edit.png) center no-repeat;
+}
+
+li[title="Quote post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/quote_3.png) center no-repeat;
+}
+
+li[title="Stamp post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/stamp.png) center no-repeat;
+}
+
+li[title="Report post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/report.png) center no-repeat;
+}
+
+li[title="Trash post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/trash.png) center no-repeat;
+}
+
+li[title="Withhold post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/withhold.png) center no-repeat;
+}
+
+#SubmissionCountsModule tbody, #SubmissionCountsModule td.ItemCount
+{
+    text-align  : center;
+}
+
+#SubmissionCountsModule tr {
+    display : inline-block;
+    width   : 25%;
+    border  : 1px solid rgba(255,64,64,0.2);
+    margin  : 5px;
+    padding : 5px;
+}
+
+#SubmissionCountsModule td {
+    display : block;
+    padding : 0;
+}

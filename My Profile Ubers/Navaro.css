@@ -1,0 +1,344 @@
+body
+{
+	background	: linear-gradient(rgb(23, 23, 23) 20%, rgb(14, 107, 147), rgb(23, 23, 23) 80%) fixed;
+}
+
+body,
+#RemindersPane ul#Reminders li p,
+#ActivityPane #ActivityCalendar ul .ActivityDay.SelectedDay
+{
+	cursor		: url('http://files.gamebanana.com/bitpit/dmz-neon-blue-arrow.png'), default !important;
+}
+
+legend sup,
+.TooltipTrigger,
+.SpoilerTrigger,
+#MedalsModule li,
+#UnlocksModule li div,
+#PostsListModule .PostStamps li:hover
+{
+	cursor		: url('http://files.gamebanana.com/bitpit/dmz-neon-blue-help.png'), help !important;
+}
+
+a,
+label,
+button,
+select,
+.ButtonLike,
+.Module h3 > img,
+#NavigatorTabs li,
+.MaximizeMinimizeButton,
+.UsernameSuggestionList li,
+#GamesPane .GamesList .Game,
+#GamesPane .AlphabetIndex li,
+#ProfileToolsWrapperModule .Module h3,
+#DonationFormModule .PaypalDonateIcon,
+.AdvancedListSettingsModule fieldset legend,
+#ActivityPane #ActivityCalendar ul .ActivityDay,
+#AddToWatchlistFormModule fieldset#AreasToWatch legend
+{
+	cursor		: url('http://files.gamebanana.com/bitpit/dmz-neon-blue-link.png'), pointer !important;
+}
+
+.ContentColumn
+{
+	padding-top	: 15px;
+}
+
+.Module > h3,
+#NavigatorPanes > li > h4
+{
+	background	: linear-gradient(rgb(126,126,126), rgb(83,83,83) 50%, rgb(23,23,23) 50%);
+	border-radius 	: 10px;
+}
+
+.Module > h3
+{
+	margin-bottom	: 0;
+	text-align	: center;
+	border		: 0;
+}
+
+.Module .Content,
+.Module > .LogMessages,
+#PostsListModule .Content > ul > li
+{
+	background	: linear-gradient(rgb(23,23,23) 10%, rgb(14, 107, 147), rgb(23,23,23) 90%);
+	border 		: 0;
+	border-radius 	: 10px;
+	margin-left	: 0;
+}
+
+.Module,
+#PostsListModule article blockquote,
+.PageNavigation
+{
+	border 		: 1px solid rgb(195,195,195);
+	box-shadow 	: 0 0 2px 1px black;
+	border-radius 	: 10px;
+	background	: rgb(23, 23, 23);
+}
+
+.ThirdPartModule
+{
+	margin-bottom 	: 15px;
+}
+
+dl,
+#ResponsibilitiesModule dl
+{
+	margin		: 0px 5px;
+	padding		: 10px;
+	background	: rgb(23, 23, 23);
+}
+
+dt,
+#SettingsPortalModule h4,
+#NavigatorPanes > li > div > h5,
+fieldset legend
+{
+	color			: white;
+	border-bottom-color	: rgb(51, 150, 254);
+}
+
+#SettingsPortalModule h4,
+#NavigatorPanes > li > div > h5,
+fieldset legend,
+#DonatePointsModule legend
+{
+	text-transform 	: uppercase;
+	font-size 	: 10px;
+	font-weight	: normal;
+}
+
+#NavigatorTabs li
+{
+	margin-right	: 5px;
+}
+
+#NavigatorTabs li,
+button
+{
+	border		: 1px solid;
+}
+
+button
+{
+	background 	: linear-gradient(rgb(90,90,90), rgb(54,54,54) 50%, rgb(36,36,36) 50%, rgb(15,15,15));
+	border-color	: rgb(128,128,128);
+	color 		: white;
+	box-shadow 	: 0 0 10px rgb(10,40,74), 0 0 10px rgb(10,40,74);
+	border-radius 	: 10px;
+}
+
+button:hover
+{
+	background 	: linear-gradient(rgb(46,90,135), rgb(0,54,110) 50%, rgb(0,36,72) 50%, rgb(1,15,28));
+	border-color	: rgb(128,128,128);
+	color 		: white !important;
+}
+
+.Modal .CloseModal,
+.PostTools button,
+.Toolbar button,
+#NavigatorTabs li
+{
+	background 	: linear-gradient(rgb(159,159,159),rgb(104,104,104) 50%, rgb(42,42,42) 50%, rgb(97,97,97));
+	border-color 	: rgb(191,191,191);
+	color 		: white !important;
+	box-shadow 	: none;
+	border-radius 	: 3px;
+}
+
+#NavigatorTabs li.TabHasUpdates
+{
+	background 	: linear-gradient(rgb(111,207,207),rgb(50,150,150) 50%, rgb(19,62,62) 50%, rgb(49,90,144));
+	border	 	: 1px solid rgb(157,221,221);
+}
+
+.Modal .CloseModal:hover,
+#NavigatorTabs li:hover,
+.PostTools button:hover,
+.Toolbar button:hover,
+#NavigatorTabs li.ActiveTab
+{
+	background 	: linear-gradient(rgb(111,154,207),rgb(50,95,150) 50%, rgb(19,41,62) 50%, rgb(49,90,144));
+	border-color 	: rgb(157,187,221);
+}
+
+#NavigatorTabs span,
+.PostTools span
+{
+	filter 		: grayscale(1) brightness(5);
+	-o-filter 	: grayscale(1) brightness(5);
+	-ms-filter 	: grayscale(1) brightness(5);
+	-moz-filter 	: grayscale(1) brightness(5);
+	-webkit-filter 	: grayscale(1) brightness(5);
+}
+
+thead
+{
+	background 	: linear-gradient(rgb(24,24,24), rgb(59,59,59));
+}
+
+th
+{
+	border 		: 1px solid rgb(64,64,64);
+}
+
+div.GenericPreviewListModule li,
+table tr
+{
+	border-bottom 	: 0;
+}
+
+#SettingsPortalModule li
+{
+	list-style-type	: none;
+}
+
+a
+{
+	color		: aquamarine;
+}
+
+a:hover
+{
+	color		: cyan;
+}
+
+#Header,
+#PageTitleWrapper,
+#DropdownMenuSubNavigator
+{
+	text-align	: center;
+}
+
+#NavigatorPanes
+{
+	text-align	: initial;
+}
+
+#NavigatorTabs li span:nth-child(2),
+#TitleBreadcrumb
+{
+	display		: none;
+}
+
+#PageTitleWrapper,
+#DropdownMenuSubNavigator,
+#CoreStrip,
+#NetworkLinks,
+#DropdownMenuSubNavigator li a:hover,
+.Modal .Contents,
+.Modal .Toolbar li
+{
+	background	: transparent;
+}
+
+#PageTitleWrapper h1
+{
+	font-size	: 75px;
+	color		: rgb(50,150,200);
+}
+
+#DropdownMenuSubNavigator > ul
+{
+	padding		: 0;
+	width		: 60%;
+	margin		: auto;
+	border-bottom	: 4px solid rgb(20,21,23);
+}
+
+#DropdownMenuSubNavigator li.TitleOnly,
+#DropdownMenuSubNavigator .sf-menu > li
+{
+	background	: rgb(19,22,27);
+	border-radius	: 5px 5px 0 0;
+	border		: 1px solid rgb(64,64,64);
+	border-bottom	: 0;
+	box-shadow	: 0 0 0 1px black;
+}
+
+#DropdownMenuSubNavigator li.TitleOnly:hover,
+#DropdownMenuSubNavigator .sf-menu > li:hover
+{
+	background	: linear-gradient(rgb(65,65,65), rgb(20,21,23));
+	border-color	: rgb(128,128,128);
+	color		: white;
+}
+
+#DropdownMenuSubNavigator .sf-menu ul
+{
+	margin-top	: 3px;
+	text-align	: initial;
+}
+
+#DropdownMenuSubNavigator .sf-menu ul li,
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry
+{
+	background	: rgb(20,21,23);
+}
+
+#DropdownMenuSubNavigator .sf-menu ul li:hover,
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry:hover
+{
+	background	: rgb(65,65,65);
+}
+
+#PostAddFormRequesterModule,
+.ThirdPartModule
+{
+	margin-bottom	: 15px;
+}
+
+#PostsListModule,
+#PostsListModule .Content
+{
+	background	: transparent;
+	border		: 0;
+	border-radius	: 0;
+	box-shadow	: none;
+}
+
+#PostsListModule .Content > ul > li
+{
+	border		: 1px solid rgb(195,195,195);
+	box-shadow	: 0 0 2px 1px black;
+	margin		: 15px 3px;
+}
+
+#PostsListModule article blockquote
+{
+	opacity		: 1;
+}
+
+.Avatar.Online
+{
+	padding		: 3px;
+	background	: linear-gradient(to bottom right, white, rgb(67,166,189));
+	border		: 2px solid rgb(80,80,80);
+}
+
+.Avatar.Offline
+{
+	padding		: 3px;
+	background	: linear-gradient(to bottom right, rgb(224,224,224), rgb(190,190,190));
+	border		: 2px solid rgb(80,80,80);
+}
+
+.Avatar img
+{
+	margin-left	: 0;
+}
+
+.InputHelp
+{
+	color		: deepskyblue;
+}
+
+.Modal div.Module
+{
+	box-shadow	: none;
+	border-radius	: 0;
+}

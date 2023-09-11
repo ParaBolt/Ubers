@@ -1,0 +1,444 @@
+/*
+
+
+
+GameBanana ÜberStyle Sheet
+Posts Module Lite™
+
+Author : Ring-A-Ding Rampage
+Date   : 14-3-2014
+
+
+
+*/
+
+
+
+/*******************/
+/* Base Formatting */
+/*******************/
+
+
+
+div#PostsListModule > div.Content > ul > li,
+div#PostsListModule article,
+div#PostsListModule div.PostHeader
+{
+	border		: 0;
+	box-shadow	: none;
+	background	: none;
+}
+
+div#PostsListModule > div.Content > ul > li
+{
+	position	: relative;
+	margin		: 0;
+	padding-top	: 10px;
+}
+
+div#PostsListModule > div.Content > ul > li:not(:nth-child(1))
+{
+	border-top	: 1px solid rgba(255,255,255,0.1);
+}
+
+
+
+/****************/
+/* Remove Stuff */
+/****************/
+
+
+
+div#PostsListModule span.LabelStat,
+div#PostsListModule footer,
+div#PostsListModule div.PostHeader div.AvatarWrapper,
+div#PostsListModule div.PostHeader div.ModeratorInfo,
+div#PostsListModule div.PostHeader div.Poster .Upic,
+div#PostsListModule div.PostHeader div.Poster small,
+div#PostsListModule div.PostHeader div.Poster div.Tooltip div.Title
+{
+	display		: none;
+}
+
+
+
+/***************************************************************/
+/* Force display of Usernames and adjust padding on PostHeader */
+/***************************************************************/
+
+
+
+div#PostsListModule div.PostHeader
+{
+	padding		: 0;
+	padding-left	: 5px;
+}
+
+div#PostsListModule div.PostHeader div.Poster div.Tooltip
+{
+
+	display		: block;
+
+	margin		: 0;
+	padding		: 0;
+
+	border		: none;
+	box-shadow	: none;
+	background	: none;
+
+}
+
+
+
+/***************************/
+/* Classic FPSB Post Tools */
+/***************************/
+
+
+
+div#PostsListModule div.PostTools
+{
+	position	: absolute;
+	top		: 10px;
+	right		: 5px;
+	padding		: 0;
+}
+
+div#PostsListModule div.PostTools li
+{
+	border		: none;
+}
+
+div#PostsListModule div.PostTools ul li.EditButton img
+{
+	content		: url(http://files.gamebanana.com/bitpit/edit.png)
+}
+
+div#PostsListModule div.PostTools ul li.TrashButton img
+{
+	content		: url(http://files.gamebanana.com/bitpit/trash.png)
+}
+
+div#PostsListModule div.PostTools ul li.WithholdButton img
+{
+	content		: url(http://files.gamebanana.com/bitpit/withhold.png)
+}
+
+div#PostsListModule div.PostTools ul li.QuoteButton img
+{
+	content		:url(http://files.gamebanana.com/bitpit/quote_3.png)
+}
+
+div#PostsListModule div.PostTools ul li.ReportButton  img
+{
+	content		: url(http://files.gamebanana.com/bitpit/report.png)
+}
+
+div#PostsListModule div.PostTools ul li.StampsButton  img
+{
+	content		: url(http://files.gamebanana.com/bitpit/stamp.png)
+}
+
+
+
+/**************************************/
+/* Reduced Font Size and Line Padding */
+/**************************************/
+
+
+
+div#PostsListModule div.Poster,
+div#PostsListModule article
+{
+	font-family	: 'Tahoma';
+	font-size	: 11px;
+}
+
+div#PostsListModule article p
+{
+	margin		: 0;
+	margin-left	: 5px;
+	padding		: 2px 0px;
+}
+
+
+
+/***********************/
+/* Minimalistic Stamps */
+/***********************/
+
+
+
+div#PostsListModule ul.PostStamps
+{
+	padding		: 5px;
+}
+
+div#PostsListModule ul.PostStamps li
+{
+	position	: relative;
+
+	height		: 12px;
+	width		: 22px;
+
+	margin		: 0;
+	padding-left	: 2px;
+	overflow	: hidden;
+
+	border-radius	: 99px;
+}
+
+div#PostsListModule ul.PostStamps li img
+{
+	height		: 12px;
+	vertical-align	: top;
+	padding		: 0;
+}
+
+div#PostsListModule ul.PostStamps li span
+{
+	visibility	: hidden;
+	position	: absolute;
+}
+
+div#PostsListModule ul.PostStamps li span b
+{
+	visibility	: visible;
+	position	: absolute;
+	top		: 0;
+	left		: 0;
+}
+
+div#PostsListModule ul.PostStamps li span b:before
+{
+	content		: "x";
+	font-weight	: normal;
+}
+
+
+
+/****************************************/
+/* Quoted and Tagged Content Formatting */
+/****************************************/
+
+
+
+div#PostsListModule article blockquote
+{
+	margin		: 5px 20px;
+	padding		: 2px 0px 2px 5px;
+	border		: 0;
+	font-style	: normal;
+}
+
+div#PostsListModule article blockquote strong
+{
+	margin		: 0;
+	font-size	: 11px;
+}
+
+div#PostsListModule article pre
+{
+	margin		: 5px 20px;
+	padding		: 2px 0px 2px 5px;
+	font-size	: 11px;
+	background	: #10171C;
+	border		: 0;
+	box-shadow	: none;
+}
+
+div#PostsListModule article blockquote p,
+div#PostsListModule article pre p
+{
+	margin		: 0;
+}
+
+div#PostsListModule h1,
+div#PostsListModule h2,
+div#PostsListModule h3,
+div#PostsListModule h4,
+div#PostsListModule h5,
+div#PostsListModule h6
+{
+	margin		: 0;
+	margin-left	: 5px;
+	padding		: 0;
+	background	: transparent;
+}
+
+div#PostsListModule article hr
+{
+	margin		: 7px 50px;
+	border		: 0;
+	border-bottom	: 1px solid rgba(255,255,255,0.1);
+}
+
+
+
+/* New Profile Look */
+
+
+
+body
+{
+	background : url(http://sleekupload.com/uploads_png/15/lover_right_effect_copy.png), url(http://sleekupload.com/uploads_png/21/top_left_effect_copy.png), url(http://sleekupload.com/uploads_png/15/lolbg_test_2.png), black;
+
+	background-repeat: no-repeat, no-repeat, repeat-x;
+	background-position: right bottom, left top, left top;
+	background-attachment: fixed;
+}
+
+div#MainContent,
+div.Module div.Content,
+div.Module > h3
+{
+	background	: transparent;
+	border		: 0;
+	box-shadow	: none;
+}
+
+div.Module
+{
+	margin		: 10px;
+	padding		: 10px;
+	background	: rgba(0,0,0,0.5);
+	border		: 1px dotted #0C7193;
+}
+
+div.Module > h3
+{
+	text-align	: center;
+	font-variant	: small-caps;
+	text-shadow	: 0px 0px 10px #34BEED;
+	color		: #B7B4B4;
+	background	: url('http://sleekupload.com/uploads_png/16/messgaetile_easy_darkkklol.png');
+	border-left	: 1px solid #1B1B1B;
+}
+
+div.Module > div.Content
+{
+	background	: url('http://sleekupload.com/uploads_png/16/neonglow_transparentfour.png') repeat-x;
+	border-top	: 1px dotted #0C7193;
+}
+
+div#PostsListModule > div.Content,
+div#PostAddFormRequesterModule > div.Content
+{
+	background	: transparent;
+	border		: 0;
+}
+
+a
+{
+	color		: #34BEED;
+	text-shadow	: 0px 0px 5px;
+}
+
+a:hover
+{
+	color		: white;
+	text-decoration	: underline;
+}
+
+div#PostsListModule article p
+{
+	color		: #555;
+}
+
+table tr:nth-child(even)
+{
+	background	: transparent;
+}
+
+div#CoreStrip
+{
+	margin-top	: 20px;
+	padding		: 0px;
+	background	: transparent;
+}
+
+div#Footer, div#TopBanner
+{
+	display		: none;
+}
+
+div#PostsListModule article blockquote, div#PostsListModule article pre
+{
+	background	: transparent;
+	border		: 1px dotted #34BEED;
+}
+
+div#PostsListModule > div.Content > ul > li:not(:nth-child(1))
+{
+	border-top	: 0;
+}
+
+ul#NavigatorPanes article
+{
+	background	: transparent;
+	border		: 0;
+	border-top	: 0;
+}
+
+ul#NavigatorPanes > li
+{
+	background	: rgba(0,0,0,0.9);
+}
+
+ul#NavigatorPanes > h4
+{
+	background	: transparent;
+	border		: 0;
+}
+
+div#PointsMeterTooltip
+{
+	background	: rgba(0,0,0,0.9);
+	border		: 0;
+}
+
+fieldset#IsAnonymous, div.InputHelp, div.markItUpHeader, fieldset#Article legend
+{
+	display		: none;
+}
+
+#Modal, #Modal div.Module, fieldset#Article
+{
+	background	: none;
+	border		: 0;
+	box-shadow	: none;
+	padding		: 0;
+	margin		: 0;
+}
+
+#Modal
+{
+	position	: relative;
+}
+
+fieldset.Submit > button
+{
+	position	: absolute;
+	bottom		: 0;
+	right		: 0;
+}
+
+div.markItUp
+{
+	width		: auto;
+	margin		: 0;
+}
+
+textarea.markItUpEditor
+{
+	padding		: 10px;
+	background	: transparent;
+	color		: #555;
+	border		: 1px dotted #34BEED;
+	font-family	: Tahoma;
+}
+
+div#Wrapper, div#ColumnGrid
+{
+	width		: auto;
+}

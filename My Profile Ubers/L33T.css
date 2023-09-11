@@ -1,0 +1,504 @@
+/* Import Fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,800);
+
+/* Base Theme */
+
+html
+{
+	background	: url('http://www.hdwallpapers.in/walls/rainbow_six_siege_2015_game-wide.jpg') no-repeat fixed center center;
+	background-size	: cover;
+}
+
+body
+{
+	padding			: 0;
+	font-family		: 'Raleway';
+	background		: -webkit-repeating-linear-gradient(top, transparent 0px, rgba(0, 0, 0, .5) 1px, transparent 1px, rgba(255, 255, 255, .3) 2px);
+	-webkit-background-size	: 100% 2px;
+	background		: -moz-repeating-linear-gradient(top, transparent 0px, rgba(0, 0, 0, .5) 1px, transparent 1px, rgba(255, 255, 255, .3) 2px);
+	-moz-background-size	: 100% 2px;
+}
+
+#Wrapper
+{
+	width		: auto;
+}
+
+#FooterWrapper
+{
+	background	: linear-gradient(to right, transparent 15%, rgba(255,255,255,0.3) 45%, rgba(0,0,0,0.6) 55%, transparent 85%);
+}
+
+/* Hide Stuff */
+
+#NetworkLinks li:not(#GamebananaTab):not(#SiteSearch),
+#AdStrip
+{
+	display		: none;
+}
+
+/* Reset Stuff */
+
+#NetworkLinks,
+#CoreStrip,
+.Module .Content,
+.Module > .LogMessages,
+#DropdownMenuSubNavigator,
+#GamebananaTab
+{
+	background	: transparent;
+}
+
+/* Header */
+
+#HeaderWrapper
+{
+	background	: rgba(0,0,0,0.8);
+	padding		: 10px;
+	padding-bottom	: 0;
+}
+
+#Header
+{
+	width		: 90%;
+	margin		: auto;
+	position	: relative;
+}
+
+/* Logo */
+
+#GamebananaTab a
+{
+	height		: 30px;
+ 	overflow	: hidden;
+}
+
+#GamebananaTab a::before
+{
+	content		: "GAMEBANANA\A\A";
+	font-size	: 25px;
+	font-weight	: 800;
+	white-space	: pre-wrap;
+}
+
+#SiteSearch
+{
+	float		: right;
+	margin		: 11px;
+}
+
+#Navigator
+{
+	position	: absolute;
+	top		: 10px;
+	left		: 30%;
+}
+
+/* Page Title */
+
+#PageTitleWrapper
+{
+	border-top	: 2px solid rgba(224,224,192,0.5);
+	padding-left	: 7%;
+	padding-bottom	: 30px;
+	background	: linear-gradient(rgba(0,0,0,0.8) 75%, transparent);
+}
+
+#PageTitleWrapper h1
+{
+	font-size	: 14px;
+	font-weight	: 800;
+}
+
+#DropdownMenuSubNavigator
+{
+	position	: relative;
+	margin-top	: -50px;
+	padding-left	: 12%;
+}
+
+#DropdownMenuSubNavigator .sf-menu > li
+{
+	text-transform	: uppercase;
+	letter-spacing	: -0.01em;
+	font-weight	: 700;
+	font-size	: 12px;
+	background : transparent;
+}
+
+#DropdownMenuSubNavigator .sf-menu ul > li,
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry a
+{
+    background : black;
+}
+
+#DropdownMenuSubNavigator .sf-menu > li,
+#DropdownMenuSubNavigator li a
+{
+    color		: rgb(224,224,200);
+}
+
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry a
+{
+	color		: rgb(224,160,96);
+}
+
+#DropdownMenuSubNavigator .sf-menu > li:hover
+{
+	color		: rgb(224,224,224);
+}
+
+#DropdownMenuSubNavigator li a:hover,
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry a:hover
+{
+	color		: rgb(32,32,32);
+	text-shadow	: 0 0 rgb(32,32,32);
+	background : white;
+}
+
+#DropdownMenuSubNavigator .sf-menu ul
+{
+	top		: 100px !important;
+	transition	: opacity 0.1s;
+	display		: block !important;
+	visibility	: visible !important;
+	opacity		: 0;
+	z-index		: -99;
+}
+
+#DropdownMenuSubNavigator .sf-menu li:hover ul
+{
+	top		: 25px !important;
+	z-index		: 1;
+	opacity		: 1;
+	transition	: opacity 0.3s, top 0.1s;
+}
+
+ul#ImportantLinks
+{
+	position	: absolute;
+	top		: 80px;
+	right		: 6.7%;
+}
+
+ul#ImportantLinks li,
+ul#ImportantLinks a
+{
+	display		: inline;
+	border		: 0;
+	font-weight	: 800;
+}
+
+ul#ImportantLinks a:hover
+{
+	border		: 0 !important;
+	color		: white !important;
+}
+
+/* Navigator Tabs */
+
+#NavigatorTabs li span:nth-child(2)
+{
+	display		: none;
+}
+
+#NavigatorTabs li
+{
+	background	: transparent;
+}
+
+#NavigatorTabs li:hover,
+#NavigatorTabs li.ActiveTab
+{
+    background : rgb(192,192,192);
+}
+
+#NavigatorTabs li.TabHasUpdates
+{
+	border : 0;
+}
+
+#NavigatorTabs .NavigatorTabIcon
+{
+	filter		: grayscale(1) brightness(100) sepia(1) saturate(4);
+	-moz-filter	: grayscale(1) brightness(100) sepia(1) saturate(4);
+	-webkit-filter	: grayscale(1) brightness(100) sepia(1) saturate(4);
+}
+
+#NavigatorTabs .TabHasUpdates .NavigatorTabIcon
+{
+	filter		: grayscale(1) brightness(100) sepia(1) hue-rotate(50deg) saturate(15);
+	-moz-filter	: grayscale(1) brightness(100) sepia(1) hue-rotate(50deg) saturate(15);
+	-webkit-filter	: grayscale(1) brightness(100) sepia(1) hue-rotate(50deg) saturate(15);
+}
+
+#NavigatorTabs li:hover .NavigatorTabIcon, #NavigatorTabs .ActiveTab .NavigatorTabIcon
+{
+	filter		: brightness(0);
+	-moz-filter	: brightness(0);
+	-webkit-filter	: brightness(0);
+}
+
+#NavigatorPanes > li > h4
+{
+	font-weight	: 800;
+	background	: rgb(192,192,192);
+	color		: rgb(32,32,32);
+	text-shadow	: 0 0;
+	font-weight	: 800;
+	padding		: 10px;
+}
+
+#NavigatorPanes > li
+{
+	color		: rgb(192,192,192);
+	font-weight	: 700;
+	background	: black;
+}
+
+/* Body */
+
+#MainContent
+{
+	width		: 1000px;
+	margin		: auto;
+}
+
+.ContentColumn:first-child .Module
+{
+	background	: rgba(255,255,255,0.3);
+	border		: 1px solid rgba(255,255,255,0.6);
+	box-shadow	: 0 0 5px 0 black inset;
+}
+
+.ContentColumn:last-child .Module
+{
+	background	: rgba(0,0,0,0.6);
+	border		: 1px solid rgba(0,0,0,0.6);
+	box-shadow	: 0 0 5px 0 rgba(255,255,255,0.5) inset;
+}
+
+.ContentColumn:first-child .Module > h3
+{
+	color		: rgb(192,192,192);
+	background	: rgba(0,0,0,0.4)
+}
+
+.ContentColumn:last-child .Module > h3
+{
+	color		: rgb(32,32,32);
+	text-shadow	: 0 0;
+	background	: rgba(255,255,255,0.4)
+}
+
+.ContentColumn:first-child .Modal .Module
+{
+	background	: transparent;
+	border		: none;
+	box-shadow	: none;
+}
+
+.PostHeader,
+.PostTools,
+.ContentColumn:first-child .PageNavigation,
+.Modal .Contents,
+.Modal .Toolbar li
+{
+	background	: rgba(0,0,0,0.4);
+}
+
+.Modal .ModalDialog
+{
+	padding		: 10px;
+	font-size	: 14px;
+	font-weight	: 700;
+	text-align	: center;
+}
+
+.ContentColumn:last-child .PageNavigation
+{
+	background	: rgba(255,255,255,0.4);
+}
+
+.Module > h3
+{
+	font-weight	: 800;
+	text-align	: left;
+	border		: 0;
+}
+
+dt
+{
+	border		: 0;
+	color: rgb(200,224,200);
+	text-shadow	: 0 0 rgb(255,255,255);
+	font-weight	: 800;
+	font-size	: 10px;
+}
+
+dt:after
+{
+	content		: "";
+	display		: block;
+	height		: 2px;
+	background: linear-gradient(to right, rgba(224,200,160,0.7), transparent);
+}
+
+dl,
+.ItemCount
+{
+	color		: rgb(224,160,96);
+	font-weight	: 700;
+}
+
+table tr
+{
+	border		: 0;
+	font-weight	: 700;
+	display		: inline-block;
+	width		: 15%;
+	border		: 2px solid rgb(192,192,192);
+	margin		: 10px;
+	padding		: 5px;
+}
+
+table,
+td,
+#SubmissionCountsModule td.ItemCount
+{
+	text-align	: center;
+}
+
+td
+{
+	display		: block;
+	padding		: 0;
+}
+
+.PageNavigation
+{
+	padding		: 10px;
+	margin		: 0;
+}
+
+.PageNavigation:first-child,
+.PostLabels
+{
+	display		: none;
+}
+
+.MultipleRowListModule .ListControls
+{
+	margin		: 0;
+}
+
+.Module .Content .Toolbar
+{
+	padding		: 0;
+}
+
+#PostsListModule article p,
+#PostsListModule article li
+{
+	color		: rgb(32,32,32);
+	text-shadow	: 0 0 rgb(32,32,32);
+	font-weight	: 700;
+}
+
+#PostsListModule ul.PostStamps li
+{
+	padding		: 0;
+	padding-right	: 5px;
+	font-size	: 10px;
+	background	: rgba(0,0,0,0.5);
+	color		: rgb(192,192,192);
+	font-weight	: 700;
+}
+
+#BuddiesModule li
+{
+	margin		: 10px;
+	padding		: 0;
+}
+
+a
+{
+	color		: rgb(224,224,200);
+	text-shadow	: 0 0;
+}
+
+a:hover
+{
+	color		: white;
+	text-decoration	: underline overline;
+}
+
+#NavigatorPanes a:hover
+{
+    text-decoration	: none;
+}
+
+#PostsListModule article blockquote
+{
+	opacity		: 1;
+	border		: 2px solid rgb(192,192,192);
+	background	: rgba(0,0,0,0.4);
+}
+
+#PostsListModule article blockquote p
+{
+	color		: rgb(192,192,192);
+	text-shadow	: 0 0;
+}
+
+button, .ButtonLike
+{
+	background	: rgb(32,32,32);
+	color		: rgb(192,192,192);
+	border		: 2px solid;
+	font-weight	: 700;
+	text-transform	: uppercase;
+	outline		: 0;
+}
+
+button:hover, .ButtonLike:hover
+{
+	background	: rgb(192,192,192);
+	color		: rgb(32,32,32) !important;
+	border		: 2px solid !important;
+	box-shadow	: 0 0 0 2px;
+	text-shadow	: 0 0;
+}
+
+.SmallButton
+{
+	font-weight	: 700;
+	font-size	: 12px;
+}
+
+.Modal .CloseModal
+{
+	color		: rgb(200,224,224);
+}
+
+.Modal .CloseModal:hover
+{
+	background	: rgb(200,224,224);
+}
+
+.Avatar img
+{
+	margin-left	: 0;
+	background	: black;
+}
+
+.Avatar.Offline
+{
+	border		: 3px solid rgb(192,192,192);
+}
+
+.Avatar.Online
+{
+	border		: 3px solid rgb(192,224,192);
+}

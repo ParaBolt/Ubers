@@ -1,0 +1,247 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,800);
+
+body
+{
+  background : black url('http://www.wallpaperhi.com/thumbnails/detail/20120201/blue%20minimalistic%20deviantart%20textures%202560x1600%20wallpaper_www.wallpaperhi.com_14.jpg') fixed no-repeat;
+  background-size : cover;
+  font-family : 'Raleway';
+  color : rgba(255,255,255,0.5);
+  text-shadow : 0 0 10px;
+}
+
+a
+{
+  color : rgba(128,255,255,0.3);
+  text-shadow : 0 0 10px rgba(128,128,255,1);
+}
+
+a:hover
+{
+  color : rgba(0,255,0,0.5);
+  text-shadow : 0 0 10px rgba(0,255,0,1);
+}
+
+.Module > h3,
+.Module .Content,
+#PostsListModule,
+#PageTitleWrapper,
+#DropdownMenuSubNavigator,
+#CoreStrip,
+#NetworkLinks
+{
+  background : transparent;
+}
+
+div.Module,
+#PostsListModule > .Content > ul > li
+{
+  background : rgba(0,0,0,0.1);
+  border-radius : 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.Module .Content
+{
+  margin-left : 0;
+}
+
+.Module > h3
+{
+  margin-bottom : 0;
+  border : 0;
+  font-weight : 800;
+  color : 
+}
+
+#PostsListModule
+{
+  border : 0;
+}
+
+#PostsListModule > .Content > ul > li
+{
+  margin : 15px 0;
+  transition : all 0.2s ease-in-out;
+}
+
+#PostsListModule > .Content > ul > li:hover
+{
+  background : rgba(10,30,50,0.2);
+}
+
+#MainContentHeader
+{
+  margin-top : 35px;
+  border : 1px solid rgba(0,0,0,0.1);
+  border-radius : 10px;
+  background : rgba(0,0,0,0.1);
+}
+
+#PageTitleWrapper h1
+{
+  color : rgba(255,255,255,0.1);
+  text-shadow : 0 0 15px white;
+  font-size : 50px;
+}
+
+#TitleBreadcrumb
+{
+  border-radius : 0 10px 0 10px;
+  border-left : 1px solid rgba(0,0,0,0.1);
+  border-bottom : 1px solid rgba(0,0,0,0.1);
+  background : transparent;
+  right : 5px;
+}
+
+#FooterWrapper,
+#HeaderWrapper
+{
+  border : 1px solid rgba(0,0,0,0.1);
+  border-radius : 10px;
+  background : rgba(0,0,0,0.1);
+  padding : 10px;
+}
+
+#HeaderWrapper
+{
+  margin-top : 10px;
+}
+
+#DropdownMenuSubNavigator
+{
+  padding : 0 10px;
+}
+
+#DropdownMenuSubNavigator > ul > li
+{
+  border : 1px solid rgba(0,0,0,0.1);
+  border-bottom : 0;
+  border-radius : 10px 10px 0 0;
+}
+
+button
+{
+    background : rgba(255,255,255,0.1);
+    border : 1px solid rgba(255,255,255,0.1);
+    border-radius : 5px;
+    box-shadow : none;
+}
+ 
+button:hover
+{
+    background : radial-gradient(at bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.1));
+    border : 1px solid rgba(255,255,255,0.1);
+    border-radius : 5px;
+    box-shadow : none;
+}
+
+body,
+#RemindersPane ul#Reminders li p,
+#ActivityPane #ActivityCalendar ul .ActivityDay.SelectedDay
+{
+        cursor          : url('https://i.imgur.com/fQtoNCw.png'), default !important;
+}
+
+legend sup,
+.TooltipTrigger,
+.SpoilerTrigger,
+#MedalsModule li,
+#UnlocksModule li div,
+#PostsListModule .PostStamps li:hover
+{
+        cursor          : url('https://i.imgur.com/GtEQ6mZ.png'), help !important;
+}
+
+a,
+label,
+button,
+select,
+.ButtonLike,
+.Module h3 > img,
+#NavigatorTabs li,
+.MaximizeMinimizeButton,
+.UsernameSuggestionList li,
+#GamesPane .GamesList .Game,
+#GamesPane .AlphabetIndex li,
+#ProfileToolsWrapperModule .Module h3,
+#DonationFormModule .PaypalDonateIcon,
+.AdvancedListSettingsModule fieldset legend,
+#ActivityPane #ActivityCalendar ul .ActivityDay,
+#AddToWatchlistFormModule fieldset#AreasToWatch legend
+{
+        cursor          : url('https://i.imgur.com/cTv6hfT.png'), pointer !important;
+}
+
+/* Experimental Shit */
+
+@keyframes rotate
+{
+    from { transform : rotateZ(0deg); }
+    to {  transform : rotateZ(360deg); }
+}
+
+@keyframes disappear
+{
+    from { opacity : 1; }
+    to {opacity : 0; }
+}
+
+@keyframes appear
+{
+    from { opacity : 0; overflow : hidden; }
+    to {opacity : 1; overflow : auto; }
+}
+
+@keyframes slide-up
+{
+    from { height : 100vh; }
+    to { height : 0vh; }
+}
+
+@keyframes load
+{
+    from { width : 0%; }
+    to { width : 100%; }
+}
+
+body
+{
+    overflow : hidden;
+    animation : appear 0.3s 3s linear forwards;
+}
+
+body::before
+{
+    background : rgb(8,8,8);
+    content : '';
+    display : block;
+    height : 100vh;
+    animation : slide-up 0s 3s linear forwards;
+}
+
+body::after
+{
+    content : '';
+    display : block;
+    position : absolute;
+    left : 0;
+    top : 50vh;
+    height : 2px;
+    width : 0%;
+    background : rgb(0,160,192);
+    animation : load 3s linear;
+}
+
+/*body::after
+{
+    content : '';
+    display : block;
+    position : absolute;
+    width : 50px;
+    height : 50px;
+    left : calc(50vw + -25px);
+    top : calc(50vh + -25px);
+    border : 3px dotted white;
+    border-radius : 99px;
+    animation : rotate 3s linear, disappear 0s 3s linear forwards;
+}*/

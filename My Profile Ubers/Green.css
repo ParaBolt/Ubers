@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+@keyframes blink
+{
+	0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100%
+	{
+		opacity		:0.99;
+		text-shadow	: 0 0 80px #0F0, 0 0 30px lime, 0 0 6px lime;
+	}
+
+	19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999%
+	{
+		opacity		:0.4;
+		text-shadow	: none;
+	}
+}
+
+:root
+{
+	--BodyBackground : #000 url('https://images.gamebanana.com/img/ss/posts/6255587a25b44.jpg') top/cover fixed;
+	--BodyWrapperBackground : url("https://www.transparenttextures.com/patterns/diagmonds.png");
+}
+
+.PageModule > h3
+{
+    letter-spacing : 0;
+    font-family : Century Gothic;
+    text-transform : Capitalize;
+    font-size : 30px;
+    text-align : left;
+    background : transparent;
+    color : greenyellow;
+    font-weight : bold;
+    text-shadow : 0 0 1px rgb(0,32,0), 0 0 1px rgb(0,32,0), 0 0 1px rgb(0,32,0), 0 0 1px rgb(0,32,0), 0 0 1px rgb(0,32,0), 0 0 2px rgb(0,32,0), 0 0 2px rgb(0,32,0), 0 0 2px rgb(0,32,0), 0 0 2px rgb(0,32,0), 0 0 5px rgb(0,32,0), 0 0 5px rgb(0,32,0), 0 0 10px rgb(0,32,0);
+    padding-bottom : 0;
+    font-variant : small-caps;
+}
+
+.MainContentWrapper
+{
+    background : rgba(0,0,0,0.5);
+    box-shadow : 0 0 10px black;
+    padding : 10px;
+}
+
+div.Module div.Content, div#PostsListModule > div.Content > ul > li
+{
+    background : url(http://s24.postimg.org/4w62x64ep/image.jpg);
+    background-size : 15%;
+    box-shadow : 0 0 10px black inset;
+}
+
+div#PostsListModule article p
+{
+    font-family : Candara;
+    font-size : 14px;
+    color : greenyellow;
+}
+
+div#PostsListModule div.PostHeader, div#PostsListModule footer
+{
+    background : rgba(0,0,0,0.5);
+    box-shadow : 0 0 10px black;
+    padding : 10px;
+}
+
+#HeadlineWrapper overlay h1
+{
+    font: 60px Monoton;
+	text-shadow	: 0 0 80px #0F0, 0 0 30px lime, 0 0 6px lime;
+    color: #0F0;
+    animation: blink 10s linear infinite;
+}

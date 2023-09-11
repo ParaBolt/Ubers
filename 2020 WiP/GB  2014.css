@@ -1,0 +1,376 @@
+:root
+{
+	--DefaultTextFontFamily       : 'Verdana', sans-serif;
+	--DefaultTechnicalFontFamily  : 'Courier New', monospace;
+	--NavPaneTitleFontFamily      : 'Verdana', sans-serif;
+	--ModuleTitleFontFamily       : 'Verdana', sans-serif;
+	--ButtonFontFamily            : 'Courier New', monospace;
+	--BodyBackground              : #1A1C1F;
+	--BodyWrapperBackground       : unset;
+	--DefaultTextColor            : #E2E2E2;
+	--PrimaryNavBackgroundColor   : rgba(0,0,0,0.7);
+	--SecondaryNavBackgroundColor : rgba(0,0,0,0.7);
+	--ButtonBackground            : #222;
+	--ButtonFontColor             : var(--LinkColor);
+	--ButtonHoverBackgroundColor  : #222;
+	--ButtonHoverFontColor        : var(--LinkHoverColor);
+	--InputBackgroundColor        : #111;
+	--InputHoverBackgroundColor   : #111;
+	--InputFocusBackgroundColor   : #111;
+	--InputTextColor              : #BEBEBE;
+}
+
+#GbLogo
+{
+	display : none;
+}
+
+#BananaNavModule widget a::after
+{
+	content : url('http://files.gamebanana.com/bitpit/logo_0811c.png');
+}
+
+#PageFooter
+{
+	background : #222;
+	border     : 1px solid #444;
+	text-align : center;
+	box-shadow : 0 0 0 1px #000;
+}
+
+button
+{
+	box-shadow : 0 0 0 1px black;
+	border     : 2px outset;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="num"],
+input[type="tel"],
+select,
+.SelectLike,
+textarea,
+.TextareaLike
+{
+	border  : 2px solid black;
+	outline : 1px solid #444;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover,
+input[type="email"]:hover,
+input[type="num"]:hover,
+input[type="tel"]:hover,
+select:hover,
+.SelectLike:hover,
+textarea:hover,
+.TextareaLike:hover
+{
+	outline-color : #777;
+	border        : 2px solid black;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="num"]:focus,
+input[type="tel"]:focus,
+select:focus,
+.SelectLike:focus,
+textarea:focus,
+.TextareaLike:focus
+{
+	outline-color : #FFD800;
+	border        : 2px solid black;
+}
+
+moduleGroup
+{
+	margin  : 0;
+	padding : 0;
+}
+
+.PageModule
+{
+	box-shadow : 0 0 0 1px #000;
+	margin     : 0;
+	padding    : 0;
+}
+
+.PageModule > h3
+{
+	background     : #334852;
+	border         : 1px solid #466675;
+	padding        : 5px;
+	font-size      : 14px;
+	text-transform : capitalize;
+	font-weight    : bold;
+	letter-spacing : 0;
+	margin-bottom  : 1px;
+	box-shadow     : 0 1px #000;
+}
+
+.PageModule > h3::after
+{
+	content : unset;
+}
+
+.PageModule .Content
+{
+	background : #151E23;
+	border     : 1px solid #1F2E35;
+}
+
+.PageModule > .Description
+{
+	background    : #1E2C32;
+	border        : 1px solid #304751;
+	margin-bottom : 1px;
+	box-shadow    : 0 1px #000;
+}
+
+.PageModule > .LogMessages
+{
+	background : #222;
+	border     : 1px solid #444;
+	color      : #BEBEBE;
+	padding    : 5px;
+	margin-top : 1px;
+}
+
+.PostsListModule .PostsListModule
+{
+	border-top : 0;
+	margin     : 10px;
+}
+
+.PostsListModule div.Content ul.Posts > li
+{
+	background : #151E23;
+	border     : 3px solid #444;
+	box-shadow : 0 0 0 1px #111,
+0 0 0 1px #10171C inset;
+	padding    : 0;
+	margin     : 10px;
+}
+
+.PostsListModule div.Content ul.Posts > li:first-child
+{
+	border-top : 3px solid #444;
+}
+
+.PostsListModule div.Content ul.Posts > li .PostHeader
+{
+	background : #1E2C32;
+	padding    : 10px;
+}
+
+.PostsListModule div.Content ul.Posts > li article
+{
+	margin     : 0;
+	padding    : 10px;
+	border-top : 1px solid #10171C;
+}
+
+.PostsListModule div.Content ul.Posts > li .TogglePostRepliesButton
+{
+	margin : 10px;
+}
+
+table
+{
+	margin : 10px;
+	width  : calc(100% - 20px);
+	border : 1px solid #0A0F12;
+}
+
+table tr:nth-child(even),
+table thead
+{
+	background : #1E2C32;
+}
+
+table td,
+table thead th
+{
+	border : 1px solid #0A0F12;
+}
+
+table thead th
+{
+	padding     : 5px;
+	font-weight : bold;
+}
+
+#ImportantLinks li a
+{
+	background    : #222;
+	box-shadow    : 0 0 0 1px #000;
+	border-radius : 3px;
+	border        : 2px outset;
+	margin-bottom : 5px;
+	padding       : 5px;
+}
+
+#ImportantLinks li a:hover
+{
+	background : #222;
+	color      : #FD70E1 !important;
+	border     : 2px solid #FD70E1 !important;
+}
+
+#PageFooter #ImportantLinks li #AddIdeaLink
+{
+	border-color : var(--LinkColor);
+}
+
+#PageFooter #ImportantLinks li #AddBugLink
+{
+	border-color : var(--DefaultRedColor);
+}
+
+#PageFooter #ImportantLinks li #AddTicketLink
+{
+	border-color : var(--DefaultBlueColor);
+}
+
+statelabel
+{
+  text-transform : uppercase;
+  box-shadow     : 0 0 0 1px black;
+  border         : 1px solid rgba(255,255,255,0.4);
+  background     : #BEBEBE;
+  font-weight    : bold;
+}
+
+stateLabel.IsHonorary,
+stateLabel.IsTopToday,
+stateLabel.BugResolution_feedback,
+stateLabel.SupportResolution_feedback,
+stateLabel.QuestionState_Stuck,
+stateLabel[data-_sThreadState="Stuck"],
+stateLabel[data-_sUpdateType="Improvement"],
+stateLabel[data-_sUpdateType="Optimization"],
+stateLabel[data-_sUpdateType="Tweak"]
+{
+ color      : #111;
+ background : var(--DefaultPurpleColor);
+}
+
+stateLabel.IsFlagged,
+stateLabel.IsWithheld,
+stateLabel.IsRedistributor,
+stateLabel.IsPending,
+stateLabel.WareVariantQuantity_LowStock,
+stateLabel.BugPriority_medium
+{
+ color      : #111;
+ background : var(--DefaultOrangeColor)
+}
+
+stateLabel.IsTrashed,
+stateLabel.IsNegative,
+stateLabel.IsActionable,
+stateLabel.WareVariantQuantity_OutOfStock,
+stateLabel.BugResolution_confirmed,
+stateLabel.BugPriority_high,
+stateLabel.PermitLevel_senior,
+stateLabel.TodoPriority_3,
+stateLabel.SupportResolution_open,
+stateLabel.RequestResolution_undeliverable,
+stateLabel.RequestResolution_cancelled,
+stateLabel.RequestResolution_duplicate,
+stateLabel.FlagState_3,
+stateLabel.IdeaResolution_cannot_address,
+stateLabel.IdeaResolution_wont_address,
+stateLabel.IdeaResolution_duplicate,
+stateLabel.QuestionState_Hot,
+stateLabel.QuestionState_Unanswered,
+stateLabel[data-_sTutorialDifficulty="Advanced"],
+stateLabel[data-_sThreadState="Hot"],
+stateLabel[data-_sUpdateType="Overhaul"],
+stateLabel[data-_sUpdateType="BugFix"],
+#CodeViewerModule controls .IsTruncated
+{
+ color      : #111;
+ background : var(--DefaultRedColor)
+}
+
+stateLabel.IsNsfw
+{
+ background  : var(--DefaultRedColor);
+ color       : #111;
+ font-weight : bold
+}
+
+stateLabel.IsUpdated,
+.PostsListModule .Posts > li .PostHeader .PostLabels stateLabel.IsSubmitter,
+stateLabel.IsCreator,
+stateLabel.BugResolution_new,
+stateLabel.RequestResolution_in_delivery,
+stateLabel.RequestResolution_open,
+stateLabel.FlagState_0,
+stateLabel.IdeaResolution_will_address,
+stateLabel.QuestionState_Answered,
+stateLabel[data-_sTutorialDifficulty="Intermediate"],
+stateLabel[data-_sThreadState="Unanswered"],
+stateLabel[data-_sUpdateType="Addition"],
+stateLabel[data-_sUpdateType="Suggestion"],
+stateLabel[data-_sUpdateType="Feature"],
+.MainForm .InputsWrapper fieldset > legend stateLabel.RequiredInput
+{
+ color      : #111;
+ background : var(--DefaultBlueColor)
+}
+
+stateLabel.FeedbackNeeded,
+stateLabel.Unrated,
+stateLabel.BugResolution_closed,
+stateLabel.BugPriority_low,
+stateLabel.TodoPriority_1,
+stateLabel.SupportResolution_closed,
+stateLabel.RequestResolution_expired,
+stateLabel.IdeaResolution_unknown,
+stateLabel.QuestionState_closed,
+stateLabel.RipeMode_expired,
+stateLabel.QuestionState_done,
+stateLabel[data-_sThreadState="Closed"],
+stateLabel.ContestState_Ended,
+stateLabel[data-_sUpdateType="Removal"],
+stateLabel[data-_sUpdateType="Refactor"]
+{
+ color      : #111;
+ background : var(--DefaultGreyColor)
+}
+
+stateLabel.IsPositive,
+stateLabel.IsComplete,
+stateLabel.PermitLevel_junior,
+stateLabel.RequestResolution_delivered,
+stateLabel.IdeaResolution_addressed,
+stateLabel.RipeMode_active,
+stateLabel.QuestionState_Solved,
+stateLabel[data-_sTutorialDifficulty="Beginner"],
+stateLabel[data-_sThreadState="Done"],
+stateLabel.ContestState_Running,
+stateLabel[data-_sUpdateType="Adjustment"],
+stateLabel[data-_sUpdateType="Amendment"]
+{
+ color      : #111;
+ background : var(--DefaultGreenColor)
+}
+
+stateLabel.BugPriority_emergency
+{
+ color      : #111;
+ background : var(--DefaultRedColor);
+ animation  : BlinkingElement 1s linear infinite
+}

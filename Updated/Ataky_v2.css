@@ -1,0 +1,164 @@
+/******************************************/
+/* Ataky's Uber v2                        */
+/* Modified by Ataky                      */
+/* CSS by ParaBolt                        */
+/* Version : 07-04-2022                   */
+/******************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap');
+
+:root
+{
+	--BodyBackground              : black url('http://img03.deviantart.net/ae82/i/2013/222/9/9/wallpaper_cupcake_by_analaurasam-d6hjkzc.jpg') center/cover fixed no-repeat;
+	--BodyWrapperBackground       : transparent;
+	--DefaultTextFontFamily       : 'Raleway';
+	--PrimaryNavBackgroundColor   : rgb(0 0 0 / 50%);
+	--SecondaryNavBackgroundColor : rgb(0 0 0 / 50%);
+	--AuxiliaryColumnBackground   : transparent;
+	--ModuleBorderColor           : rgb(0 192 192);
+}
+
+/* Columns */
+
+column:first-child
+{
+	padding-right : .5em;
+}
+
+column:last-child
+{
+	padding-left : .5em;
+}
+
+#ContentGrid.xs row>column.xs-12
+{
+	padding : .5em;
+}
+
+/* Modules */
+
+.PageModule:not(.PageModule .PageModule)
+{
+	padding    : 0;
+	background : rgb(0 0 0 / 50%);
+	border     : 2px dashed var(--ModuleBorderColor);
+	box-shadow : 0 0 0 3px rgb(0 0 0), 0 0 0 3px rgb(0 0 0) inset;
+}
+
+.PageModule + .PageModule
+{
+	margin-top : 1em;
+}
+
+#ContentGrid > row > column:not(:first-child) module:not(.PageModule .PageModule),
+#ContentGrid > row > column:not(:first-child) moduleGroup
+{
+	border-bottom-color : var(--ModuleBorderColor);
+}
+
+.PageModule > h2
+{
+	background : linear-gradient(rgb(0 0 0), rgb(0 0 0 / 1%));
+	padding    : .5em;
+}
+
+.PageModule > h2::after
+{
+	content : unset;
+}
+
+.PageModule .Content
+{
+	padding : 1em;
+}
+
+/* Header and Footer */
+
+#PageFooter,
+#MainContentHeader
+{
+	background : rgb(0 0 0 / 50%);
+	box-shadow : 0 0 10px rgb(0 0 0);
+	padding    : 10px;
+}
+
+#MainContentHeader
+{
+	text-align : center;
+	margin-top : 1em;
+}
+
+#HeadlineWrapper overlay h1
+{
+	--TextShadow : 0 0 5px rgb(0 0 0);
+	font-weight  : 800;
+	color        : rgb(64,192,192);
+	text-shadow  : var(--TextShadow), var(--TextShadow), var(--TextShadow), var(--TextShadow), var(--TextShadow), var(--TextShadow), var(--TextShadow), var(--TextShadow), var(--TextShadow), var(--TextShadow);
+}
+
+/* Definition Lists */
+
+dt
+{
+	background    : rgba(0 0 0 / 20%);
+	padding       : .5em;
+	border-radius : 10px;
+	color         : burlywood;
+	font-weight   : 800;
+	border-bottom : 2px dotted darksalmon;
+}
+
+dd
+{
+	color       : orange;
+	margin-left : 1em;
+}
+
+dd + dt
+{
+	margin-top : 1em;
+}
+
+/* Avatar */
+
+.Avatar,
+.Avatar.IsRipeSupporter,
+.Avatar.HasClearanceLevel
+{
+	display       : inline-flex;
+	border-radius : 50%;
+	padding       : 1px;
+}
+
+.Avatar.IsRipeSupporter
+{
+	background : transparent;
+}
+
+.Avatar.HasClearanceLevel
+{
+	box-shadow: none;
+}
+
+.Avatar.Online
+{
+	border : 2px dotted yellow;
+}
+
+.Avatar.Offline
+{
+	border : 2px dotted rgb(192 192 192);
+}
+
+.Avatar.Online::after
+{
+	content : unset;
+}
+
+.Avatar img
+{
+	border-radius : 50%;
+	border        : 2px solid black;
+	width         : auto;
+	height        : auto;
+}

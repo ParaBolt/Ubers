@@ -1,0 +1,628 @@
+@keyframes view-one
+{
+    20.01%, 100%
+	{
+		z-index : -99;
+	}
+	0%, 20%
+	{
+		z-index : 1;
+	}
+}
+
+@keyframes view-two
+{
+	0%, 19.99%, 41.01%, 100%
+	{
+		z-index : -99;
+	}
+	20%, 40%
+	{
+		z-index : 1;
+	}
+}
+
+@keyframes view-three
+{
+	0%, 39.99%, 61.01%, 100%
+	{
+		z-index : -99;
+	}
+	40%, 60%
+	{
+		z-index : 1;
+	}
+}
+
+@keyframes view-four
+{
+	0%, 59.99%, 81.01%, 100%
+	{
+		z-index : -99;
+	}
+	60%, 80%
+	{
+		z-index : 1;
+	}
+}
+
+@keyframes view-five
+{
+	0%, 79.99%
+	{
+		z-index : -99;
+	}
+	80%, 100%
+	{
+		z-index : 1;
+	}
+}
+
+.image-slider-wrapper
+{
+	min-height : 250px;
+	display : flex;
+	align-items : center;
+	justify-content : center;
+    font-size: initial;
+    margin : 10px;
+}
+
+.image-container
+{
+	position : relative;
+	width : 640px;
+	height : 250px;
+	overflow : hidden;
+}
+
+.tab
+{
+	width : 640px;
+	height : 250px;
+	background : #050505;
+	position : absolute;
+	z-index : -99;
+}
+
+#tab-one
+{
+	animation : view-one 15s linear infinite;
+}
+
+#tab-two
+{
+	animation : view-two 15s linear infinite;
+}
+
+#tab-three
+{
+	animation : view-three 15s linear infinite;
+}
+
+#tab-four
+{
+	animation : view-four 15s linear infinite;
+}
+
+#tab-five
+{
+	animation : view-five 15s linear infinite;
+}
+
+.tab a
+{
+	display : block;
+	position : relative;
+	color : #999;
+}
+
+.tab img
+{
+	max-width : 100%;
+}
+
+.tab span
+{
+	display : block;
+	width : 100%;
+	padding : 10px 0;
+	position : absolute;
+	bottom : 0;
+	left : 0;
+	background : linear-gradient(to right, rgba(0,0,0,0.9), transparent);
+	text-shadow : 1px 1px 2px black, 1px 1px 2px black, 1px 1px 2px black, 1px 1px 2px black, 1px 1px 2px black;
+    text-indent : 20px;
+}
+
+/***/
+
+@font-face
+{
+	font-family	: 'Happy Monkey';
+	font-style	: normal;
+	font-weight	: 400;
+	src		: local('Happy Monkey'), local('HappyMonkey-Regular'), url(http://fonts.gstatic.com/s/happymonkey/v5/c2o0ps8nkBmaOYctqBq1rT0LW-43aMEzIO6XUTLjad8.woff2) 
+
+format('woff2');
+	unicode-range	: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face
+{
+	font-family	: 'Happy Monkey';
+	font-style	: normal;
+	font-weight	: 400;
+	src		: local('Happy Monkey'), local('HappyMonkey-Regular'), url(http://fonts.gstatic.com/s/happymonkey/v5/c2o0ps8nkBmaOYctqBq1rTy24DTBG-RpCwXaYkM4aks.woff2) 
+
+format('woff2');
+	unicode-range	: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body
+{
+	background		: rgb(4,12,16);
+	font-family		: 'Happy Monkey';
+	color			: rgb(64,128,160);
+}
+
+.Module > h3
+{
+	border			: 0;
+	margin			: 0;
+	text-align		: center;
+}
+
+.Module .Content,
+.Module > .LogMessages
+{
+	margin			: 0;
+}
+
+.Module > h3,
+.PostHeader,
+#NavigatorPanes > li > h4
+{
+	background		: linear-gradient(rgb(16,48,64),rgb(8,24,32));
+	color			: rgb(255,128,64);
+}
+
+.Module .Content,
+#PostsListModule > .Content > ul > li,
+.Module > .LogMessages,
+#NavigatorPanes > li,
+ul#ImportantLinks a
+{
+	background		: rgb(8,24,32);
+}
+
+#PostsListModule .Content,
+.Modal .Contents,
+.Modal .Toolbar li,
+#CoreStrip,
+#NetworkLinks,
+#PageTitleWrapper
+{
+	background		: transparent;
+}
+
+#PostsListModule > .Content > ul > li
+{
+	margin-bottom		: 10px;
+	border-bottom		: 0;
+}
+
+a,
+#ActivityPane #ActivityCalendar ul .ActivityDay,
+#DropdownMenuSubNavigator li a
+{
+	color			: rgb(0,160,224);   
+}
+
+a:hover,
+#ActivityPane #ActivityCalendar ul .ActivityDay:hover,
+#DropdownMenuSubNavigator li a:hover
+{
+	color			: rgb(224,224,224);   
+}
+
+ul#ImportantLinks a
+{
+	margin			: 0;
+	border			: 0;
+}
+
+ul#ImportantLinks a:hover
+{
+	background		: rgb(16,48,64);
+	color			: rgb(224,224,224) !important;
+	border			: 0 !important;
+}
+
+li.SelectedDay,
+.PageNavigation li.CurrentPage
+{
+	color			: rgb(0,224,160);
+}
+
+thead tr,
+tr:not(:last-child)
+{
+	border-bottom		: 1px solid rgb(32,64,64);
+}
+
+td:nth-of-type(3),
+div.InputHelp,
+div#PostsListModule footer
+{
+	color			: rgb(64,128,64);
+}
+
+thead
+{
+	background		: transparent;
+}
+
+thead th
+{
+	color			: rgb(255,128,64);
+	font-weight		: bold;
+	font-size		: 12px;
+}
+
+dt,
+#NavigatorPanes > li > div > h5
+{
+	color			: rgb(64,128,64);
+	border-bottom		: 1px solid rgb(32,64,64);
+}
+
+button,
+div.StampsForm label.Checked
+{
+	background		: rgb(0,112,80);
+	color			: rgb(0,224,160) !important;
+	border			: 0;
+	border-radius		: 3px;
+	font-family		: 'Happy Monkey'
+}
+
+.ButtonLike,
+div#PostsListModule .PostStamps li,
+div.StampsForm label
+{
+	background		: rgb(32,96,96);
+	border			: 0;
+	outline			: 0;
+	color			: rgb(64,192,192) !important;
+	border-radius		: 3px;
+}
+
+button:hover,
+.ButtonLike:hover,
+#PostsListModule .PostStamps li:hover,
+div.StampsForm label:hover
+{
+	background		: rgb(128,64,32);
+	border			: 0;
+	color			: rgb(255,128,64) !important;
+}
+
+.CloseModal
+{
+	font-size		: 10px;
+	height			: 1.7em;
+	white-space		: pre-wrap;
+	overflow : hidden;
+}
+
+.CloseModal:before
+{
+	content			:'X\A';
+}
+
+#MainContentHeader
+{
+	text-align	: center;
+}
+
+#PageTitleWrapper h1
+{
+	font-size		: 60px;
+	color			: rgb(255,128,64);
+	text-shadow		: none;
+}
+
+#DropdownMenuSubNavigator
+{
+	border		: 0;
+	background	: transparent;
+}
+
+#DropdownMenuSubNavigator li.TitleOnly
+{
+	color		: rgb(64,128,160);
+	text-align	: initial;
+}
+
+#DropdownMenuSubNavigator .sf-menu > li
+{
+	margin		: 0 -2px;
+}
+
+#DropdownMenuSubNavigator li.TitleOnly,
+#DropdownMenuSubNavigator > ul > li > a,
+#DropdownMenuSubNavigator .sf-menu ul > li
+{
+	background	: rgb(8,24,32);
+}
+
+#DropdownMenuSubNavigator li.TitleOnly:hover,
+#DropdownMenuSubNavigator li a:hover
+{
+	background	: rgb(16,48,64);
+}
+
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry
+{
+	background	: rgb(32,96,96);
+	padding		: 0;
+}
+
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry a
+{
+	color		: rgb(64,192,192);
+}
+
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry a:hover
+{
+	background	: rgb(128,64,32);
+	color		: rgb(255,128,64);
+}
+
+.UsernameSuggestionList li:hover
+{
+	background	: rgb(128,64,32);
+	color		: rgb(255,128,64);
+	border		: 0;
+}
+
+.UsernameSuggestionList li
+{
+	background	: rgb(32,96,96);
+	border		: 0;
+	color		: rgb(64,192,192);
+}
+
+.tooltipster-default
+{
+	background		: linear-gradient(rgb(16,48,64),rgb(8,24,32));
+}
+
+#NavigatorTabs span:nth-child(2),
+#AdStrip
+{
+	display		: none;
+}
+
+#NavigatorTabs li
+{
+	background		: linear-gradient(rgb(16,48,64),rgb(8,24,32));
+	margin			: -0.1px 0;
+	padding			: 10px;
+}
+
+#NavigatorTabs li.TabHasUpdates
+{
+	background		: linear-gradient(rgb(255,128,64),rgb(128,64,32));
+	border			: none;
+}
+
+#NavigatorTabs li:hover,
+#NavigatorTabs li.ActiveTab
+{
+	background		: linear-gradient(rgb(64,192,192),rgb(32,96,96));
+}
+
+#NavigatorTabs li.TabHasUpdates.ActiveTab
+{
+	background		: linear-gradient(rgb(0,224,160),rgb(0,112,80));
+}
+
+#NavigatorPanes li
+{
+	top			: 0px !important;
+}
+
+.Avatar.Offline,
+.Avatar.Online
+{
+	border			: 0;
+}
+
+.Avatar img
+{
+	border			: 2px solid rgb(128,128,128);
+	border-radius		: 20px;
+}
+
+.Avatar.Online img
+{
+	border			: 2px solid rgb(0,224,160);
+}
+
+.Avatar img:hover
+{
+	border			: 2px solid rgb(224,224,224);
+}
+
+input,
+.markItUpEditor
+{
+	border			: 1px solid rgb(32,64,64);
+	outline			: 0;
+	color			: rgb(64,128,128);
+}
+
+input:hover,
+.markItUpEditor:hover
+{
+	border-color		: rgb(0,224,160);
+	color			: rgb(0,224,160);
+}
+
+input:focus,
+.markItUpEditor:focus
+{
+	border-color		: rgb(224,224,224);
+	color			: rgb(224,224,224);
+}
+
+div.markItUpHeader ul li
+{
+	border-radius	: 10px;
+	background		: rgb(64,192,192);
+}
+
+div.markItUpHeader ul li:hover
+{
+	background		: rgb(255,160,128);
+}
+
+#PostsListModule .LabelState
+{
+	font-size		: 12px;
+	border			: 0;
+}
+
+#PostsListModule .LabelState.IsSubmitter
+{
+	background		: rgb(32,96,96);
+	color			: rgb(64,192,192);
+}
+
+#PostsListModule .LabelState.IsModerator
+{
+	background		: rgb(128,64,32);
+	color			: rgb(255,128,64);
+}
+
+/********************/
+/* Date Label Spans */
+/********************/
+
+
+
+.LessThan5minsOld
+{
+	text-decoration		: none;
+	color			: rgb(64,248,248);
+}
+
+.LessThan30minsOld
+{
+	color			: rgb(64,224,192);
+}
+
+.LessThan1HourOld
+{
+	color			: rgb(96,192,160);
+}
+
+.LessThan4HoursOld
+{
+	color			: rgb(96,160,96);
+}
+
+.OlderThan1Day
+{
+	color			: rgb(96,128,96);
+}
+
+
+
+/**************/
+/* Scrollbars */
+/**************/
+
+
+
+::-webkit-scrollbar
+{
+	width			: 5px;
+	height			: 5px;
+}
+ 
+::-webkit-scrollbar-thumb
+{
+	background		: linear-gradient(rgb(64,192,192),rgb(32,96,96));
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+	background		: linear-gradient(rgb(255,128,64),rgb(128,64,32));
+}
+
+/***/
+
+#MedalsPane ul
+{
+	text-align		: center;
+}
+
+.GreenColor
+{
+	color			: rgb(0,224,160)
+}
+
+.RedColor
+{
+	color			: rgb(224,112,112)
+}
+
+.PurpleColor
+{
+	color			: cornflowerblue;
+}
+
+.BlueColor
+{
+	color			: rgb(0,160,224);
+}
+
+.OrangeColor
+{
+	color			: rgb(255,128,64);
+}
+
+.GreyColor
+{
+	color			: rgb(255,255,128);
+}
+
+#MedalsPane ul,
+header
+{
+	text-align		: center;
+}
+
+.TitleOnly,
+#NavigatorPanes
+{
+	text-align		: initial;
+}
+
+#NavigatorPanes > li,
+.tooltipster-default,
+#DropdownMenuSubNavigator ul ul
+{
+	box-shadow		: 0 0 10px black;
+}
+
+#AtfLeaderboard,
+#BtfLeaderboardRow,
+#AdsByCurseBanner,
+#OpskinsHeaderLink
+{
+    display: none;
+}

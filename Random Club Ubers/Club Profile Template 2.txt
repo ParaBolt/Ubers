@@ -1,0 +1,34 @@
+?>
+
+	<div class="ContentRow FluidRow" id="Row1">
+
+		<div class="ContentColumn FluidColumn EquiCol">
+			<?= $d["_aModules"]["_sIdentity"] ?>
+		</div>
+
+		<div class="ContentColumn FluidColumn EquiCol">
+			<?= $d["_aModules"]["_sBlurb"] ?>
+		</div>
+
+		<div class="ContentColumn FluidColumn EquiCol">
+			<?= $d["_aModules"]["_sStats"] ?>
+		</div>
+
+	</div>
+
+	<div class="ContentRow FluidRow" id="Row2">
+
+		<div class="ContentColumn FluidColumn" id="ThinCol">
+	        	<?= $d["_aModules"]["_sLeadership"] ?>
+			<?= $d["_aModules"]["_sTeamMembersList"] ?>
+		</div>
+
+		<div class="ContentColumn FluidColumn" id="WideCol">
+			<?= $d["_aThirdPartyModules"]["_sShoutbox"] ?>
+			<?= $d["_aModules"]["_sPostAddFormRequester"] ?>
+			<?= $d["_aModules"]["_sProfileMessages"] ?>
+		</div>
+
+	</div>
+
+<?

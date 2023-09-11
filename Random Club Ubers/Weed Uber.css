@@ -1,0 +1,128 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,800);
+
+body
+{
+	padding		: 0;
+	background	: url('http://i.imgur.com/nz73FrX.jpg') fixed no-repeat center;
+	cursor : url('http://files.gamebanana.com/bitpit/normalselect.cur'), default !important;
+}
+
+a, button, .PostTools li, #NavigatorTabs li
+{
+    cursor : url('http://files.gamebanana.com/bitpit/linkselect.cur'), default !important;
+}
+
+#Wrapper
+{
+    width : auto;
+}
+
+#ColumnGrid
+{
+    margin : auto;
+}
+
+#NetworkLinks
+{
+    text-align  : right;
+    background  : transparent;
+}
+
+#NetworkLinks li:not(#GamebananaTab),
+#ImportantLinks
+{
+    display : none;
+}
+
+#GamebananaTab img
+{
+    visibility : hidden;
+}
+
+#GamebananaTab
+{
+    background : url('http://files.gamebanana.com/bitpit/ezgqc6_1_.png') center center no-repeat;
+}
+
+#CoreStrip
+{  
+    margin-top : -42px;
+    background  : transparent;
+}
+
+.Module > h3, .Module .Content
+{
+	background	: rgb(30,40,30) url('http://i.imgur.com/TflkXBg.png');
+	background-size : 75px;
+	border		: 0;
+	box-shadow	: 0 0 10px 3px black;
+	border-radius	: 10px;
+}
+
+.Module > h3
+{
+	font		: 800 18px Raleway;
+	color		: rgb(60,80,60);
+	text-align	: left;
+	display		: inline-block;
+	letter-spacing	: 0.05em;
+}
+
+#HeaderWrapper
+{
+    padding : 20px;
+    background : rgba(255,255,255,0.3) url('http://i.imgur.com/Cw7QinB.png');
+    background-size : 75px;
+    position : relative;
+}
+
+#FooterWrapper
+{
+    margin : 0;
+    margin-bottom : -100px;
+    background : rgba(255,255,255,0.3) url('http://i.imgur.com/Cw7QinB.png');
+    background-size : 100px;
+    padding : 10px;
+    position : relative;
+}
+
+#HeaderWrapper::after, #FooterWrapper::after, #MainContentHeader::after
+{
+    content : "";
+    display : block;
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    z-index : -1;
+    background : url('http://i.imgur.com/nz73FrX.jpg') fixed no-repeat center;
+    -webkit-filter : blur(5px);
+}
+
+#MainContentHeader
+{
+    width : 80%;
+    margin : 20px auto;
+    text-align : center;
+    position : relative;
+    background : rgba(255,255,255,0.3) url('http://i.imgur.com/Cw7QinB.png');
+    background-size : 75px;
+}
+
+#PageTitleWrapper, #DropdownMenuSubNavigator, #TitleBreadcrumb
+{
+    background : transparent;
+}
+
+#AdStrip
+{
+    height : 0;
+}
+
+#PageTitleWrapper h1
+{
+    color : rgb(60,100,80);
+    font-size : 50px;
+    text-shadow : 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+}

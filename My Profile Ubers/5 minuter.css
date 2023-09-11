@@ -1,0 +1,45 @@
+body
+{
+    background : #000;
+    color : yellowgreen;
+}
+
+#Wrapper
+{
+    background : transparent;
+}
+
+.Module > h3
+{
+    background : linear-gradient(#020, #000);
+    border : 1px solid lime;
+    box-shadow : 0 0px 100px #030;
+}
+
+.Module .Content
+{
+    background : transparent;
+}
+
+#PostsListModule .Content ul .Post
+{
+    margin-top : 10px;
+    border-bottom : 1px solid green;
+}
+
+a
+{
+    color : lime;
+}
+
+a:hover
+{
+    color : white;
+}
+
+div.Module
+{
+    padding : 10px;
+    margin : 10px;
+    font-size : 12px;
+}

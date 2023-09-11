@@ -1,0 +1,93 @@
+div.StaticColumn:last-of-type
+{
+	display		: none;
+}
+body {
+    background: rgb(32,32,96);
+}
+
+.Module > h3 {
+    background: transparent;
+    color:rgb(255,255,128);
+    font: bold 12px 'Arial Black';
+    text-shadow : 0 0 1px rgb(64,64,32), 0 0 1px rgb(64,64,32), 0 0 1px rgb(64,64,32), 0 0 2px rgb(64,64,32), 0 0 2px rgb(64,64,32), 0 0 2px rgb(64,64,32), 0 0 3px rgb(64,64,32), 0 0 3px rgb(64,64,32), 0 0 3px rgb(64,64,32), 0 0 4px rgb(64,64,32), 0 0 4px rgb(64,64,32), 0 0 4px rgb(64,64,32), 0 0 5px rgb(64,64,32), 0 0 5px rgb(64,64,32), 0 0 5px rgb(64,64,32), 0 0 10px rgb(64,64,32), 0 0 10px white, 0 0 10px white;
+}
+
+.Module > .Content {
+    background: transparent;
+}
+
+.Module {
+    background: rgba(255,255,255,0.2);
+    position : relative;
+    border:2px solid rgb(16,16,64);
+}
+
+.Module::before, .Module::after, .Module .Content::before, .Module .Content::after
+{
+    content:"";
+    display:block;
+    position:absolute;
+    width:20px;
+    height:20px;
+    background: rgb(32,32,96);
+    color:transparent;
+    border-radius:10px;
+}
+
+.Module::before
+{
+    top:-5px;
+    left:-5px;
+    border-bottom:2px solid rgb(16,16,64);
+    border-right:2px solid rgb(16,16,64);
+}
+
+.Module::after
+{
+    top:-5px;
+    right:-5px;
+    border-bottom:2px solid rgb(16,16,64);
+    border-left:2px solid rgb(16,16,64);
+}
+
+.Module .Content::before
+{
+    bottom:-5px;
+    left:-5px;
+    border-top:2px solid rgb(16,16,64);
+    border-right:2px solid rgb(16,16,64);
+}
+
+.Module .Content::after
+{
+    bottom:-5px;
+    right:-5px;
+    border-top:2px solid rgb(16,16,64);
+    border-left:2px solid rgb(16,16,64); 
+}
+
+#SectionLinks, #DropdownMenuSubNavigator
+{
+    text-align:center;
+    background:transparent;
+}
+
+#PageTitle {
+color: rgb(128,192,255);
+font: small-caps 50px 'Arial Black';
+text-shadow: 0 0 1px rgb(16,24,32), 0 0 1px rgb(16,24,32), 0 0 1px rgb(16,24,32), 0 0 3px rgb(16,24,32), 0 0 3px rgb(64,96,128), 0 0 3px rgb(16,24,32), 0 0 5px rgb(16,24,32), 0 0 5px rgb(16,24,32), 0 0 5px rgb(16,24,32), 0 0 7px rgb(16,24,32), 0 0 7px rgb(16,24,32), 0 0 7px rgb(16,24,32), 0 0 15px rgb(128,192,255), 0 0 15px rgb(128,192,255);
+}
+
+#PostsListModule .Content > ul > li
+{
+    margin : 10px;
+    background : rgba(64,0,64,0.3);
+    border : 2px solid rgb(32,0,32);
+    border-radius : 20px;
+}
+
+body article p
+{
+    font : 12px Tahoma;
+}

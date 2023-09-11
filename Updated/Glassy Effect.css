@@ -1,0 +1,87 @@
+:root
+{
+	--BodyBackground                      : #000 url('https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/1ee91411729143.560fc51d5a378.jpg') top/cover fixed no-repeat;
+	--BodyWrapperBackground               : transparent;
+	--AuxiliaryColumnBackground           : transparent;
+	--OverlayBackground                   : rgb(0 0 0 / 30%);
+	--SubNavigatorDropdownBackgroundColor : #222;
+	--TabBorder                           : #222;
+	--TabBackground                       : #222;
+	--PrimaryNavBackgroundColor           : #222;
+	--SecondaryNavBackgroundColor         : #222;
+	--NavPaneBackgroundColor              : #111;
+}
+
+column:first-child
+{
+	padding-right : .5em;
+}
+
+column:last-child
+{
+	padding-left : .5em;
+}
+
+#ContentGrid.xs row > column.xs-12
+{
+	padding : .5em;
+}
+
+#ContentGrid column > * + *
+{
+	margin-top : 1em;
+}
+
+#MainContentHeader,
+#SubNavigator,
+.PageModule > h2,
+.PageModule .Content
+{
+	background : var(--OverlayBackground)
+}
+
+#SubNavigator,
+#SubNavigator .ActiveEntry,
+#SubNavigator .DropdownMenuSubNavigator > li:hover
+{
+	border-bottom : 0;
+}
+
+.PageModule > h2
+{
+	margin  : 0;
+	padding : .5em;
+}
+
+.PageModule > h2::after
+{
+	content : unset;
+}
+
+.PageModule
+{
+	position   : relative;
+	padding    : .35em;
+	box-shadow : 0 0 10px #000;
+}
+
+.PageModule::after
+{
+	content    : "";
+	position   : absolute;
+	box-sizing : border-box;
+	top        : 0;
+	left       : 0;
+	display    : block;
+	width      : 100%;
+	height     : 100%;
+	z-index    : -1;
+	background : var(--BodyBackground);
+	filter     : blur(5px);
+}
+
+.ExtendedContentButton
+{
+	background : var(--ButtonBackground);
+	color      : var(--ButtonFontColor);
+}

@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
+:root
+{
+	--DefaultBlueColor                    : rgb(0 160 224);
+	--DefaultRedColor                     : rgb(224 112 112);
+	--DefaultGreenColor                   : rgb(0 224 160);
+	--DefaultGreyColor                    : rgb(96 128 96);
+	--DefaultYellowColor                  : rgb(255 255 128);
+	--DefaultOrangeColor                  : rgb(255 128 64);
+
+	--BaseColor                           : rgb(8 24 32);
+	--BaseColorDark                       : rgb(4 12 16);
+	--BaseColorLight                      : rgb(16 48 64);
+
+	--BodyBackground                      : var(--BaseColorDark);
+	--PrimaryNavBackgroundColor           : var(--BaseColorDark);
+	--SecondaryNavBackgroundColor         : var(--BaseColorDark);
+	--FixedMainContentHeaderBackground    : var(--BaseColorDark);
+
+	--StateLabelBackground                : var(--BaseColorLight);
+
+	--BodyWrapperBackground               : transparent;
+	--AuxiliaryColumnBackground           : transparent;
+
+	--LinkColor                           : rgb(0 160 224);
+	--LinkHoverColor                      : rgb(224 224 224);
+	--DefaultTextColor                    : rgb(64 128 160);
+
+	--GenericFontFamily                   : 'Quicksand', cursive;
+	--DefaultTextFontFamily               : var(--GenericFontFamily);
+	--ModuleTitleFontFamily               : var(--GenericFontFamily);
+	--ButtonFontFamily                    : var(--GenericFontFamily);
+	--DefaultTechnicalFontFamily          : var(--GenericFontFamily);
+
+	--NavPaneBackgroundColor              : var(--BaseColor);
+	--SubNavigatorDropdownBackgroundColor : var(--BaseColor);
+	--SubNavigatorActiveTabBorderColor    : var(--DefaultOrangeColor);
+
+	--ButtonBackground                    : rgb(0 112 80);
+	--ButtonFontColor                     : rgb(0 224 160);
+	--ButtonHoverBackgroundColor          : rgb(128 64 32);
+	--ButtonHoverFontColor                : var(--DefaultOrangeColor);
+	--ButtonBackgroundAlt                 : rgb(32 96 96);
+	--ButtonFontColorAlt                  :	rgb(64 192 192);
+
+	--PageTitleColor                      : var(--DefaultOrangeColor);
+	--ModuleTitleColor                    : var(--DefaultOrangeColor);
+
+	--InputBackgroundColor                : var(--BaseColorLight);
+	--InputHoverBackgroundColor           : var(--BaseColorLight);
+	--InputFocusBackgroundColor           : var(--BaseColorLight);
+	--InputPlaceholderColor               : var(--DefaultTextColor);
+
+	--BaseGradient                        : linear-gradient(var(--BaseColorLight), var(--BaseColor));
+	--BaseGradient2                       : linear-gradient(var(--ButtonFontColorAlt), var(--ButtonBackgroundAlt));
+	--BaseGradient3                       : linear-gradient(var(--ButtonHoverFontColor), var(--ButtonHoverBackgroundColor));
+
+	--TabBorder                           : var(--BaseColorLight);
+	--TabBackground                       : var(--BaseColor);
+}
+
+h1, h2, h3, h4, h5, h6,
+fieldset > legend
+{
+	color : var(--DefaultOrangeColor);
+}
+
+dt,
+td:nth-child(odd)
+{
+	color : var(--DefaultGreyColor);
+}
+
+.PageModule > h2,
+.PostHeader,
+pane header
+{
+	background : var(--BaseGradient);
+}
+
+.PageModule:not(.PostsListModule) > .Content,
+.PageModule > .LogMessages,
+.PostsListModule .Post
+{
+	background : var(--BaseColor);
+}
+
+body > .BananaTip
+{
+	background : var(--BaseColorDark);
+}
+
+.ExtendedContentButton
+{
+	background : var(--ButtonBackgroundAlt);
+	color      : var(--ButtonFontColorAlt);
+}
+
+.PageModule > h2,
+.PostsListModule .Posts .PostHeader,
+.PostsListModule .Posts > li,
+.PostsListModule .Posts > li:last-child
+{
+	padding : .5rem;
+}
+
+.PostsListModule .Posts .PostHeader
+{
+	margin : -.5rem;
+}
+
+/* RESET */
+
+.PageModule,
+.PostsListModule .Posts > li
+{
+	border-bottom : unset;
+}
+
+.PageModule > h2
+{
+	margin-bottom: unset
+}
+
+.PageModule > h2::after,
+#SecondaryNav > wrapper module pane header::after,
+#SecondaryNav > wrapper module pane footer::after,
+.Avatar.Online::after
+{
+	content : unset;
+}
+
+#NavOptionsNavModule pane #NavOptionsUiThemeList li,
+.Modal .PageModule .Content
+{
+	background : unset;
+}
+
+#PrimaryNav module pane
+{
+	padding : unset;
+}
+
+.Avatar.HasClearanceLevel,
+.Avatar.IsRipeSupporter img
+{
+	box-shadow : unset;
+}
+
+.Avatar.IsRipeSupporter
+{
+	padding       : unset;
+	background    : unset;
+	border-radius : unset;
+}
+
+/* DATE LABELS */
+
+.LessThan5minsOld
+{
+	color : rgb(64 248 248);
+}
+
+.LessThan30minsOld
+{
+	color : rgb(64 224 192);
+}
+
+.LessThan1HourOld
+{
+	color : rgb(96 192 160);
+}
+
+.LessThan4HoursOld
+{
+	color : rgb(96 160 96);
+}
+
+.OlderThan1Day
+{
+	color : rgb(96 128 96);
+}
+
+/* AVATAR */
+
+.Avatar.Offline,
+.Avatar.Online
+{
+	border : 0;
+}
+
+.Avatar
+{
+	border        : 2px solid rgb(128 128 128);
+	border-radius : 20px;
+	overflow      : hidden;
+}
+
+.Avatar.Online
+{
+	border : 2px solid var(--DefaultGreenColor);
+}
+
+.Avatar:hover
+{
+	border : 2px solid rgb(224 224 224);
+}
+
+/* NAV */
+
+#SecondaryNav > wrapper module.HasUpdates icon
+{
+	background : var(--BaseGradient3);
+	border     : none;
+}
+
+#SecondaryNav > wrapper module.Selected icon
+{
+	background : var(--BaseGradient2);
+}
+
+/* SCROLLBARS */
+
+::-webkit-scrollbar
+{
+	width  : 7px;
+}
+
+::-webkit-scrollbar-track
+{
+	background : transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background : var(--BaseGradient2);
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+	background : var(--BaseGradient3);
+}
+
+*
+{
+	scrollbar-color : var(--ButtonFontColorAlt) var(--BaseColorDark);
+	scrollbar-width : thin;
+}

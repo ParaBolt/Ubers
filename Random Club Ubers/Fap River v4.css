@@ -1,0 +1,686 @@
+@import "http://ilikestargateswebsite.webs.com/CSS/spoilerwhite.css";
+
+/**********/
+/* Layout */
+/**********/
+
+
+div#Wrapper, div#ColumnGrid
+{
+	width		: auto;
+}
+
+div#Row1
+{
+	margin-bottom	: 20px;
+}
+
+div.EquiCol
+{
+	width		: 375px;
+	margin-left	: 20px;
+}
+
+div.ThinCol
+{
+	width		: 110px;
+	margin-left	: 20px;
+}
+
+div.WideCol
+{
+	width		: 1045px;
+	margin-left	: 20px;
+}
+
+div.SingleRowProfileModule:not(#LeadershipModule)
+{
+	margin-top	: 20px;
+}
+
+div.SingleRowProfileModule:not(#LeadershipModule) div.Content
+{
+	height		: 200px;
+}
+
+div#TopBanner,
+div#Footer,
+div#SubdomainMenus,
+div#SectionLinks,
+div#SiteSearch,
+div#ImportantLinks,
+div#TitlebarBanner
+{
+	display		: none;
+}
+
+
+/***********/
+/* Content */
+/***********/
+
+
+
+/* Codes Added by Ring-A-Ding */
+
+
+/* Background Image */
+
+body
+{
+	background		: url('http://files.gamebanana.com/bitpit/aurora_borealis_2-wallpaper-2560x16.jpg') fixed no-repeat;
+	background-size		: cover;
+}
+
+#TBar
+{
+	margin			: 50px 0px 50px 30px;
+}
+
+#DropdownMenuSubNavigator > ul
+{
+	width			: 12%;
+	margin			: auto;
+}
+
+
+
+
+
+/************************************************/
+/**************** Navigator Tabs ****************/
+/************************************************/
+
+
+
+#NavigatorTabs li
+{
+	box-shadow		: none;
+	background		: rgb(32,96,64);
+	border			: 1px solid rgb(48,128,96);
+	transition		: border-radius 1s, background 1s, border 1s;
+}
+
+#NavigatorTabs li:hover
+{
+	background		: rgb(32,64,96);
+	border			: 1px solid rgb(48,96,128);
+	border-radius		: 99px;
+}
+
+#NavigatorTabs li.TabHasUpdates
+{
+	background		: rgb(96,64,96);
+	border			: 1px solid rgb(255,128,255);
+
+	-webkit-animation	: flash 0.5s ease infinite alternate 0s;
+	-moz-animation		: flash 0.5s ease infinite alternate 0s;
+	animation		: flash 0.5s ease infinite alternate 0s;
+}
+
+#NavigatorTabs li.TabHasUpdates:hover
+{
+	background		: rgb(96,128,192);
+	border			: 1px solid rgb(128,192,255);
+}
+
+
+
+
+
+/************************************************/
+/***************** Points Meter *****************/
+/************************************************/
+
+
+
+#CurrentPointSubLevel .UnachievedSublevel
+{
+	background		: rgb(128,96,64) !important;
+	border			: 1px solid rgb(192,128,96);
+}
+
+#CurrentPointSubLevel .AchievedSublevel
+{
+	background		: rgb(64,96,128) !important;
+	border			: 1px solid rgb(96,128,192);
+}
+
+#CurrentPointSubLevel div
+{ 
+	height			: 8px !important;
+	margin-right		: 1px !important;
+}
+
+#CurrentPointSubLevel
+{
+	margin			: 1px;
+	opacity			: 1 !important;
+}
+
+#PointsMeter
+{ 
+	margin-top		: 1px;
+}
+
+/* Remove Ads, Footer and Subdomain Menus */
+
+#Footer, #TopBanner, .StaticColumn, #SubdomainMenus
+{
+	display			: none !important;
+}
+
+/* Page Title Edits */
+
+h2#PageTitle
+{ 
+	font-size		: 50px;
+	line-height		: 50px;
+	text-shadow		: 0px 5px 20px green, 0px -5px 20px cyan, 0px 5px 20px green, 0px -5px 20px cyan;
+	font-family		: 'Tahoma';
+	text-align		: center;
+	padding-top		: 50px;
+	font-variant		: small-caps;
+}
+
+#TitleBreadcrumb
+{ 
+	font-family		: 'Tahoma';
+	font-size		: 30px !important;
+	text-align		: center;
+	font-variant		: small-caps;
+}
+
+
+
+
+/* Global Styling Modules */
+
+#MainContent
+{
+	background		: none !important;
+	border			: none !important;
+	box-shadow		: none !important;
+}
+
+.Module > h3
+{
+	margin-bottom		: none;
+	color			: rgb(32,64,96);
+	text-transform		: uppercase;
+	font-family		: 'Calibri';
+	text-align		: center;
+	box-shadow		: none !important;
+}
+
+.Module .Content, .Module > h3, #PostsListModule .PostHeader, #PostsListModule article
+{ 
+
+	background		: rgba(0,0,0,0.8) !important;
+	border			: 1px solid rgb(32,64,96) !important;
+	border-radius		: 0px 30px 0px 30px;
+	box-shadow		: none !important;
+}
+
+#PostsListModule .PostHeader
+{
+	margin-bottom		: 2px;
+}
+
+.Module
+{
+	border			: none !important;
+	padding			: 10px !important;
+	box-shadow		: none !important;
+}
+
+
+
+
+/* Styling "Add Message" Button and it's Module */
+
+#PostAddFormRequesterModule .Content
+{
+	background		: none !important;
+	border			: none !important;
+	box-shadow		: none !important;
+	text-align		: center;
+}
+
+#PostAddFormRequesterModule button.ModalLauncher:before
+{
+	content			: "Click To Fap \A \A";
+	white-space		: pre-wrap;
+}
+
+#PostAddFormRequesterModule button.ModalLauncher:hover:before
+{
+	content			: "Go Ahead! Click! \A \A";
+}
+
+#PostAddFormRequesterModule button.ModalLauncher
+{
+	width			: 95%;
+	height			: 2.1em;
+	overflow		: hidden;
+
+	background		: rgba(0, 0, 0, 0.8);
+	border			: 1px solid rgb(32,96,64) !important;
+	border-radius		: 0px !important;
+	color			: rgb(32,96,64) !important;
+
+	transition		: color 1s, border 1s, border-radius 1s;
+}
+
+#PostAddFormRequesterModule button.ModalLauncher:hover
+{
+	border			: 1px solid rgb(128,255,192) !important;
+	border-radius		: 99px !important;
+	color			: rgb(128,255,192) !important;
+}
+
+
+
+
+/* Post Module Edits and Styling */
+
+p
+{
+	color			: cornflowerblue;
+	font-size		: 14px;
+}
+
+#PostsListModule .Content, #PostsListModule .Content > ul > li
+{
+	background		: none !important;
+	border			: none !important;
+	box-shadow		: none !important;
+}
+
+#PostsListModule .Content > ul > li
+{
+	transform		: scale(0.95);
+	-webkit-transform	: scale(0.95);
+	-ms-transform		: scale(0.95);
+	transition		: all 0.5s;
+}
+
+#PostsListModule .Content > ul > li:hover
+{
+	transform		: scale(1);
+	-webkit-transform	: scale(1);
+	-ms-transform		: scale(1);
+}
+
+/* Just Random */
+
+tr:nth-child(2n)
+{
+	background		: transparent !important;
+}
+
+tr:nth-child(2n+1)
+{
+	background		: transparent !important;
+}
+
+td, th
+{
+	border			: none !important;
+}
+
+div#SiteSearch
+{
+	display 		: none;
+}
+
+body article blockquote
+{
+	opacity			: 1.0;
+	font-style		: normal;
+	margin			: 10px;
+	font-size		: 11px;
+	padding			: 0px;
+	border			: 1px dashed blueviolet !important;
+	background		: rgba(128,128,128,0.1) !important;
+}
+
+body article blockquote p
+{
+	color			: lightseagreen;
+}
+
+a
+{
+	color			: rgb(64,96,32);
+	transition		: color 1s;
+}
+
+a:hover
+{ 
+	color                   : rgb(128,192,96);
+}
+
+#NavigatorPanes h4
+{ 
+	background		: black;
+}
+
+#NavigatorPanes article
+{ 
+	background		: rgb(15,15,15);
+}
+
+img.LevelBar, .Online img.OnlineIndicator, .Offline img.OnlineIndicator
+{
+	display			: none;
+}
+
+#Logo > h1 > a > img
+{
+	content			: url('http://files.gamebanana.com/bitpit/rndm.png');
+}
+
+#Logo p
+{
+	height			: 1.2em;
+	overflow		: hidden;
+}
+
+#Logo p:before
+{
+	content			: "The Online Abode of Raving Idiots"
+	white-space		: pre-wrap;
+}
+
+#PostsListModule .PostTools
+{
+	float			: right;
+}
+
+/* #PostsListModule footer
+{ 
+	background-image        : url("/web/20140212092208/http://s13.postimg.org/hy7flmcxj/imageedit_8_5476710431.gif");
+	background-position     : 90% 50%;
+	background-repeat       : no-repeat;
+} */
+
+
+
+/* Posting Module Edits */
+
+#Modal .Content
+{
+	background		: none !important;
+	box-shadow		: none !important;
+	border			: none !important;
+}
+
+#Modal
+{
+	background		: rgba(0,8,16,0.9);
+	border			: 1px solid cyan;
+	box-shadow		: 0px 0px 15px cyan inset, 0px 0px 15px cyan;
+}
+
+#Modal fieldset
+{
+	border			: 1px solid aquamarine;
+	background		: none;
+}
+
+.markItUpEditor
+{
+	background		: rgba(0,0,0,0.5);
+	color			: yellowgreen;
+}
+
+.InputHelp
+{
+	display			: none;
+}
+
+fieldset > legend > sup
+{
+	background		: none;
+	border			: 1px solid blueviolet;
+	color			: blueviolet !important;
+}
+
+fieldset legend
+{
+	position		: relative;
+	color			: dodgerblue;
+}
+
+label
+{
+	color			: rgb(0,255,0);
+}
+
+.FormModule > div > form > fieldset.Submit
+{
+	text-align		: center;
+}
+
+.FormModule > div > form > fieldset.Submit > button
+{
+	width			: 300px;
+	margin			: 10px;
+	color			: tomato !important;
+	border			: none !important;
+	background		: none;
+	box-shadow		: none;
+}
+
+/* Member Titles */
+
+#PostsListModule .Poster a[href*="1244443"]:after
+{
+	content			: " (Rocko 'N' Hunter)";
+}
+
+#PostsListModule .Poster a[href*="1235118"]:after
+{
+	content			: " (Metalhead Randomite)";
+}
+
+#PostsListModule .Poster a[href*="1291525"]:after
+{
+	content			: " (Freak in Da House)";
+}
+
+#PostsListModule .Poster a[href*="1320279"]:after
+{
+	content			: " (Gaymmer Nazi)";
+}
+
+#PostsListModule .Poster a[href*="1377932"]:after
+{
+	content			: " (Obsessed with Chickens, bawk bawk!)";
+}
+
+
+#PostsListModule .Poster a[href*="1332419"]:after
+{
+	content			: " (Douchebag level: Infinite)";
+}
+
+#PostsListModule .Poster a[href*="1298547"]:after
+{
+	content			: " (Please Cum on my Pony *-*)";
+}
+
+#PostsListModule .Poster a[href*="1370489"]:after
+{
+	content			: " (All Hail Hastapachins)";
+}
+
+#PostsListModule .Poster a[href*="1285881"]:after
+{
+	content			: " (Mr. Ambassador Fancy Pants)";
+}
+
+#PostsListModule .Poster a[href*="229079"]:after
+{
+	content			: " (Fapper Solido)";
+}
+
+#PostsListModule .Poster a[href*="1281838"]:after
+{
+	content			: " (Fap Note : He's Got the Power...)";
+}
+
+#PostsListModule .Poster a[href*="845796"]:after
+{
+	content			: " (Corporal Doggystyle)";
+}
+
+
+
+/******************************************/
+/* Team Members Module, Leadership Module */
+/******************************************/
+
+
+
+#Club_Profile #LeadershipModule h3,
+#Club_Profile #LeadershipModule .Owner > a,
+#Club_Profile #LeadershipModule li > a,
+#Club_Profile #LeadershipModule dt,
+#Club_Profile #TeamMembersListModule h3,
+#Club_Profile #TeamMembersListModule .Member > a,
+#Club_Profile #TeamMembersListModule thead,
+#Club_Profile #TeamMembersListModule td:nth-of-type(2),
+#Club_Profile #TeamMembersListModule td:nth-of-type(3)
+{
+	display			: none;
+}
+
+#Club_Profile #TeamMembersListModule td,
+#Club_Profile #TeamMembersListModule table,
+#Club_Profile #TeamMembersListModule tr
+{
+	border			: 0;
+	background		: transparent;
+}
+
+#Club_Profile #LeadershipModule li
+{
+	margin			: 0;
+	margin-top		: 10px;
+}
+
+#Club_Profile #LeadershipModule ul
+{
+	padding			: 0;
+}
+
+#Club_Profile #LeadershipModule dd,
+#Club_Profile #LeadershipModule dl
+{
+	margin			: 0;
+}
+
+#Club_Profile #LeadershipModule
+{
+	margin-bottom		: 20px;
+}
+
+#Club_Profile #LeadershipModule .Content:before
+{
+	content			: "Leaders";
+}
+
+#Club_Profile #TeamMembersListModule .Content:before
+{
+	content			: "Members";
+}
+
+#Club_Profile #LeadershipModule .Content:before,
+#Club_Profile #TeamMembersListModule .Content:before
+{
+	display			: block;
+	margin-bottom		: 15px;
+	padding-bottom		: 5px;
+	border-bottom		: 1px solid #333333;
+	text-align		: center;
+	font-weight		: bold;
+	font-size		: 14px;
+}
+
+#Club_Profile .LevelBar,
+#Club_Profile .OnlineIndicator
+{
+	display			: none;
+}
+
+#Club_Profile .AvatarWrapper.Online img
+{
+	border			: 2px solid #00AAFF;
+	border-radius		: 99px;
+}
+
+#Club_Profile .AvatarWrapper.Offline img
+{
+	border			: 2px solid #999999;
+	border-radius		: 99px;
+}
+
+#Club_Profile .AvatarWrapper img:hover
+{
+	border			: 2px solid white;
+	box-shadow		: none !important;
+}
+
+#Club_Profile div.AvatarWrapper img.Avatar
+{
+	margin-left		: 7px;
+}
+
+/******************/
+/* Adds HTML Code */
+/******************/
+
+
+
+overline, o
+{
+	text-decoration:overline;
+}
+
+
+hl, highlight
+{
+	color:black;
+	background-color:#ffff00;
+}
+
+hl.cyan, highlight.cyan
+{
+	background-color:cyan;
+}
+
+hl.lime, highlight.lime
+{
+	background-color:lime;
+}
+
+hl.orange, highlight.orange
+{
+	background-color:orange;
+}
+
+edit:before
+{
+	content:'Edited:';
+	color:#444444;
+	font-size: x-small;
+	display: block;
+}
+
+imgreset img
+{
+	width:auto !important;
+	height:auto !important;
+}

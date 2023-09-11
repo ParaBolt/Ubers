@@ -1,0 +1,375 @@
+div#Wrapper
+{
+	width	: 80%;
+}
+
+#MainContent, #ColumnGrid
+{
+	width	: auto;
+}
+
+.ContentColumn
+{
+	width	: 49%;
+	padding-top: 15px;
+}
+
+div#tBarRow {
+margin: 10px;
+text-align: center;
+}
+
+img#tbar {
+    -webkit-animation : pulsate 5s linear infinite;
+    animation : pulsate 5s linear infinite;
+}
+
+@keyframes pulsate
+{
+    0%, 40%, 60%, 100% {
+        filter: sepia(0);
+    }
+    50% {
+        filter: sepia(1);
+    }
+}
+
+@-webkit-keyframes pulsate
+{
+    0%, 40%, 60%, 100% {
+        -webkit-filter: sepia(0);
+    }
+    50% {
+        -webkit-filter: sepia(1);
+    }
+}
+
+/*************/
+/* UnderMenu */
+/*************/
+
+#Menu
+{
+    background : #10171C;
+    text-align : center;
+    margin : 10px 0;
+}
+
+#Menu > div
+{
+    display: inline-block;
+    margin : 0;
+    padding : 10px;
+    width: 31%;
+    text-align : center;
+    vertical-align: middle;
+}
+
+#Menu > div > h3
+{
+    display : none;
+}
+
+#Menu > div > .Content
+{
+    padding : 0;
+    background : transparent;
+}
+
+#Menu fieldset
+{
+    padding : 0;
+}
+
+#PmMeModule img
+{
+    display : none;
+}
+
+#Menu button, #Menu ul
+{
+    background : transparent;
+    box-shadow : none;
+    border : none;
+}
+
+#Menu button, #Menu li
+{
+	border : 1px solid;
+	padding : 4px;
+	width : 100%;
+	font : bold 12px Arial;
+}
+
+
+
+/***************************/
+/* Classic FPSB Post-Tools */
+/***************************/
+
+
+
+.PostTools ul > li > img
+{
+	visibility	: hidden;
+	width		: 8px;
+}
+
+div#PostsListModule div.PostTools li
+{
+	border		: none;
+	box-shadow	: none;
+}
+
+li[title="Edit post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/edit.png) center no-repeat;
+}
+
+li[title="Quote post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/quote_3.png) center no-repeat;
+}
+
+li[title="Stamp post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/stamp.png) center no-repeat;
+}
+
+li[title="Report post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/report.png) center no-repeat;
+}
+
+li[title="Trash post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/trash.png) center no-repeat;
+}
+
+li[title="Withhold post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/withhold.png) center no-repeat;
+}
+
+/*********************/
+/* Posts Module Lite */
+/*********************/
+
+#PostsListModule footer,
+#PostsListModule .Avatar,
+#PostsListModule .Upic,
+.AffiliatedStudio,
+#PostsListModule div.PostHeader div.Poster small,
+.LabelState,
+#PostsListModule article .LabelStat.Date
+{
+	display		: none;
+}
+
+#PostsListModule .MemberLink .Tooltip
+{
+	display		: block;
+}
+
+#PostsListModule div.PostHeader, #PostsListModule .PostTools
+{
+	padding		: 0;
+	display		: inline-block;
+	width		: 49%;
+}
+
+#PostsListModule article
+{
+	padding-top	: 0;
+}
+
+#PostsListModule article p
+{
+	margin		: 0;
+	padding		: 2px 10px;
+	font-size	: 13px;
+}
+
+#PostsListModule > div.Content > ul > li
+{
+	padding		: 10px;
+	border-bottom	: 1px solid rgba(255,255,255,0.1);
+}
+
+#PostsListModule .PostStamps li, #PostsListModule .PostStamps li img
+{
+	padding		: 0;
+	margin		: 0;
+}
+
+span.StampTitle
+{
+	display		: none;
+}
+
+/***********/
+/* Effects */
+/***********/
+
+.PostTools > ul > li,
+.PostTools input
+{
+	-webkit-transform	: scale(0);
+	-moz-transform		: scale(0);
+	-ms-transform		: scale(0);
+	-o-transform		: scale(0);
+	transform		: scale(0);
+	transition		: all 0.2s ease-in-out;
+}
+
+.PostsListModule > .Content > ul > li:hover .PostTools > ul > li,
+.PostsListModule > .Content > ul > li:hover .PostTools input
+{
+	-webkit-transform	: scale(1);
+	-moz-transform		: scale(1);
+	-ms-transform		: scale(1);
+	-o-transform		: scale(1);
+	transform		: scale(1);
+}
+
+.PostTools > ul > li:nth-child(2)
+{
+	transition-delay	: 0.1s;
+}
+
+.PostTools > ul > li:nth-child(3)
+{
+	transition-delay	: 0.2s;
+}
+
+.PostTools > ul > li:nth-child(4)
+{
+	transition-delay	: 0.3s;
+}
+
+.PostTools > ul > li:nth-child(5)
+{
+	transition-delay	: 0.4s;
+}
+
+.GenericSuperfish ul ul
+{
+	opacity			: 0;
+	transition		: opacity 1s ease-in-out;
+	display			: block !important;
+	visibility		: visible !important;
+}
+
+.GenericSuperfish ul > li:hover ul
+{
+	opacity			: 1;
+	transition		: opacity 0.3s ease-in-out;
+}
+
+#ImportantLinks
+{
+	position		: initial;
+}
+
+#ImportantLinks > li
+{
+	position		: fixed;
+	right			: -61px;
+	width			: 85px;
+	transition		: right 1s ease-in-out;
+}
+
+#ImportantLinks > li:hover
+{
+	right			: -2px;
+	transition		: right 0.3s ease-in-out;
+}
+
+#ImportantLinks > li:nth-child(1)
+{
+	bottom			: 105px;
+}
+
+#ImportantLinks > li:nth-child(2)
+{
+	bottom			: 70px;
+}
+
+#ImportantLinks > li:nth-child(3)
+{
+	bottom			: 35px;
+}
+
+#HeaderWrapper
+{
+	margin-top		:-120px;
+	transition		: all 0.3s ease-in-out;
+}
+
+#HeaderWrapper:after
+{
+	content			: '';
+	margin-left		: 50%;
+	border-left		: 5px solid transparent;
+	border-right		: 5px solid transparent;
+	border-top		: 5px solid #334852;
+	transition		: border 0.3s ease-in-out;
+}
+
+#HeaderWrapper:hover
+{
+	margin-top		: 0px;
+}
+
+#HeaderWrapper:hover:after
+{
+	border-top		: 5px solid transparent;
+	border-bottom		: 5px solid #334852;
+}
+
+tr,
+.GenericSuperfish ul ul li
+{
+	-webkit-transform	: rotate(0deg);
+	-moz-transform		: rotate(0deg);
+	-ms-transform		: rotate(0deg);
+	-o-transform		: rotate(0deg);
+	transform		: rotate(0deg);
+	transition		: all 0s ease-in-out;
+}
+
+tr:hover,
+.GenericSuperfish ul ul li:hover
+{
+	-webkit-transform	: rotate(360deg);
+	-moz-transform		: rotate(360deg);
+	-ms-transform		: rotate(360deg);
+	-o-transform		: rotate(360deg);
+	transform		: rotate(360deg);
+	transition		: all 0.3s ease-in-out;
+}
+
+/****************************/
+/* Submission Counts Module */
+/****************************/
+
+#SubmissionCountsModule tbody,
+#SubmissionCountsModule td.ItemCount
+{
+	text-align	: center;
+}
+
+#SubmissionCountsModule tr
+{
+	display		: inline-block;
+	width		: 25%;
+	border		: 1px solid rgba(255,255,255,0.1);
+	margin		: 5px;
+	padding		: 5px;
+}
+
+#SubmissionCountsModule td
+{
+	display		: block;
+	padding		: 0;
+}

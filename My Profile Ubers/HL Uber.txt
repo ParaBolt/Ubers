@@ -1,0 +1,33 @@
+a
+{
+    color : rgb(179,135,49);
+    text-shadow : 1px 1px 2px black, 1px 1px 2px black;
+}
+
+a:hover
+{
+     color : rgb(255,242,76);
+     text-shadow : 0 0 10px orange, 0 0 10px orange, 0 0 10px orange;
+}
+
+body
+{
+    background : url('http://hl-improvement.com/frontend/0.2.2.2/half-life/images/background_header.jpg') fixed no-repeat;
+    background-size : cover;
+    color : #999;
+}
+
+.Module > h3, .Module .Content
+{
+    background : transparent;
+    margin : 0;
+    border : 0;
+}
+
+.Module
+{
+    background : #111;
+    box-shadow : 0 0 10px 3px black;
+    border : 2px solid #926D26;
+    border-radius : 10px;
+}

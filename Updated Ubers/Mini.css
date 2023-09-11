@@ -1,0 +1,534 @@
+/**********************************************/
+/* Original Uber (FPSB) by InJust/Justin      */
+/* Reimagined (GB) by Sneeza                  */
+/* Re-re-revamped umpteen times by ParaBolt   */
+/* Image Resources : http://imgur.com/a/fdoor */
+/* Version : 03-06-2020                       */
+/**********************************************/
+
+:root
+{
+	--NeedHelpWarning : 'PLEASE READ THE WARNING JUST ABOVE THIS ADD POST FORM CALLED "NEED HELP" BEFORE ADDING ANY MESSAGES TO MY PROFILE. THANKS.';
+
+	--BGOverlay   : url('https://files.gamebanana.com/bitpit/background_overlay.png');
+	--BGBody      : url('https://files.gamebanana.com/bitpit/background_19.jpg');
+	--BGTopBar    : url('https://files.gamebanana.com/bitpit/minitopbar.png');
+	--BGGreyBar   : url('https://files.gamebanana.com/bitpit/minigreybar.png');
+	--BGBottomBar : url('https://files.gamebanana.com/bitpit/minibottombar.png');
+	--BGButton    : url('https://files.gamebanana.com/bitpit/button_4.png');
+	--BGRedBar    : url('https://files.gamebanana.com/bitpit/miniredbar.png');
+	--BGGreyFade  : url('https://files.gamebanana.com/bitpit/minigreyfade.png');
+	--BGLogo      : url('https://files.gamebanana.com/bitpit/umadbro.png');
+	--BGHeadbar   : url('https://files.gamebanana.com/bitpit/miniheadbar.png');
+	--BGHead      : url('https://files.gamebanana.com/bitpit/minihead.png');
+	--BGInput     : url('https://files.gamebanana.com/bitpit/textarea.png');
+	--BGQuote     : url('https://files.gamebanana.com/bitpit/quote_2.png');
+	--BGH1        : url('https://files.gamebanana.com/bitpit/h1.png');
+
+	--DefaultTextFontFamily      : 'Verdana', sans-serif;
+	--DefaultTechnicalFontFamily : 'Verdana', monospace;
+
+	--DefaultTextColor : #FFCCD9;
+	--LinkColor        : #FFC5B2;
+	--LinkHoverColor   : #FFA080;
+
+	--LoaderBackgroundColor : #111;
+	--LoaderColor           : #ED143D;
+
+	--BodyBackground        : var(--BGOverlay) repeat-y top center, var(--BGBody) top center;
+	--BodyWrapperBackground : transparent;
+
+	--NavBackgroundColor               : rgb(0 0 0 / 75%);
+	--PrimaryNavBackgroundColor        : var(--NavBackgroundColor);
+	--SecondaryNavBackgroundColor      : var(--NavBackgroundColor);
+	--FixedMainContentHeaderBackground : var(--NavBackgroundColor);
+	--NavUpdatesIndicatorColor         : transparent;
+	--NavPaneBackgroundColor           : rgb(0 0 0 / 90%) var(--BGGreyBar);
+
+	--SubNavigatorBorderColor             : var(--LinkColor);
+	--SubNavigatorTabHoverBorderColor     : var(--LinkHoverColor);
+	--SubNavigatorActiveTabFontColor      : var(--LoaderColor);
+	--SubNavigatorActiveTabBorderColor    : var(--LoaderColor);
+	--SubNavigatorDropdownBackgroundColor : transparent;
+
+	--ModuleTitleFontSize   : var(--DefaultXLargeFontSize);
+	--ModuleTitleFontColor  : #FFFFFF;
+	--ModuleTitleBackground : transparent var(--BGBottomBar) repeat-x;
+
+	--ButtonFontColor            : var(--LinkColor);
+	--ButtonBackground           : #303030 var(--BGButton) repeat-x;
+	--ButtonFontFamily           : var(--DefaultTextFontFamily);
+	--ButtonHoverFontColor       : var(--LinkHoverColor);
+	--ButtonHoverBackgroundColor : var(--ButtonBackground);
+	--ButtonBorderColor          : #FF4000;
+
+	--InputBackgroundColor      : #252525 var(--BGInput) repeat-y;
+	--InputHoverBackgroundColor : #252525 var(--BGInput) repeat-y;
+	--InputFocusBackgroundColor : #252525 var(--BGInput) repeat-y;
+
+	--ScrollbarColor : #ED143D;
+}
+
+/* FONT VARIANT */
+
+body
+{
+	font-variant : small-caps;
+}
+
+matIcon
+{
+	font-variant : initial;
+}
+
+/* BUTTONS AND LINKS */
+
+button, .ButtonLike, .ExtendedContentButton
+{
+	font-variant : small-caps;
+	border       : 1px solid var(--ButtonBorderColor);
+}
+
+.ExtendedContentButton
+{
+	color      : var(--ButtonTextColor);
+	background : var(--ButtonBackground)
+}
+
+a
+{
+	font-weight : bold;
+}
+
+a:hover, button:hover, .ButtonLike:hover, .ExtendedContentButton:hover
+{
+	text-shadow : var(--LinkColor) 0 0 5px;
+}
+
+#SubNavigator .DropdownMenuSubNavigator > li > a
+{
+	color : var(--LinkColor);
+}
+
+/* INPUTS */
+
+input[type="text"],
+select,
+.SelectLike,
+textarea,
+.TextareaLike
+{
+	border       : 1px inset black;
+	font-variant : small-caps;
+}
+
+.Editor .WysiwygPalettes
+{
+	background : transparent;
+}
+
+/* PRIMARY AND SECONDARY NAV */
+
+@keyframes flash
+{
+	from
+	{
+		opacity : .5;
+	}
+
+	to
+	{
+		opacity : 1;
+	}
+}
+
+#PrimaryNav module pane,
+#SecondaryNav module pane
+{
+	background-repeat : repeat-y;
+}
+
+#SecondaryNav module icon
+{
+	opacity : .5;
+}
+
+#SecondaryNav module:hover icon
+{
+	opacity : 1;
+}
+
+#SecondaryNav module.HasUpdates icon
+{
+	animation : flash .5s ease infinite alternate;
+}
+
+#SecondaryNav module.Selected icon
+{
+	background : transparent;
+}
+
+#PrimaryNav module.Selected widget
+{
+	background : rgb(0 0 0 / 50%);
+}
+
+#PrimaryNav module pane header h4, #SecondaryNav module pane header h4
+{
+	color : var(--ModuleTitleFontColor);
+}
+
+#AlertsNavModule pane .Broadcasts li, #ActivityNavModule pane .Broadcasts li
+{
+	opacity : .7;
+}
+
+/* MODULES */
+
+.Module
+{
+	margin  : .5em .5em 1em .5em;
+	padding : .5em;
+}
+
+.Module > .Content
+{
+	padding : .5em;
+}
+
+.PageModule::after, .Module::after
+{
+	content    : '';
+	display    : block;
+	width      : 100%;
+	height     : 20px;
+	background : var(--BGGreyFade) bottom repeat-x;
+}
+
+.PageModule > h3, .Module > h3
+{
+	background    : var(--ModuleTitleBackground);
+	text-align    : center;
+	color         : var(--ModuleTitleFontColor);
+	display       : block;
+	padding       : 13px;
+	margin-bottom : 0;
+}
+
+.PageModule > h3::after
+{
+	content : unset;
+}
+
+.PageModule .Content,
+.PageModule > .Description,
+.PageModule > .LogMessages,
+.Module > .Content
+{
+	background : var(--BGTopBar) repeat-x top, var(--BGGreyBar) repeat-y;
+}
+
+.PageModule > .Description + .Content
+{
+	background : var(--BGGreyBar) repeat-y;
+}
+
+.PostHeader
+{
+	background : var(--BGRedBar) repeat-y right;
+}
+
+.Modal .PageModule::after
+{
+	content : unset;
+}
+
+.Modal .PageModule .Content
+{
+	background : unset;
+}
+
+/* LOGO */
+
+#BananaNavModule a #GbLogo
+{
+	display : none;
+}
+
+#BananaNavModule a
+{
+	width      : 274px;
+	height     : 24px;
+	background : var(--BGLogo) no-repeat center;
+}
+
+/* PAGE HEADER */
+
+#HeadlineWrapper
+{
+	background : var(--BGHeadbar) repeat-x;
+	min-height : 90px;
+}
+
+#HeadlineWrapper overlay h1
+{
+	color               : transparent;
+	background          : var(--BGHead) no-repeat;
+	background-position : left bottom;
+}
+
+/* SEARCH INPUT */
+
+#SearchNavModule #SearchForm button
+{
+	margin-left : -3em;
+}
+
+#SearchNavModule #SearchForm input[type="text"]
+{
+	padding-right : 4em;
+}
+
+/* BUDDIES MODULE */
+
+#BuddiesModule .Paginator
+{
+	display : none;
+}
+
+#BuddiesModule .Content > ul > li
+{
+	padding : 15px;
+}
+
+#BuddiesModule .Avatar
+{
+	padding : 0.25em;
+}
+
+/* TABLES AND LISTS */
+
+dt
+{
+	color         : var(--ModuleTitleFontColor);
+	border-bottom : 1px solid rgb(255 255 255 / 30%);
+}
+
+table
+{
+	width : 100%;
+}
+
+table thead th
+{
+	background    : var(--BGH1);
+	padding       : 16px;
+	color         : var(--ModuleTitleFontColor);
+	border-bottom : 0;
+}
+
+table tr:nth-child(even)
+{
+	background : rgb(0 0 0 / 30%);
+}
+
+table td
+{
+	padding : 5px;
+	border  : 0;
+}
+
+/* DROPDOWN MENU */
+
+#SubNavigator .DropdownMenuSubNavigator > li ul
+{
+	background : rgb(0 0 0 / 90%) var(--BGGreyBar) repeat-y;
+}
+
+/* FOOTER */
+
+#PageFooter
+{
+	background : var(--BGGreyBar) repeat-y, rgb(0 0 0 / 30%) var(--BGRedBar) repeat-y right;
+}
+
+/* POSTS */
+
+.PostsListModule .Posts > li .PostHeader .Poster .AffiliatedStudio,
+.PostsListModule .Posts > li .PostHeader .Poster small,
+.PostsListModule .Posts > li .PostHeader .DateAdded,
+.PostsListModule .Posts > li .PostHeader .DateModified,
+.PostsListModule .Posts > li .PostHeader .PostLabels,
+.PostsListModule .Posts > li footer
+{
+	display : none;
+}
+
+.PostsListModule .Posts > li .PostHeader .AvatarWrapper .Avatar
+{
+	width  : 35px;
+	height : 35px;
+}
+
+/* POSTS CONTENT */
+
+.PostsListModule .Posts > li article blockquote
+{
+	background : var(--BGQuote) no-repeat bottom left;
+	color      : #CCC;
+	opacity    : 1;
+	border     : 0;
+}
+
+.PostsListModule .Posts > li article h1
+{
+	background : var(--BGH1);
+	padding    : 11px;
+}
+
+/* POST TOOLS */
+
+.PostsListModule .Posts > li .PostTools
+{
+	opacity : 1;
+}
+
+.PostsListModule .Posts > li .PostTools > button spriteicon
+{
+	width               : 8px;
+	height              : 8px;
+	background-repeat   : no-repeat !important;
+	background-position : center !important;
+}
+
+.PostsListModule .Posts > li .PostTools button,
+.PostsListModule .Posts > li .PostTools button[disabled]:hover
+{
+	border     : none;
+	background : none;
+}
+
+.PostsListModule .Posts > li .PostTools .EditIcon
+{
+	background : url('http://files.gamebanana.com/bitpit/edit.png');
+}
+
+.PostsListModule .Posts > li .PostTools .QuoteIcon
+{
+	width      : 10px;
+	background : url('http://files.gamebanana.com/bitpit/quote_3.png');
+}
+
+.PostsListModule .Posts > li .PostTools .StampIcon
+{
+	background : url('http://files.gamebanana.com/bitpit/stamp.png');
+}
+
+.PostsListModule .Posts > li .PostTools .ReportIcon
+{
+	background : url('http://files.gamebanana.com/bitpit/report.png');
+}
+
+.PostsListModule .Posts > li .PostTools .TrashIcon
+{
+	background : url('http://files.gamebanana.com/bitpit/trash.png');
+}
+
+.PostsListModule .Posts > li .PostTools .WithholdIcon
+{
+	background : url('http://files.gamebanana.com/bitpit/withhold.png');
+}
+
+.PostsListModule .Posts > li .PostTools .LinkIcon
+{
+	width      : 10px;
+	background : url('http://files.gamebanana.com/bitpit/link_e1a90.png');
+}
+
+/* STAMPS */
+
+.PostsListModule .Posts > li article .PostStamps
+{
+	margin-top : 3px;
+}
+
+.PostsListModule .Posts > li article .PostStamps li
+{
+	margin  : 2px;
+	padding : 2px;
+	border  : 0;
+}
+
+.PostsListModule .Posts > li article .PostStamps li spriteicon
+{
+	counter-increment : span;
+	margin-right      : 0;
+}
+
+.PostsListModule .Posts > li article .PostStamps li spriteicon:not(:first-child)
+{
+	display : inline;
+}
+
+.PostsListModule .Posts > li article .PostStamps li
+{
+	counter-reset : span;
+	position      : relative;
+}
+
+.PostsListModule .Posts > li article .PostStamps li span
+{
+	font-size : 0;
+}
+
+.PostsListModule .Posts > li article .PostStamps li span::after
+{
+	font-size   : 10px;
+	content     : 'x' counter(span);
+	text-shadow : 0 0 5px black;
+}
+
+.PostsListModule .Posts > li article .PostStamps li,
+.PostsListModule .Posts .FullStampsDisplay .Stamp
+{
+	background : var(--BGQuote) no-repeat left bottom;
+}
+
+.PostsListModule .Posts .FullStampsDisplay
+{
+	background : var(--BGRedBar) repeat-y right;
+}
+
+/* MISC CHANGES */
+
+#ResponsibilitiesModule ul.Modgroups li
+{
+	background : var(--BGRedBar) right;
+	box-shadow : none;
+}
+
+.ContentEditableEditor .InputWrapper .Editor::after
+{
+	display    : block;
+	content    : var(--NeedHelpWarning);
+	font-size  : 20px;
+	margin-top : 10px;
+}
+
+#NavOptionsNavModule pane #NavOptionsUiThemeList li
+{
+	background : transparent;
+}
+
+/* SCROLLBAR */
+
+html
+{
+	scrollbar-color : var(--ScrollbarColor) #333;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-corner
+{
+	background : var(--ScrollbarColor);
+}

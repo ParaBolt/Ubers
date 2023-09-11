@@ -1,0 +1,126 @@
+/************************/
+/* Original Uber by ??? */
+/* Updated by ParaBolt  */
+/* Version : 08-06-2020 */
+/************************/
+
+:root
+{
+	--BodyBackground              : url("http://www.photos-public-domain.com/wp-content/uploads/2011/02/black-vertical-siding-texture.jpg") center / cover fixed no-repeat;
+	--BodyWrapperBackground       : transparent;
+	--ButtonBackground            : url("http://www.backgroundsy.com/file/preview/blue-scratched-texture.jpg");
+	--ButtonHoverBackgroundColor  : url("http://www.backgroundsy.com/file/preview/blue-scratched-texture.jpg");
+	--PrimaryNavBackgroundColor   : #000A;
+	--SecondaryNavBackgroundColor : #000A;
+	--ThickBorder                 : 4px solid rgb(0 0 0 / 50%);
+}
+
+button, .ButtonLike
+{
+	border : 4px solid rgba(0 0 0 / 50%);
+}
+
+.ExtendedContentButton
+{
+	background : var(--ButtonBackground);
+}
+
+.PageModule > h3
+{
+	color          : white;
+	text-shadow    : 2px 2px 2px rgb(0 0 0);
+	border         : var(--ThickBorder);
+	background     : var(--ButtonBackground);
+	margin-bottom  : 0;
+	text-transform : uppercase;
+}
+
+.PageModule > h3: : after
+{
+	content : unset;
+}
+
+.PageModule > .Content
+{
+	background : var(--PrimaryNavBackgroundColor);
+	border     : var(--ThickBorder);
+}
+
+module > icon > spriteicon,
+.sf-menu li > spriteicon,
+.sf-menu li > a > spriteicon
+{
+	transition : .5s transform;
+}
+
+module:hover > icon > spriteicon,
+.sf-menu li:hover > spriteicon,
+.sf-menu li:hover > a > spriteicon
+{
+	transform : rotate(720deg);
+}
+
+.Avatar.Offline,
+.Avatar.Online
+{
+	background : transparent;
+	padding    : 0;
+	outline    : 2px double;
+	box-shadow : 0 0 6 1px;
+}
+
+.Avatar.Online::after
+{
+	content : unset;
+}
+
+.Avatar.Offline
+{
+	color : #A3A3A3;
+}
+
+.Avatar.Online
+{
+	color : #83FF24;
+}
+
+*** Default Cursor ***/
+/* -- This is the main cursor which switches to secondary cursors where applicable. -- */
+
+body,
+#RemindersPane ul#Reminders li p,
+#ActivityPane #ActivityCalendar ul .ActivityDay.SelectedDay {
+	cursor : url('http://i.imgur.com/WLDcvI7.png'), default !important;
+}
+/*** Help Cursor ***/
+/* -- This is the cursor meant for places which give info on hover / click like Tooltips, stamps, etc. -- */
+
+legend sup,
+.TooltipTrigger,
+.SpoilerTrigger,
+#MedalsModule li,
+#UnlocksModule li div,
+#PostsListModule .PostStamps li:hover {
+	cursor : url('http://i.imgur.com/kdUEOQv.png'), help !important;
+}
+/*** Pointer Cursor ***/
+/* -- This is the second major cursor next to the default one. It appears over clickable elements like links and buttons. -- */
+
+a,
+label,
+button,
+select,
+.ButtonLike,
+.Module h3 > img,
+#NavigatorTabs li,
+.MaximizeMinimizeButton,
+.UsernameSuggestionList li,
+#GamesPane .GamesList .Game,
+#GamesPane .AlphabetIndex li,
+#ProfileToolsWrapperModule .Module h3,
+#DonationFormModule .PaypalDonateIcon,
+.AdvancedListSettingsModule fieldset legend,
+#ActivityPane #ActivityCalendar ul .ActivityDay,
+#AddToWatchlistFormModule fieldset#AreasToWatch legend {
+	cursor : url('http://i.imgur.com/bTy2rbU.png'), pointer !important;
+}

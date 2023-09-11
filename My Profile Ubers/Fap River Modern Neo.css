@@ -1,0 +1,192 @@
+@font-face
+{
+	font-family		: 'Nosifer';
+	font-style		: normal;
+	font-weight		: 400;
+	src			: local('Nosifer'), local('Nosifer-Regular'), url(http://fonts.gstatic.com/s/nosifer/v5/eF2_jPFOvazU2jusNUruvw.woff2) format('woff2');
+	unicode-range		: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+
+/**********/
+/* LAYOUT */
+/**********/
+
+
+
+body
+{
+	padding			: 0;
+}
+
+div#Wrapper
+{
+	width			: auto;
+}
+
+#ColumnGrid
+{
+	margin			: auto;
+}
+
+.ContentColumn
+{
+	padding-top		: 15px;
+}
+
+
+
+/*********/
+/* ROW 1 */
+/*********/
+
+
+
+.EquiCol
+{
+	width			: 32%;
+	margin			: 0 7px;
+}
+
+.EquiCol .Module .Content
+{
+	height			: 200px;
+}
+
+
+
+/*********/
+/* ROW 2 */
+/*********/
+
+
+
+#ThinCol
+{
+	width			: 7%;
+	text-align		: center;
+	margin-left		: 7px;
+}
+
+#WideCol
+{
+	width			: 90%;
+}
+
+
+
+/***************************************/
+/* LEASERSHIP AND TEAM MEMBERS MODULES */
+/***************************************/
+
+
+
+#Row2 .Module h3,
+#LeadershipModule dt,
+html#Club_Profile #TeamMembersListModule thead,
+html#Club_Profile #TeamMembersListModule td:nth-of-type(2),
+html#Club_Profile #TeamMembersListModule td:nth-of-type(3)
+{
+	display			: none;
+}
+
+
+#Row2 .Module .Content,
+#LeadershipModule dd,
+#LeadershipModule dl,
+#LeadershipModule ul,
+html#Club_Profile #TeamMembersListModule td
+{
+	margin			: 0;
+	padding			: 0;
+}
+
+html#Club_Profile #TeamMembersListModule tr
+{
+	border			: 0;
+}
+
+#ThinCol .Avatar
+{
+	margin			: 5px;
+}
+
+
+
+/*********/
+/* THEME */
+/*********/
+
+
+
+body
+{
+	background		: url('http://files.gamebanana.com/bitpit/aurora_borealis_2-wallpaper-2560x16.jpg') fixed no-repeat;
+	background-size		: cover;
+}
+
+.Module > h3, .Module .Content, .Module > .LogMessages, #NavigatorPanes article, #NavigatorPanes h4, .Modal .Toolbar li, .Modal .Contents, #DropdownMenuSubNavigator, #PageTitle, #TitleBreadcrumb, #SectionLinks, #NetworkLinks, #NetworkLinks #GamebananaTab
+{
+ 	background		: transparent;
+}
+
+.Module, #PostsListModule .Content > ul > li, #NavigatorPanes > li
+{
+	background		: rgba(0,0,0,0.5);
+	border			: 3px solid cyan;
+	border-left-color	: rgb(0,255,128);
+	border-top-color	: rgb(0,255,128);
+	border-radius		: 10px;
+	box-shadow		: 1px 1px 10px rgba(0,255,255,0.5), -1px -1px 10px rgba(0,255,255,0.5) inset, -1px -1px 10px rgba(0,255,128,0.5), 1px 1px 10px rgba(0,255,128,0.5) inset;
+	transition		: all 0.3s;
+}
+
+.Module:hover, #PostsListModule .Content > ul > li:hover, #NavigatorPanes > li:hover
+{
+	border			: 3px solid rgb(0,255,128);
+	border-left-color	: cyan;
+	border-top-color	: cyan;
+	border-radius		: 10px;
+	box-shadow		: 1px 1px 10px rgba(0,255,128,0.5), -1px -1px 10px rgba(0,255,128,0.5) inset, -1px -1px 10px rgba(0,255,255,0.5), 1px 1px 10px rgba(0,255,255,0.5) inset;
+}
+
+#PostsListModule, #PostsAddFormRequesterModule
+{
+	background		: transparent;
+	border			: 0;
+	box-shadow		: none;
+}
+
+#PostsListModule .Content > ul > li
+{
+	margin-bottom		: 20px;
+}
+
+#PageTitle, #TitleBreadcrumb, #DropdownMenuSubNavigator
+{
+	text-align		: center;   
+}
+
+#PageTitle
+{
+	font-size		: 50px;
+	text-shadow		: 0px 5px 10px rgba(0,255,128,0.5), 0px 5px 20px rgba(0,255,128,0.5), 0px -5px 10px rgba(0,255,255,0.5), 0px -5px 20px rgba(0,255,255,0.5);
+	font-family		: 'Nosifer', cursive;
+	text-align		: center;
+	padding-top		: 50px;
+}
+
+
+#NavigatorTabs li
+{
+    background : url('data:image/jpeg;base64,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');;
+    border : 2px solid rgb(0,128,128);
+    padding : 10px;
+    text-align : center;
+    border-radius : 10px;
+}
+
+#NavigatorTabs img {
+    -webkit-filter: brightness(100);
+}

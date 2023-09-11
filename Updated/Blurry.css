@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap');
+
+:root
+{
+	--BodyWrapperBackground : none;
+	--BodyBackground        : black url('http://www.wallpaperhi.com/thumbnails/detail/20120201/blue%20minimalistic%20deviantart%20textures%202560x1600%20wallpaper_www.wallpaperhi.com_14.jpg') center/cover fixed no-repeat;
+	--DefaultTextFontFamily : Raleway;
+	--DefaultTextColor      : rgba(255,255,255,0.5);
+	--LinkColor             : rgba(128,255,255,0.3);
+	--LinkHoverColor        : rgba(0,255,0,0.5);
+}
+
+body
+{
+	text-shadow : 0 0 10px;
+}
+
+a
+{
+	text-shadow : 0 0 10px rgba(128,128,255,1);
+}
+
+a:hover
+{
+	text-shadow : 0 0 10px rgba(0,255,0,1);
+}
+
+.PageModule,
+.Post
+{
+	background    : rgba(0,0,0,0.1);
+	border-radius : 10px;
+	border        : 1px solid rgba(0,0,0,0.1);
+}
+
+.Post
+{
+	margin     : 15px 0;
+	transition : all 0.2s ease-in-out;
+}
+
+.Post:hover
+{
+	background : rgba(10,30,50,0.2);
+}
+
+#MainContentHeader
+{
+	margin-top    : 1em;
+	border        : 1px solid rgba(0,0,0,0.1);
+	border-radius : 10px;
+	background    : rgba(0,0,0,0.1);
+}
+
+#HeadlineWrapper overlay h1
+{
+	color       : rgba(255,255,255,0.1);
+	text-shadow : 0 0 15px white;
+	font-size   : 50px;
+}
+
+#Breadcrumb
+{
+	border-radius : 0 10px 0 10px;
+	border-left   : 1px solid rgba(0,0,0,0.1);
+	border-bottom : 1px solid rgba(0,0,0,0.1);
+	background    : transparent;
+}
+
+#PageFooter
+{
+	border        : 1px solid rgba(0,0,0,0.1);
+	border-radius : 10px;
+	background    : rgba(0,0,0,0.1);
+	padding       : 10px;
+}
+
+#DropdownMenuSubNavigator > ul > li
+{
+	border        : 1px solid rgba(0,0,0,0.1);
+	border-bottom : 0;
+	border-radius : 10px 10px 0 0;
+}
+
+button
+{
+		background    : rgba(255,255,255,0.1);
+		border        : 1px solid rgba(255,255,255,0.1);
+		border-radius : 5px;
+		box-shadow    : none;
+}
+
+button:hover
+{
+	background    : radial-gradient(at bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.1));
+	border        : 1px solid rgba(255,255,255,0.1);
+	border-radius : 5px;
+	box-shadow    : none;
+}
+
+body,
+#RemindersPane ul#Reminders li p,
+#ActivityPane #ActivityCalendar ul .ActivityDay.SelectedDay
+{
+	cursor : url('https://i.imgur.com/fQtoNCw.png'), default !important;
+}
+
+legend sup,
+.TooltipTrigger,
+.SpoilerTrigger,
+#MedalsModule li,
+#UnlocksModule li div,
+#PostsListModule .PostStamps li:hover
+{
+	cursor : url('https://i.imgur.com/GtEQ6mZ.png'), help !important;
+}
+
+a,
+label,
+button,
+select,
+.ButtonLike,
+.Module h3 > img,
+#NavigatorTabs li,
+.MaximizeMinimizeButton,
+.UsernameSuggestionList li,
+#GamesPane .GamesList .Game,
+#GamesPane .AlphabetIndex li,
+#ProfileToolsWrapperModule .Module h3,
+#DonationFormModule .PaypalDonateIcon,
+.AdvancedListSettingsModule fieldset legend,
+#ActivityPane #ActivityCalendar ul .ActivityDay,
+#AddToWatchlistFormModule fieldset#AreasToWatch legend
+{
+	cursor : url('https://i.imgur.com/cTv6hfT.png'), pointer !important;
+}

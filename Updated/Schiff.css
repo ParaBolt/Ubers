@@ -1,0 +1,158 @@
+@font-face
+{
+	font-family     : 'JHTitles';
+	src             : url('https://files.gamebanana.com/bitpit/jh_titles.ttf');
+}
+
+@font-face
+{
+	font-family     : 'AgencyFB Wide';
+	src             : url('https://files.gamebanana.com/bitpit/agencyfbboldwide.ttf');
+}
+
+:root
+{
+	--BodyWrapperBackground       : transparent;
+	--BodyBackground              : black url('https://images.gamebanana.com/img/ss/posts/6246b4d6b477a.jpg') center/cover fixed no-repeat;
+	--PrimaryNavBackgroundColor   : black;
+	--SecondaryNavBackgroundColor : black;
+	--DefaultTextFontFamily       : 'AgencyFB Wide';
+	--LinkColor                   : skyblue;
+	--LinkHoverColor              : deepskyblue;
+}
+
+#PrimaryNav,
+#SecondaryNav
+{
+	box-shadow : 0 0 10px 5px black;
+}
+
+#SecondaryNavModule pane
+{
+	background    : rgba(0,0,0,0.9);
+	border        : 1px dashed deepskyblue;
+	border-radius : 10px;
+}
+
+.PageModule
+{
+	background    : rgba(0,0,0,0.5);
+	border-radius : 10px;
+	box-shadow    : 0 0 10px black;
+	border        : 0;
+	margin-block  : 1em;
+}
+
+#HeadlineWrapper overlay h1
+{
+	font-variant    : small-caps;
+	font-size       : 50px;
+	animation       : wink 2s linear infinite;
+}
+
+#SubNavigator .DropdownMenuSubNavigator
+{
+  background    : linear-gradient(deepskyblue, rgb(0,96,128), deepskyblue);
+  border-radius : 0 0 99px 99px;
+}
+
+.PageModule h2
+{
+  font        : 20px 'JHTitles';
+  text-shadow : 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue;
+  box-shadow  : 0 1px deepskyblue,   0 10px 10px -7px deepskyblue;
+}
+
+.PageModule h2::after
+{
+  content : unset;
+}
+
+.PageModule h2 a
+{
+  color       : white;
+  text-shadow : 0 0 5px cyan, 0 0 5px cyan, 0 0 5px cyan;
+}
+
+#SiteLogo
+{
+	color       : white;
+	text-shadow : 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue;
+}
+
+#SiteLogo:hover
+{
+	text-shadow : 0 0 5px, 0 0 5px;
+}
+
+#SiteLogo::before
+{
+	font    : 30px 'JHTitles';
+	content : "GAMEBANANA\A\A";
+}
+
+#SiteLogo img
+{
+  display : none;
+}
+
+dt
+{
+	color          : white;
+	font-size      : 14px;
+	font-variant   : small-caps;
+	text-transform : capitalize;
+	border         : 0;
+	text-shadow    : 0 0 5px cyan, 0 0 5px cyan, 0 0 5px cyan;
+}
+
+dt:after
+{
+	content    : "";
+	display    : block;
+	height     : 2px;
+	background : linear-gradient(to right, deepskyblue, transparent);
+}
+
+dl
+{
+	text-shadow : 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue;
+}
+
+button, .ButtonLike
+{
+	font        : small-caps 14px 'AgencyFB Wide';
+	background  : transparent;
+	border      : 0;
+	box-shadow  : 0 0 0 1.5px deepskyblue, 0 0 20px 2px deepskyblue;
+	color       : white;
+	text-shadow : 0 0 1px deepskyblue,     0 0 1px deepskyblue, 0 0 1px deepskyblue, 0 0 5px deepskyblue, 0 0 10px deepskyblue, 0 0 30px deepskyblue;
+}
+
+.Modal .CloseModal
+{
+	box-shadow  : 0 0 0 1.5px red, 0 0 20px 2px red;
+	color       : white;
+	text-shadow : 0 0 1px red,     0 0 1px red, 0 0 1px red, 0 0 5px red, 0 0 10px red, 0 0 30px red;
+}
+
+button:hover, .Modal .CloseModal:hover, .ButtonLike:hover
+{
+	border      : 0;
+	box-shadow  : 0 0 0 1.5px, 0 0 20px 2px;
+	color       : white !important;
+	text-shadow : 0 0 1px,     0 0 10px, 0 0 30px;
+}
+
+@keyframes wink
+{
+	0%, 35%, 50%, 65%, 100%
+	{
+		text-shadow : 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 5px deepskyblue, 0 0 10px deepskyblue, 0 0 10px deepskyblue, 0 0 10px deepskyblue;
+	}
+
+	40%, 60%
+	{
+		text-shadow : 0 0 10px, 0 0 10px, 0 0 10px;
+	}
+}

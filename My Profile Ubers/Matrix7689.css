@@ -1,0 +1,563 @@
+/*********/
+/* FONTS */
+/*********/
+
+@font-face
+{
+	font-family	: 'LegoBlocks';
+	src		: url('http://files.gamebanana.com/bitpit/lego_blocks.ttf');
+}
+
+
+/**********/
+/* LAYOUT */
+/**********/
+
+
+
+/* Reset Width */
+
+div#Wrapper
+{
+	width		: auto;
+}
+
+#ColumnGrid
+{
+	width		: 70%;
+	margin		: auto;
+	font-size	: initial;
+}
+
+
+
+/* Align Layout */
+
+.ContentRow
+{
+	display		: flex;
+	white-space	: initial;
+	margin-bottom	: 10px;
+}
+
+#Row4,
+#Row6
+{
+	flex-direction	: column;
+}
+
+.Module
+{
+	width		: 100%;
+	margin-right	: 10px;
+	box-sizing	: border-box;
+}
+
+.Module:last-child
+{
+	margin-right	: 0px;
+}
+
+#Row3 .Module:not(#PointsModule)
+{
+	display		: flex;
+	align-items	: center;
+	justify-content	: center;
+}
+
+#Row4 .Module,
+#Row6 .Module
+{
+	flex-direction	: column;
+	margin-bottom	: 10px;
+}
+
+#BuddyRequesterModule > h3
+{
+	display		: none;
+}
+
+.Module > .LogMessages
+{
+	padding		: 0;
+	background	: transparent;
+}
+
+
+
+/* Image Lists */
+
+.ItemList
+{
+	display		: flex;
+}
+
+.ItemList li
+{
+	display		: inline-block;
+	margin		: 0 10px;
+	position	: relative;
+	text-align	: center;
+	width		: 100%;
+}
+
+.ItemList li img
+{
+	width		: 100px;
+	transition	: all 0.3s;
+}
+
+
+
+/* Special Coding for Map List */
+
+#Showcase
+{
+	flex-wrap	: wrap;
+}
+
+#Showcase li
+{
+	margin		: 10px;
+	width		: 30.97%;
+}
+
+#Showcase img
+{
+	width		: 250px;
+}
+
+
+
+/* Hover Behaivor */
+
+.ItemList li span
+{
+	display		: block;
+	position	: absolute;
+	width		: 100%;
+	font-weight	: bold;
+	opacity		: 0;
+	z-index		: 1;
+	transition	: all 0.3s;
+}
+
+.ItemList li:hover span
+{
+	opacity		: 1;
+}
+
+.ItemList li:hover img
+{
+	filter		: brightness(0.5);
+	-o-filter	: brightness(0.5);
+	-ms-filter	: brightness(0.5);
+	-moz-filter	: brightness(0.5);
+	-webkit-filter	: brightness(0.5);
+}
+
+#ContactData li .id
+{
+	top		: 25%;
+	font-size	: 20px;
+}
+
+#OtherSubLinks li .id
+{
+	top		: 35%;
+	font-size	: 20px;	
+}
+
+#ContactData li .content
+{
+	top		: 50%;
+	font-size	: 14px;
+}
+
+
+
+/*********/
+/* THEME */
+/*********/
+
+
+
+body
+{
+	background	: url('http://i.imgur.com/7gSUqbo.jpg') repeat;
+	background-size	: 750px;
+}
+
+#NetworkLinks li:not(#GamebananaTab),
+#tBar,
+#AdStrip,
+#PcSpecsModule dd img,
+#AdsByCurseBanner
+{
+	display		: none;
+}
+
+#NetworkLinks,
+#CoreStrip,
+.Module > h3,
+.Module .Content,
+.Module > .LogMessages,
+#PageTitleWrapper,
+#DropdownMenuSubNavigator
+{
+	background	: transparent;
+}
+
+#HeaderWrapper
+{
+	padding		: 10px 50px;
+	background	: url('http://i.imgur.com/EhiefxL.jpg') repeat;
+	background-size	: 500px;
+	border-bottom	: 5px solid firebrick;
+	box-shadow	: 0 0 30px 10px black;
+}
+
+#FooterWrapper
+{
+	background	: url('http://i.imgur.com/EhiefxL.jpg') repeat;
+	background-size	: 500px;    
+	border-top	: 5px solid firebrick;
+	box-shadow	: 0 0 30px 10px black;
+	margin		: 0;
+	margin-bottom	: -200px;
+	padding		: 10px;
+}
+
+#MainContentHeader
+{
+	margin-top	: 50px;
+	text-align	: center;
+}
+
+#PageTitleWrapper h1
+{
+	height		: 2em;
+	white-space	: pre-wrap;
+	overflow	: hidden;
+	font		: 60px 'Lego Blocks';
+	color		: white;
+	text-shadow	: 0 0 10px, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black;
+	padding-top	: 20px;
+	width		: 100%;
+}
+
+#PageTitle::before
+{
+	content		: "Cats Never Lie!"
+}
+
+
+
+/* Modules */
+
+.Module:not(#PostsListModule),
+.tooltipster-default,
+#PostsListModule > .Content > ul > li,
+.PageNavigation
+{
+	background	: rgba(0,0,0,0.5);
+	border		: 3px solid white;
+	box-shadow	: 0 0 10px, 0 0 10px inset;
+}
+
+.Module > h3
+{
+	text-transform	: uppercase;
+	font-size	: 13px;
+	border-bottom	: 3px solid white;
+	box-shadow	: 0 0 10px, 0 0 10px inset;
+}
+
+
+
+/* Posts List Module */
+
+#PostsListModule .Content > ul > li
+{
+	display		: flex;
+	flex-wrap	: wrap;
+	position	: relative;
+	margin-bottom	: 10px;
+}
+
+#PostsListModule article
+{
+	width		: 75.1%;
+	padding-top	: 50px;
+}
+
+.PostHeader
+{
+	display		: flex;
+	flex-direction	: column;
+	justify-content	: center;
+	align-items	: center;
+	border-right	: 2px solid;
+	width		: 20%;
+	box-shadow	: 10px 0 10px -10px, -10px 0 10px -10px inset;
+}
+
+.Modal
+{
+	width		: 100%;
+	order		: 1;
+	margin		: 0;
+	border-top	: 2px solid;
+	box-shadow	: 0 -10px 10px -10px, 0 10px 10px -10px inset;
+}
+
+.PostTools
+{
+	position	: absolute;
+	top		: 10px;
+	right		: 10px;
+}
+
+#PostsListModule article blockquote
+{
+	opacity		: 1;
+	border		: 3px solid;
+	box-shadow	: 0 0 10px, 0 0 10px inset;
+	border-radius	: 10px;
+}
+
+
+
+/* Stamps */
+
+#PostsListModule ul.PostStamps li
+{
+	background	: transparent;
+	font-size	: 10px;
+	padding		: 2px;
+	border		: 1px solid white;
+	padding-right	: 5px;
+	box-shadow	: 0 0 10px, 0 0 10px inset;
+}
+
+div.FullStampsDisplay li.Stamp div,
+div.StampsForm label
+{
+	background	: transparent !important;
+	border		: 1px solid white !important;
+	box-shadow	: 0 0 10px, 0 0 10px inset;
+}
+
+div.StampsForm label:hover,
+#PostsListModule ul.PostStamps li:hover
+{
+	color		: yellow;
+}
+
+div.StampsForm label.Checked
+{
+	color		: lime;
+}
+
+div.StampsForm label.Checked:hover
+{
+	color		: cyan;
+}
+
+
+
+/* Posts List Module */
+
+.PageNavigation
+{
+	margin		: 10px 0;
+}
+
+
+/* DT and Tables */
+
+dt
+{
+	border		: 0;
+	color		: rgb(255,192,128);
+	font-weight	: bold;
+	font-size	: 10px;
+}
+
+dt:after
+{
+	content  	: "";
+	display		: block;
+	height		: 1px;
+	background	: linear-gradient(to right, rgb(255,255,128), transparent);
+}
+
+dd
+{
+	font-size	: 13px;
+	margin		: 0;
+	margin-bottom	: 5px;
+}
+
+table tr
+{
+	border-bottom	: 0;
+}
+
+td
+{
+	padding		: 5px;
+	font-size	: 14px;
+}
+
+
+
+/* Buttons */
+
+button
+{
+	border		: 0;
+	outline		: 0;
+	box-shadow	: none;
+	background	: rgb(0,96,160);
+	color		: rgba(255,255,255,0.5);
+	text-transform	: uppercase;
+	font		: bold 14px 'Open Sans';
+}
+
+button:hover
+{
+	border		: 0;
+	background	: rgb(0,112,204);
+	color		: rgba(255,255,255,0.5);
+}
+
+.Modal .CloseModal
+{
+	background	: rgb(80,25,25);
+	color		: rgba(255,255,255,0.5);
+}
+
+.Modal .CloseModal:hover
+{
+	background	: rgb(128,40,40);
+}
+
+.SmallButton
+{
+	background	: rgb(0,80,25);
+	font-weight	: bold;
+}
+
+.SmallButton:hover
+{
+	background	: rgb(0,120,40);
+}
+
+
+
+/* Avatar */
+
+.Avatar, .Avatar img
+{
+	border-radius	: 99px
+}
+
+.Avatar img
+{
+	margin		: 0;
+	border		: 3px solid;
+}
+
+.Avatar.Offline,
+.Avatar.Online
+{
+	border		: 0;
+	margin-bottom	: 10px;
+}
+
+.Avatar.Offline img
+{
+	border-color	: rgb(200,200,200);
+}
+
+.Avatar.Online img
+{
+	border-color	: rgb(0,200,200);
+}
+
+.Avatar:hover img
+{
+	border-color	: white;
+	box-shadow	: 0 0 10px white;
+}
+
+
+
+/* Important Links */
+
+ul#ImportantLinks
+{
+	position	: absolute;
+	top		: 40px;
+	height		: 1px;
+}
+
+#ImportantLinks li
+{
+	display		: inline-block;
+	margin-right	: 10px;
+}
+
+ul#ImportantLinks li a
+{
+	border		: 2px solid;
+	background	: rgba(0,0,0,0.5);
+}
+
+ul#ImportantLinks li a:hover
+{
+	border		: 2px solid !important;
+	color		: white !important;
+}
+
+
+
+/* Cursor */
+
+body,
+#RemindersPane ul#Reminders li p,
+#ActivityPane #ActivityCalendar ul .ActivityDay.SelectedDay
+{
+	cursor		: url('http://i.imgur.com/huucisP.gif'), default !important;
+}
+
+legend sup,
+.TooltipTrigger,
+.SpoilerTrigger,
+#MedalsModule li,
+#UnlocksModule li div,
+#PostsListModule .PostStamps li:hover
+{
+	cursor		: url('http://i.imgur.com/ULH8k5Z.gif'), help !important;
+}
+
+a,
+label,
+button,
+select,
+.ButtonLike,
+.Module h3 > img,
+#NavigatorTabs li,
+.MaximizeMinimizeButton,
+.UsernameSuggestionList li,
+#GamesPane .GamesList .Game,
+#GamesPane .AlphabetIndex li,
+#ProfileToolsWrapperModule .Module h3,
+#DonationFormModule .PaypalDonateIcon,
+.AdvancedListSettingsModule fieldset legend,
+#ActivityPane #ActivityCalendar ul .ActivityDay,
+#AddToWatchlistFormModule fieldset#AreasToWatch legend
+{
+	cursor		: url('http://i.imgur.com/zHNoB1Q.gif'), pointer !important;
+}

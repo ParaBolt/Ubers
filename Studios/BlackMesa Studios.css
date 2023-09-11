@@ -1,0 +1,183 @@
+:root
+{
+    --BodyBackground : url('https://i.ibb.co/6wwpJws/1.jpg') no-repeat, #111 url('https://i.ibb.co/Y3h1PHv/2.jpg');
+    --BodyWrapperBackground : transparent;
+    --NavBackgroundColor : #111 url('http://i.imgur.com/Z8MJjHD.png');
+    --PrimaryNavBackgroundColor : #111;
+    --SecondaryNavBackgroundColor : #111;
+    --NavPaneBackgroundColor : #111 url('http://i.imgur.com/Z8MJjHD.png');
+/*     --LinkColor : #926D26; */
+/*     --LinkHoverColor : #B45A00; */
+        --LinkColor : #b38731;
+    --LinkHoverColor : #fff24c;
+    --AuxiliaryColumnBackground : transparent;
+    --AuxiliaryColumnBorder : unset;
+    --PageTitleFontSize : 5em;
+    --ScrollbarTrackBG : #000;
+	--ScrollbarThumbBG : #B45A00;
+}
+
+#MainContentHeader
+{
+    text-align : center;
+}
+
+#Studio_Profile #PageDescription,
+#Studio_Profile #Breadcrumb
+{
+    display: none;
+}
+
+#Studio_Profile #HeadlineWrapper overlay h1
+{
+    display : inline-block;
+    animation : animate 5s linear infinite alternate, pulsate 2s linear infinite;
+    position : relative;
+}
+
+#Studio_Profile #HeadlineWrapper overlay h1::after
+{
+    font-size : .9em;
+    color : #FFF;
+    content : 'Black Mesa Inc.';
+    letter-spacing: .2em;
+    filter: blur(7px);
+    position: absolute;
+    top: -25%;
+    left: -25%;
+    width : 150%;
+}
+
+.PageModule
+{
+    border : 2px solid #B45A00;
+    box-shadow : 0 0 0 1px black, 0 0 5px 2px black;
+    padding : 0;
+}
+
+.PageModule > h3
+{
+    background: #B45A00;
+    font-size: 11px;
+    margin : 0;
+    color : rgb(90,45,0);
+    text-shadow : 1px 1px 1px orange;
+    padding : .5em 0 .8em 0;
+}
+
+.PageModule > h3::after
+{
+    content : unset;
+}
+
+.PageModule > .Content
+{
+    background: #111 url('http://i.imgur.com/Z8MJjHD.png');
+    margin : 0;
+}
+
+#ContentGrid > row > column:not(:first-child) > .PageModule
+{
+    border : 2px solid #B45A00;
+}
+
+#ContentGrid row > column
+{
+    padding : 0 .25em;
+}
+
+dt
+{
+    text-indent : 5px;
+    padding : 5px 0;
+    background : #050505;
+    border-bottom : 2px solid #926D26;
+}
+
+.Avatar.Online::after
+{
+    background : rgb(255,255,128);
+}
+
+a
+{
+    text-shadow : 1px 1px 2px black, 1px 1px 2px black;
+}
+
+a:hover
+{
+     text-shadow : 0 0 10px orange, 0 0 10px orange, 0 0 10px orange;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform : translateX(-50px);
+    }
+
+    30%
+    {
+        transform : translateX(50px);
+    }
+
+    50%
+    {
+        transform : translateX(0px);
+    }
+
+    60%
+    {
+        transform : translateX(25px);
+    }
+
+    70%
+    {
+        transform : translateX(-50px);
+    }
+
+    100%
+    {
+        transform : translateX(50px);
+    }
+}
+
+@keyframes pulsate
+{
+    0%, 45%, 55%, 100%
+    {
+        color : #CCC;
+        text-shadow : 0 0 10px transparent;
+    }
+
+    50%
+    {
+        color : white;
+        text-shadow : 0 0 10px white, 0 0 10px white, 0 0 10px white;
+    }
+}
+
+/**************/
+/* SCROLLBARS */
+/**************/
+
+::-webkit-scrollbar
+{
+	width  : 7px;
+}
+
+::-webkit-scrollbar-track
+{
+	background : var(--ScrollbarTrackBG);
+}
+
+::-webkit-scrollbar-thumb
+{
+	background : var(--ScrollbarThumbBG);
+}
+
+*
+{
+	scrollbar-color : var(--ScrollbarThumbBG) var(--ScrollbarTrackBG);
+	scrollbar-width : thin;
+}

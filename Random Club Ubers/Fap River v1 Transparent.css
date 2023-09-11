@@ -1,0 +1,389 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 23:24:23 Jan 14, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 8:08:12 Mar 1, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/* Google Fonts API */
+
+@import url(/web/20140114232423/http://fonts.googleapis.com/css?family=Autour+One|Flavors);
+
+
+
+/* Background Image */
+
+body
+{
+	background		: url('/web/20140114232423/http://files.gamebanana.com/bitpit/aurora_borealis_2-wallpaper-2560x16.jpg') fixed no-repeat;
+	background-size		: cover;
+}
+
+
+
+/* Profile Layout Edits */
+
+#Col2
+{
+	height			: 475px;
+	width			: 470px !important;
+}
+
+#Col1
+{
+	width			: 500px !important;
+}
+
+#Row2
+{
+	width			: 98%;
+	padding-left		: 2px;
+	margin-top 		: 30px;
+}
+
+
+
+/* Remove Ads, Footer and Subdomain Menus */
+
+#Footer, #TopBanner, .StaticColumn, #SubdomainMenus
+{
+	display			: none !important;
+}
+
+/* Page Title Edits */
+
+h2#PageTitle
+{ 
+	font-size		: 50px;
+	line-height		: 50px;
+	text-shadow		: 0px 5px 20px green, 0px -5px 20px cyan, 0px 5px 20px green, 0px -5px 20px cyan;
+	font-family		: 'Flavors', cursive;
+	text-align		: center;
+	padding-top		: 50px;
+}
+
+#TitleBreadcrumb
+{ 
+	font-family		: 'Autour One', cursive;
+	font-size		: 18px !important;
+	text-align		: center;
+}
+
+
+
+
+/* Global Styling Modules */
+
+#MainContent
+{
+	background		: none !important;
+	border			: none !important;
+	box-shadow		: none !important;
+}
+
+.Module > h3
+{
+	margin-bottom		: none;
+	color			: #FF99FF;
+	text-align		: center;
+	text-shadow		: 0px 0px 5px #FF00FF;
+}
+
+
+
+.Module .Content, .Module > h3, #PostsListModule .PostHeader, #PostsListModule article
+{ 
+	background		: rgba(0, 0, 0, 0.8) !important;
+	border			: thin solid white !important;
+	box-shadow		: 0px 0px 5px white inset !important;
+	transition		: border 1s, box-shadow 1s;
+	border-radius 		: 30px;
+}
+
+#PostsListModule article:after
+{
+	background		: url('/web/20140114232423/http://i302.photobucket.com/albums/nn109/noisel3ss/bginset.png') !important;
+	opacity			: 0.7;
+}
+
+.Module
+{
+	border			: none !important;
+	padding			: 10px !important;
+}
+
+
+
+
+/* Styling "Add Message" Button and it's Module */
+
+#PostAddFormRequesterModule .Content
+{
+	background		: none !important;
+	border			: none !important;
+	box-shadow		: none !important;
+	text-align		: center;
+}
+
+#PostAddFormRequesterModule button.ModalLauncher:before
+{
+	content			: "Click To Fap \A \A";
+	white-space		: pre-wrap;
+}
+
+#PostAddFormRequesterModule button.ModalLauncher
+{
+	width			: 30%;
+	height			: 2.1em;
+	overflow		: hidden;
+
+	background		: rgba(0, 0, 0, 0.8);
+	border			: thin solid orange !important;
+	box-shadow		: 0px 0px 3px orange inset;
+
+	color			: orange !important;
+	text-shadow		: 0px 0px 5px orange;
+
+	transition		: color 1s, border 1s, box-shadow 1s, text-shadow 1s;
+}
+
+#PostAddFormRequesterModule button.ModalLauncher:hover
+{
+	border			: thin solid yellow !important;
+	box-shadow		: 0px 0px 3px yellow inset;
+
+	color			: yellow !important;
+	text-shadow		: 0px 0px 5px yellow;
+}
+
+
+
+
+/* Post Module Edits and Styling */
+
+p
+{
+	color			: rgb(224,128,64);
+	font-family		: 'Candara', sans-serif;
+	text-shadow		: 0px 0px 1px rgba(255,255,255,0.4);
+	font-size		: 15px;
+}
+
+#PostsListModule .Content, #PostsListModule .Content > ul > li
+{
+	background		: none !important;
+	border			: none !important;
+	box-shadow		: none !important;
+}
+
+#PostsListModule .Content > ul > li
+{
+	padding			: 10px !important;
+}
+
+
+
+
+/* Member Titles */
+
+#PostsListModule .Poster a[href*="1244443"]:after
+{
+	content			: " (UberDick)";
+}
+
+#PostsListModule .Poster a[href*="1235118"]:after
+{
+	content			: " (Metalhead Randomite)";
+}
+
+#PostsListModule .Poster a[href*="1291525"]:after
+{
+	content			: " (OMGZ He's G4Y)";
+}
+
+#PostsListModule .Poster a[href*="1320279"]:after
+{
+	content			: " (Gaymmer Nazi)";
+}
+
+#PostsListModule .Poster a[href*="1332419"]:after
+{
+	content			: " (Cum in my Weed)";
+}
+
+#PostsListModule .Poster a[href*="1298547"]:after
+{
+	content			: " (Please Cum on my Pony *-*)";
+}
+
+#PostsListModule .Poster a[href*="1370489"]:after
+{
+	content			: " (All Hail Hastapachins)";
+}
+
+#PostsListModule .Poster a[href*="1285881"]:after
+{
+	content			: " (Mr. Ambassador Fancy Pants)";
+}
+
+#PostsListModule .Poster a[href*="229079"]:after
+{
+	content			: " (Fapper Solido)";
+}
+
+#PostsListModule .Poster a[href*="1281838"]:after
+{
+	content			: " (Fap Note : He's Got the Power...)";
+}
+
+
+/* Just Random */
+
+
+.TeamMembersListModule .Content
+{
+	height			: 350px;
+	overflow-y		: scroll;
+}
+
+div#SiteSearch
+{
+	display 		: none;
+}
+
+body article blockquote p:before
+{
+	content			: "\201C";
+	color			: grey;
+	font-size		: 20px;
+}
+
+body article blockquote p:after
+{
+	content			: "\201D";
+	color			: grey;
+	font-size		: 20px;
+}
+
+#PostsListModule footer
+{ 
+	background-image        : url("/web/20140114232423/http://s13.postimg.org/hy7flmcxj/imageedit_8_5476710431.gif");
+	background-position     : 90% 50%;
+	background-repeat       : no-repeat;
+}
+
+a
+{
+	color			: rgba(240,240,240,0.7);
+	transition		: text-shadow 0.75s, color 0.75s;
+}
+
+a:hover
+{ 
+	color                   : white;
+	text-shadow             : 0px 0px 15px white, 0px 0px 15px white, 0px 0px 10px white, 0px 0px 10px white;
+}
+
+#NavigatorPanes h4
+{ 
+	background		: black;
+}
+
+#NavigatorPanes article
+{ 
+	background		: rgb(15,15,15);
+}
+
+#CurrentPointSubLevel .UnachievedSublevel
+{
+	background		: black !important;
+}
+
+#CurrentPointSubLevel .AchievedSublevel
+{
+	background		: rgb(32,96,192) !important;
+}
+
+#CurrentPointSubLevel div
+{ 
+	box-shadow		: 0px 0px 10px white inset;
+	height			: 8px !important;
+	margin-right		: 0px !important;
+}
+
+#CurrentPointSubLevel
+{
+	margin			: 3px;
+	opacity			: 1 !important;
+}
+
+#PointsMeter
+{ 
+	margin-top		: 10px;
+}
+
+img.LevelBar, .Online img.OnlineIndicator, .Offline img.OnlineIndicator
+{
+	display			: none;
+}
+
+#Logo P
+{
+	height			: 2.3em;
+	overflow		: hidden;
+}
+
+#Logo P:before
+{
+	content			: "EmilioVerse : The Online Palace of Hanging Dicks and Dripping Cum \A \A";
+	white-space		: pre-wrap;
+}
+
+#PostsListModule .PostTools
+{
+	float			: right;
+}
+
+/* Added by ILikeStargates*/
+
+div.AvatarWrapper { position: relative; width: 72px; height: 50px; }
+
+div.AvatarWrapper a, img.Avatar, img.OnlineAvatar, img.OfflineAvatar, div.AvatarWrapper a:hover, img.Avatar:hover, img.OnlineAvatar:hover, img.OfflineAvatar:hover { border: 1; outline: 0; }
+
+div.AvatarWrapper div.AvatarTop { position: absolute; top: 0; right: 0; }
+
+div.AvatarWrapper div.AvatarMiddle { top: 0; left: 0; }
+
+div.AvatarWrapper div.AvatarBase, div.AvatarWrapper img.OnlineIndicator, div.AvatarWrapper div.AvatarMiddle img.LevelBar { display: none; }
+
+div.AvatarWrapper img.Avatar { background: url('/web/20140114232423/http://i.cubeupload.com/2YpRsq.png') no-repeat top left; padding-left: 10px; margin: 0; box-shadow: none !important; width: 50px; height: 50px; }
+
+div.Online img.Avatar { background: url('/web/20140114232423/http://i.cubeupload.com/cRGrkR.png') no-repeat top left !important; }
+
+div.AvatarWrapper div.AvatarTop { position: absolute; top: 0; right: 0; width: 5px; height: 52px; overflow: hidden; }
+
+div.AvatarWrapper div.AvatarTop img.PointsLevelBar { width: 5px; height: 52px; background-image: url('/web/20140114232423/http://files.gamebanana.com/bitpit/avatar_points.png'); }
+
+img.PointsLevelBar1 { background-position: 0 0; }
+
+img.PointsLevelBar2 { background-position: -5px 0; }
+
+img.PointsLevelBar3 { background-position: -10px 0; }
+
+img.PointsLevelBar4 { background-position: -15px 0; }
+
+img.PointsLevelBar5 { background-position: -20px 0; }
+
+img.PointsLevelBar6 { background-position: -25px 0; }
+
+img.PointsLevelBar7 { background-position: -30px 0; }
+
+img.PointsLevelBar8 { background-position: -35px 0; }
+
+img.PointsLevelBar9 { background-position: -40px 0; }

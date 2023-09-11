@@ -1,0 +1,175 @@
+/*
+
+GameBanana Profile Uberstyle
+Ring-A-Ding Rampage
+
+*/
+
+/*
+   ************************
+   User and Moderator Tools
+   ************************
+*/
+
+body
+{
+	background		: url('http://files.gamebanana.com/bitpit/stripe-black.png') fixed;
+	font-family : Century Gothic;
+}
+
+.Module .Content, .Module > h3, #DropdownMenuSubNavigator
+{
+    background : transparent;
+}
+
+.Module
+{
+	background		: rgba(0,0,0,0.3);
+	border			: 1px solid white;
+	margin			: 10px;
+}
+
+.Module > h3
+{
+	border-bottom		: 1px solid white;
+	text-shadow		: 0px 0px 10px white;
+	font-weight : bold;
+	font-size : 14px;
+	letter-spacing		: 0;
+}
+
+#DropdownMenuSubNavigator > ul > li
+{
+	margin-bottom		: 10px;
+	color			: cornflowerblue;
+	border			: 1px solid;
+	padding			: 5px;
+	background		: rgba(101,156,239,0.3);
+	width			: 80px;
+}
+
+#DropdownMenuSubNavigator > ul > li:hover
+{
+	background		: rgba(0,255,127,0.3);
+	color			: springgreen;
+	border			: 1px solid;
+}
+
+#PostsListModule div.Content > ul > li
+{
+	margin		: 10px;
+}
+
+#PostsListModule div.Content > ul > li:nth-child(3n)
+{
+	background		: rgba(16,16,48,0.5);
+	border			: 2px solid rgb(64,64,128);
+	color			: rgb(128,128,255);
+}
+
+#PostsListModule div.Content > ul > li:nth-child(3n+1)
+{
+	background		: rgba(16,48,16,0.5);
+	border			: 2px solid rgb(64,128,64);
+	color			: rgb(128,255,128);
+}
+
+#PostsListModule div.Content > ul > li:nth-child(3n+2)
+{
+	background		: rgba(48,16,16,0.5);
+	border			: 2px solid rgb(128,64,64);
+	color			: rgb(255,128,128);
+}
+
+a
+{
+	color			: lime;
+}
+
+a:hover
+{
+    color : yellow;
+}
+
+#PostsListModule article blockquote
+{
+	background		: rgba(16,32,64,0.5);
+	border			: 1px solid rgb(32,64,128);
+	color			: rgb(64,128,255);
+	box-shadow		: 1px 1px 5px black;
+	opacity : 1;
+}
+
+table tr
+{
+	border			: 1px solid rgb(128,128,128);
+}
+
+td, th
+{
+	border-left		: 1px solid rgb(128,128,128);
+	border-right		: 1px solid rgb(128,128,128);
+}
+
+
+/*
+   =====================
+   Post Add Form Styling
+   =====================
+*/
+
+
+
+#IsAnonymous, .InputHelp
+{
+	display			: none;
+}
+
+.Modal .Submit
+{
+	text-align		: center;
+	border-top : 0;
+}
+
+.Modal
+{
+	background		: rgba(0,8,16,0.9);
+	border			: 1px solid cyan;
+	box-shadow		: 0px 0px 15px cyan inset, 0px 0px 15px cyan;
+}
+
+.Modal fieldset
+{
+	border			: 1px solid aquamarine;
+	background		: none;
+}
+
+.markItUpEditor
+{
+	background		: rgba(0,0,0,0.5);
+	color			: yellowgreen;
+}
+
+fieldset > legend > sup
+{
+	background		: none;
+	border			: 1px solid blueviolet;
+	color			: blueviolet !important;
+	vertical-align: middle;
+}
+
+fieldset legend
+{
+	position		: relative;
+	color			: dodgerblue;
+}
+
+label
+{
+	color			: rgb(0,255,0);
+}
+
+.FormModule > div > form > fieldset.Submit
+{
+	text-align		: center;
+}

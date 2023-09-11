@@ -1,0 +1,19 @@
+?>
+	<div id="tBar">
+		<img src="http://i.imgur.com/Bh4K5om.png" />
+	</div>
+
+	<div class="ContentColumn FluidColumn">
+		<?= $d["_aModules"]["_sIdentity"] ?>
+		<?= $d["_aModules"]["_sBlurb"] ?>
+	        <?= $d["_aModules"]["_sStats"] ?>
+		<?= $d["_aModules"]["_sLeadership"] ?>
+		<?= $d["_aModules"]["_sTeamMembersList"] ?>
+		
+	</div>
+
+	<div class="ContentColumn FluidColumn">
+		<?= $d["_aModules"]["_sPostAddFormRequester"] ?>
+		<?= $d["_aModules"]["_sProfileMessages"] ?>
+	</div>
+<?

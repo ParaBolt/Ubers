@@ -1,0 +1,84 @@
+/*
+
+
+
+Hemingway's ÜberStyle
+
+Author	: Ring-A-Ding Rampage (Code), Hemingway (Concept)
+Created	: 19-2-2016
+Updated	: 24-2-2016
+
+
+
+*/
+
+
+
+/******************/
+/*** HIDE STUFF ***/
+/******************/
+
+
+
+#HeaderWrapper,
+#FooterWrapper,
+#MainContentHeader,
+#AtfLeaderboard,
+#IdentityModule,
+#ImportantLinks
+{
+	display		: none !important;
+}
+
+
+
+/******************/
+/*** BASE STYLE ***/
+/******************/
+
+
+
+body
+{
+	overflow	: hidden;
+	background	: url('http://i.imgur.com/79BrgWE.png');
+	background-size	: 100% 100vh;
+}
+
+#Wrapper
+{
+	width		: auto;
+}
+
+
+
+/********************/
+/*** MAIN CONTENT ***/
+/********************/
+
+
+
+#ColumnGrid
+{
+	display		: flex;
+	flex-direction	: column;
+	width		: 40vw;
+	height		: 100vh;
+	margin		: auto;
+	padding		: 20px 5px;
+	background	: url('http://i.imgur.com/tbHKVnf.png');
+	background-size	: 100% 100vh;
+}
+
+.row
+{
+	display		: flex;
+	box-sizing	: border-box;
+	width		: 100%;
+	padding		: 0 20px;
+}
+
+img
+{
+	max-width	: 100%;
+}

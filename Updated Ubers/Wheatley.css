@@ -1,0 +1,534 @@
+/*
+
+
+
+Wheatley's ÜberStyle
+
+Author	: Ring-A-Ding Rampage (Code), Wheatley (Concept)
+Created	: 28-8-2015
+Updated	: 24-2-2016
+
+
+
+*/
+
+
+
+/******************/
+/*** FONT RULES ***/
+/******************/
+
+
+
+@font-face
+{
+	font-family		: 'Wheat';
+	font-weight		: 600;
+	src			: url('http://files.gamebanana.com/bitpit/ff_din_condensed_medium.otf');
+}
+ 
+@font-face
+{
+	font-family		: 'Wheat';
+	font-weight		: 400;
+	src			: url('http://files.gamebanana.com/bitpit/ff_din_condensed_light.otf');
+}
+
+
+
+/**********************/
+/*** HIDE AND RESET ***/
+/**********************/
+
+
+
+#HeaderWrapper.Fixed,
+#FooterWrapper,
+#AtfLeaderboard,
+#MainContentHeader,
+#ImportantLinks,
+#NetworkLinks li:not(#GamebananaTab),
+#OpskinsHeaderLink,
+dt:first-child,
+dt:first-child + dd,
+#GamebananaTab img,
+#NavigatorTabs span:nth-child(2),
+#IdentityModule .UserTitle,
+.IconSheet.MaximizeMinimizeButton,
+#MapPreviewListModule > h3,
+.GenericPreviewListModule li a:not(:first-child),
+#row-two input,
+.PageNavigation,
+#PostsListModule footer,
+#PostsListModule .Avatar,
+#PostsListModule .LabelStat,
+#PostsListModule .PostStamps li,
+#PostsListModule blockquote blockquote,
+.Description,
+#IsAnonymous,
+#SearchTab,
+.StateLabel
+{
+	display			: none !important;
+}
+
+#HeaderWrapper,
+.Module > h3,
+.Module .Content,
+.Module > .LogMessages,
+#NavigatorTabs li,
+#NavigatorTabs li.ActiveTab
+{
+	background		: transparent;
+}
+
+
+
+/******************/
+/*** BASE STYLE ***/
+/******************/
+
+
+
+body
+{
+	overflow		: hidden;
+	background		: url('http://files.gamebanana.com/bitpit/bg_wall.jpg');
+	background-size		: 100% 100vh;
+	color			: #000;
+	font-family		: 'Wheat';
+	cursor			: url('http://i.imgur.com/86KiJKB.png'), default !important;
+}
+
+a,
+button,
+#NavigatorTabs li,
+#ActivityPane #PersonalActivityFeedModule .Content .Controls .MarkAllAsSeen,
+label
+{
+	cursor			: url('http://i.imgur.com/xDHohjH.png'), pointer !important;
+}
+
+#Wrapper
+{
+	width			: 70vw;
+	height			: 100vh;
+	padding			: 10px;
+	background		: url('http://files.gamebanana.com/bitpit/bg_panel.jpg');
+	background-size		: 100% 100vh;
+}
+
+a
+{
+	color			: #00BFFF;
+	transition		: .2s linear;
+}
+
+a:hover
+{
+	color			: #FF8000;
+}
+
+::-webkit-scrollbar
+{
+	background		: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background		: #000;
+}
+
+::selection
+{
+	background		: #000;
+	color			: #FFF;
+}
+
+
+/**************/
+/*** HEADER ***/
+/**************/
+
+
+
+#HeaderWrapper
+{
+	border-bottom		: 2px solid;
+}
+
+
+/** Logo **/
+
+#GamebananaTab a:after
+{
+	content			: url('http://i.imgur.com/z2BBfQ9.png');
+}
+ 
+#GamebananaTab:hover a:after
+{
+	content			: url('http://i.imgur.com/JrmzMe6.png');
+}
+
+
+/** Navigator Tabs **/
+
+#NavigatorTabs li
+{
+	margin			: 2px;
+	padding			: 0;
+}
+
+#NavigatorTabs li.ActiveTab .IconSheet.NavigatorTabIcon
+{
+	background-image	: url('http://files.gamebanana.com/bitpit/lazout_iconh.png');    
+}
+
+#NavigatorTabs .IconSheet.NavigatorTabIcon
+{
+	width			: 50px;
+	height			: 50px;
+	background-image	: url('http://files.gamebanana.com/bitpit/lazout_icon.png');
+	transition		: .2s linear;
+}
+
+#NavigatorTabs .IconSheet.NavigatorTabIcon.PersonalTabIcon
+{
+	background-position	: 0 0;
+}
+
+#NavigatorTabs .IconSheet.NavigatorTabIcon.ActivityTabIcon
+{
+	background-position	: -100px 0;
+}
+ 
+#NavigatorTabs .IconSheet.NavigatorTabIcon.SubmissionsTabIcon
+{
+	background-position	: -150px 0;
+}
+ 
+#NavigatorTabs .IconSheet.NavigatorTabIcon.MessagesTabIcon
+{
+	background-position	: -50px 0;
+}
+ 
+#NavigatorTabs .IconSheet.NavigatorTabIcon.StatsTabIcon
+{
+	background-position	: -200px 0;
+}
+ 
+#NavigatorTabs .IconSheet.NavigatorTabIcon.MedalsTabIcon
+{
+	background-position	: -250px 0;
+}
+ 
+#NavigatorTabs .IconSheet.NavigatorTabIcon.RemindersTabIcon
+{
+	background-position	: -350px 0;
+}
+
+#NavigatorTabs .IconSheet.NavigatorTabIcon.AdminTabIcon
+{
+	background-position	: -500px 0;
+}
+
+#NavigatorTabs .IconSheet.NavigatorTabIcon.GamesTabIcon
+{
+	background-position	: -400px 0;
+}
+ 
+#NavigatorTabs .IconSheet.NavigatorTabIcon.SectionsTabIcon
+{
+	background-position	: -450px 0;
+}
+ 
+#NavigatorTabs .IconSheet.NavigatorTabIcon.SubmitTabIcon
+{
+	background-position	: -700px 0;
+}
+
+
+/** Navigator Panes **/
+
+#NavigatorPanes
+{
+	position		: relative !important;
+}
+
+#NavigatorPanes > li
+{
+	position		: absolute !important;
+	top			: 0px !important;
+	background		: rgba(0,0,0,.95);
+	color			: #FFF;
+}
+
+li#SearchPane
+{
+	display			: block !important;
+	top			: -130px !important;
+	left			: auto !important;
+	right			: 0px !important;
+	z-index			: 1;
+	background		: transparent;
+}
+
+#SearchPane input
+{
+	width			: 150px;
+	height			: 48px;
+	padding			: 0 10px;
+	background		: transparent;
+	border			: 1px solid;
+	outline			: 0;
+	font			: 20px 'Wheat';
+	color			: #000;
+}
+
+#SearchPane input:hover
+{
+	border			: 1px solid;
+}
+
+#SearchPane button
+{
+	width			: 50px;
+	height			: 50px;
+	background		: url('http://files.gamebanana.com/bitpit/lazout_icon.png') -800px 0;
+	border			: 0;
+	border-radius		: 0;
+	box-shadow		: none;
+	color			: transparent;
+	transition		: .2s linear;
+}
+
+#SearchPane button:hover
+{
+	background		: url('http://files.gamebanana.com/bitpit/lazout_iconh.png') -800px 0;
+}
+
+
+
+/********************/
+/*** MAIN CONTENT ***/
+/********************/
+
+
+
+#ColumnGrid
+{
+	width			: auto;
+	font-size		: initial;
+}
+
+.row .Module .Content
+{
+	display			: flex;
+	align-items		: center;
+	justify-content		: center;
+	margin			: 0;
+}
+
+
+/** Row One Base **/
+
+#row-one
+{
+	display			: flex;
+	flex-wrap		: wrap;
+	border-bottom		: 2px solid;
+}
+
+#row-one a
+{
+	color			: #000;
+}
+
+#page-title
+{
+	width			: 100%;
+	font-size		: 75px;
+	text-align		: center;
+}
+
+
+/** Row One Modules **/
+
+#row-one .Module
+{
+	box-sizing		: border-box;
+	width			: 33.33%;
+	margin			: 0;
+	font-size		: 18px;
+}
+
+.Module > h3
+{
+	padding			: 0;
+	border			: 0;
+	text-align		: center;
+	font-size		: 20px;
+}
+
+#IdentityModule .Avatar
+{
+	border			: 0;
+}
+
+#row-one dt
+{
+ 	display			: inline-block;
+	width			: 65px;
+	border			: 0;
+	font-size		: 18px;
+	color			: #000;
+	text-align		: right;
+}
+
+#row-one dd
+{
+	display			: inline;
+}
+
+#row-one dd:before
+{
+	content			: '| ';
+}
+
+#row-one dd:after
+{
+	content			: '';
+	display			: block;
+}
+
+
+/** Row Two Base **/
+
+#row-two
+{
+	text-align		: center;
+}
+
+#row-two label
+{
+	display			: inline-block;
+	margin			: 0 -5px;
+	margin-top		: -65px;
+	padding			: 10px;
+	background		: #000;
+	font-size		: 20px;
+	color			: #FFF;
+	transition		: .2s linear;
+}
+
+#row-two label:hover
+{
+	color			: #FF8000;
+}
+
+#row-two input:checked + label
+{
+	color			: #00BFFF;
+}
+
+.tab
+{
+	position		: absolute;
+	left			: -100px;
+	width			: 100%;
+	opacity			: 0;
+	text-align		: initial;
+	transition		: .2s linear;
+}
+
+#row-two input:checked + label + .tab
+{
+	left			: 0;
+	opacity			: 1;
+}
+
+
+/** Maps Module **/
+
+#MapPreviewListModule ul
+{
+	display			: flex;
+}
+
+#MapPreviewListModule li
+{
+	margin			: 0 -40px;
+	border			: 0;
+}
+
+#MapPreviewListModule li:first-child,
+#MapPreviewListModule li:last-child
+{
+	margin			: 0 -60px;
+	z-index			: 1;
+}
+
+#MapPreviewListModule li:nth-child(even)
+{
+	z-index			: 2;
+	transform		: scale(.8);
+}
+ 
+#MapPreviewListModule li:nth-child(odd)
+{
+	transform		: scale(.6);
+}
+ 
+#MapPreviewListModule li:nth-child(3)
+{
+	z-index			: 3;
+	transform		: scale(1);
+}
+
+
+/** Post List Module **/
+
+#PostsListModule > .Content
+{
+	display			: block;
+}
+
+#PostsListModule > .Content > ul
+{
+	display			: flex;
+	flex-wrap		: wrap;
+	justify-content		: center;
+	height			: 250px;
+	overflow-y		: scroll;
+}
+ 
+#PostsListModule > .Content > ul > li
+{
+	width			: 45%;
+	margin			: 10px;
+	border			: 3px solid #000;
+	box-sizing		: border-box;
+}
+
+.PostTools
+{
+	float			: right;
+}
+
+.PostTools button
+{
+	background		: transparent;
+	border			: 0;
+	outline			: 0;
+	box-shadow		: none;
+}
+
+.Modal
+{
+	position		: fixed;
+	top			: 0px;
+	left			: 30vw;
+	z-index			: 999;
+	background		: rgba(0,0,0,.95);
+	color			: #FFF;
+}

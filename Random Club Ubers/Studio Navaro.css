@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body
+{
+    background : black url('http://i.imgur.com/qx54EzL.jpg') fixed no-repeat;
+    background-size : cover;
+    color : cyan;
+    font-family : Montserrat;
+}
+
+a
+{
+    color : white;
+}
+
+a:hover
+{
+    color : deepskyblue;
+}
+
+.Module
+{
+    background : rgba(0,0,0,0.5);
+    padding-top : 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px cyan;
+}
+
+.Module .Content,
+.Module > .LogMessages
+{
+    margin-bottom : 20px;
+    background : transparent;
+}
+
+.Module > h3
+{
+    background : transparent;
+    position : relative;
+    margin-top : 5px;
+    margin-bottom : 15px;
+    color : rgb(255,255,255);
+    border : 0;
+    text-align : center;
+    text-shadow: 0 0 1px cyan, 0 0 10px cyan;
+}
+
+.Module > h3::after
+{
+    content : "";
+    display : block;
+    width : 100%;
+    height : 1px;
+    background : linear-gradient(to right, transparent, cyan, transparent);
+    position : absolute;
+    bottom : -5px;
+    left : 0;
+}
+
+.Screenshot img
+{
+    transform : scale(0.9);
+    transition : all 0.2s;
+    -webkit-filter : grayscale(0.5) brightness(0.8);
+    filter : grayscale(0.5) brightness(0.8);
+    -moz-filter : grayscale(0.5) brightness(0.8);
+}
+
+.Screenshot img:hover
+{
+    transform : scale(1);
+    -webkit-filter : none;
+    filter : none;
+    -moz-filter : none;
+}
+
+.Rated9To10
+{
+    text-shadow : 0 0 1px deepskyblue, 0 0 5px deepskyblue, 0 0 7px deepskyblue, 0 0 10px deepskyblue, 0 0 10px deepskyblue;
+    color : white;
+}
+
+.Rated7To9
+{
+    text-shadow : 0 0 1px lime, 0 0 5px lime, 0 0 7px lime, 0 0 10px lime;
+    color : white;
+}
+
+.Rated5To7
+{
+    text-shadow : 0 0 1px orange, 0 0 5px orange, 0 0 7px orange, 0 0 10px orange, 0 0 10px orange;
+    color : white;
+}
+
+.RatedLessThan5
+{
+    text-shadow : 0 0 1px red, 0 0 5px red, 0 0 7px red, 0 0 10px red;
+    color : white;
+}
+
+.InputHelp
+{
+    color : aquamarine;
+}
+
+legend
+{
+    border-bottom : 0;
+    color : white;
+    text-shadow : 0 0 10px deepskyblue;
+}
+
+#SubmissionAuthors li fieldset legend
+{
+    margin-bottom : 10px;
+}
+
+legend::after
+{
+    display : block;
+    content : "";
+    height : 1px;
+    background : linear-gradient(to right, skyblue, transparent);
+}
+
+input, select, textarea
+{
+    border : 0;
+    border-radius : 10px;
+    box-shadow : 0 0 10px cyan;
+    outline : 0;
+    font-family : Montserrat;
+    color : cyan;
+}
+
+input:hover, select:hover, textarea:hover
+{
+    border : 0;
+    box-shadow : 0 0 10px white;
+    color : white;
+}
+
+input:focus, select:focus, textarea:focus
+{
+    border : 0;
+    box-shadow : 0 0 10px deepskyblue;
+    color : deepskyblue;
+}
+
+select
+{
+    margin-bottom : 10px;
+}
+
+.AuthorIsMember
+{
+    color : white;
+}
+
+#WipModule a
+{
+    display: block;
+    text-align: center;
+}

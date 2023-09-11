@@ -1,0 +1,697 @@
+﻿/**********/
+/* Layout */
+/**********/
+
+body
+{
+    padding : 0;
+}
+
+body *
+{
+    font-family : 'Verdana';
+}
+
+div#Wrapper
+{
+    width    : 100%;
+}
+
+#MainContent
+{
+    width   : 75%;
+    margin  : auto;
+}
+
+#ColumnGrid, .ContentRow
+{
+    width    : auto;
+}
+
+.ContentColumn
+{
+    width    : 32%;
+    padding-top: 15px;
+    margin : 5px;
+}
+
+#tBarRow
+{
+    margin     : 10px 0;
+    text-align  : center;
+}
+
+#FooterWrapper
+{
+    margin-bottom : 0;
+}
+
+/*************/
+/* UnderMenu */
+/*************/
+
+.Enclosure
+{
+    background : rgb(30,30,30);
+    text-align : center;
+    box-shadow: 0 0 2px black;
+    border-radius : 3px;
+}
+
+#Menu
+{
+    margin : 0 10px;
+}
+
+#Menu > .Module
+{
+    display: inline-block;
+    margin : 0;
+    padding : 10px;
+    width: 30%;
+    text-align : center;
+    vertical-align: middle;
+    box-shadow : none;
+}
+
+#Menu > div > h3
+{
+    display : none;
+}
+
+#Menu > div > .Content
+{
+    padding : 0;
+    background : transparent;
+}
+
+#Menu fieldset
+{
+    padding : 0;
+}
+
+#PmMeModule img
+{
+    display : none;
+}
+
+#Menu ul
+{
+    background : transparent;
+    box-shadow : none;
+    border : none;
+}
+
+#Menu button, #Menu li
+{
+    border : 1px solid;
+    padding : 4px;
+    width : 100%;
+}
+
+/*************/
+/* tBar Anim */
+/*************/
+
+#tbar
+{
+    -webkit-animation : pulsate 5s linear infinite;
+    animation : pulsate 5s linear infinite;
+}
+
+@keyframes pulsate
+{
+    0%, 40%, 60%, 100% {
+        filter: sepia(0);
+    }
+    50% {
+        filter: sepia(1);
+    }
+}
+
+@-webkit-keyframes pulsate
+{
+    0%, 40%, 60%, 100% {
+        -webkit-filter: sepia(0);
+    }
+    50% {
+        -webkit-filter: sepia(1);
+    }
+}
+
+/**********************/
+/* Posts Module Lite™ */
+/**********************/
+
+#PostsListModule footer,
+#PostsListModule .Avatar,
+#PostsListModule .Upic,
+.AffiliatedStudio,
+#PostsListModule div.PostHeader div.Poster small,
+.LabelState,
+#PostsListModule article .LabelStat.Date
+{
+    display        : none;
+}
+
+#PostsListModule .MemberLink .Tooltip
+{
+	display		: block;
+}
+
+#PostsListModule div.PostHeader, #PostsListModule .PostTools
+{
+	padding		: 0;
+	display		: inline-block;
+	width		: 49%;
+}
+
+#PostsListModule article
+{
+	padding: 0 10px;
+}
+
+#PostsListModule > div.Content > ul > li
+{
+	padding		: 10px;
+	border-bottom	: 1px solid rgba(255,255,255,0.1);
+}
+
+#PostsListModule .PostStamps li
+{
+	padding: 1px 3px 2px;
+    margin : 2px .5px;
+	vertical-align	: bottom;
+	font-size	: 10px;
+	font-weight : bold;
+	letter-spacing : -0.1em
+}
+
+#PostsListModule .PostStamps li img
+{
+	padding		: 0;
+	margin		: 0;
+	height		: 12px;
+}
+
+span.StampTitle
+{
+	display		: none;
+}
+
+#PostsListModule div.Poster
+{
+	margin : 0 0 5px 4px;
+}
+
+#PostsListModule div.Poster,
+#PostsListModule article
+{
+	font-size	: 11px;
+}
+
+#PostsListModule article p, #PostsListModule article ul
+{
+	margin		: 0 0 0 5px;
+	padding		: 2px 0px;
+}
+
+#PostsListModule article blockquote
+{
+	opacity		: 1;
+	border: 1px solid rgba(255,255,255,0.1);
+}
+
+#PostsListModule article blockquote strong
+{
+	margin		: 0;
+	font-size	: 10px;
+}
+
+#PostsListModule article pre, #PostsListModule article blockquote
+{
+	margin		: 5px 20px;
+	padding		: 2px 0px 2px 5px;
+	font-size	: 11px;
+	background	: #10171C;
+	box-shadow	: none;
+}
+
+#PostsListModule article blockquote p,
+#PostsListModule article pre p
+{
+	margin		: 0;
+}
+
+#PostsListModule h1,
+#PostsListModule h2,
+#PostsListModule h3,
+#PostsListModule h4,
+#PostsListModule h5,
+#PostsListModule h6
+{
+	margin		: 0;
+	margin-left	: 5px;
+	padding		: 0;
+	border-bottom : 0;
+}
+
+#PostsListModule article hr
+{
+	margin		: 7px 50px;
+	border		: 0;
+	border-bottom	: 1px solid rgba(255,255,255,0.1);
+}
+
+.PostTools ul > li > img
+{
+	visibility	: hidden;
+	width		: 8px;
+}
+
+#PostsListModule .PostTools li
+{
+	border		: none;
+	box-shadow	: none;
+}
+
+li[title="Edit post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/edit.png) center no-repeat;
+}
+
+li[title="Quote post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/quote_3.png) center no-repeat;
+}
+
+li[title="Stamp post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/stamp.png) center no-repeat;
+}
+
+li[title="Report post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/report.png) center no-repeat;
+}
+
+li[title="Trash post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/trash.png) center no-repeat;
+}
+
+li[title="Withhold post"]
+{
+	background	: url(http://files.gamebanana.com/bitpit/withhold.png) center no-repeat;
+}
+
+#PostsListModule .PostTools input {
+    height: 10px;
+    margin: 0 3px;
+    vertical-align: bottom;
+}
+
+/*********/
+/* Theme */
+/*********/
+
+html {
+    background: url('data:image/jpeg;base64,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');
+}
+
+body {
+background: rgba(20,20,20,0.9);
+}
+
+#ForumLinks a {
+  display: block;
+}
+
+#HeaderWrapper, #FooterWrapper
+{
+    background: rgba(5,5,5,0.5);
+    padding     : 10px;
+}
+
+#DropdownMenuSubNavigator {
+background: rgb(30, 30, 30);
+box-shadow: 0 0 2px black;
+border-radius: 3px;
+}
+
+body article p {
+color: rgb(80,120,100);
+}
+
+.Module > h3 {
+background: rgb(40, 40, 40);
+color: rgb(120,120,80);
+letter-spacing : 0.1em;
+}
+
+.Module > .Content, #LogMessages, #NavigatorPanes article {
+background: rgb(30,30,30);
+}
+
+.Module {
+    border-radius: 3px;
+    box-shadow: 0 0 2px black;
+}
+
+.Module > h3, .Module .Content {
+    border-radius: 3px;
+}
+
+.Module > .Content
+{
+    border-top : 0;
+}
+
+a:hover {
+    color: rgb(50,100,120);
+}
+
+a {
+    color: rgb(140,100,70);
+}
+
+#PostsListModule article pre, #PostsListModule article blockquote {
+background: rgb(40,40,40);
+border : 0;
+border-radius: 3px;
+box-shadow: 0 0 2px black;
+}
+
+button {
+    background: transparent;
+    border: 1px solid;
+    box-shadow: none;
+    color: rgb(100,50,50);
+    outline:0;
+}
+
+button:hover {
+    color: rgb(30,30,30) !important;
+    border: 1px solid !important;
+    background: rgb(100,50,50);
+}
+
+#Member
+{
+    margin-bottom : 10px;
+    padding : 10px;
+}
+
+#IdentityModule, #CoreStatsModule, #tpm__sViewCount .Module
+{
+    margin : 0;
+    box-shadow : none;
+    text-align : center;
+}
+
+#IdentityModule > h3, #CoreStatsModule > h3, #tpm__sViewCount .Module > h3
+{
+    display : none;
+}
+
+#IdentityModule .Content, #CoreStatsModule .Content, #tpm__sViewCount .Module .Content
+{
+    padding : 0;
+}
+
+#CoreStatsModule dt
+{
+    display : none;
+}
+
+#CoreStatsModule dd
+{
+    display : inline;
+    font-size : 10px;
+}
+
+#CoreStatsModule dd:first-of-type::after
+{
+    content : "\A";
+    white-space : pre-wrap;
+}
+
+#CoreStatsModule dd:first-of-type::before
+{
+    content : "Banana ID : ";
+}
+
+#CoreStatsModule dd:nth-of-type(2)::before
+{
+    content : "Since : ";
+}
+
+#CoreStatsModule dd:last-of-type::before
+{
+    content : "\A(";
+    white-space : pre-wrap;
+}
+
+#CoreStatsModule dd:last-of-type::after
+{
+    content : " old)";
+}
+
+#tpm__sViewCount b.RedColor,
+#tpm__sViewCount img,
+#tpm__sViewCount br
+{
+    display : none;
+}
+
+#tpm__sViewCount .Content center, #tpm__sViewCount font
+{
+    visibility : hidden;
+    font-size : 1px;
+}
+
+#tpm__sViewCount font b
+{
+    visibility : visible !important;
+    display : block;
+    font-size : 10px;
+    font-weight : normal;
+    margin-top : -3px;
+}
+
+#tpm__sViewCount font b::before
+{
+    content : "Has "
+}
+
+#UnlocksModule li img, #UnlocksModule li {
+    width: 35px;
+}
+
+#UnlocksModule li span {
+    display: none;
+}
+
+#MedalsModule li img
+{
+    height : 35px;
+    width : 35px;
+}
+
+#SubmissionCountsModule tr{
+    border-bottom : 0;
+}
+
+#SubmissionCountsModule td{
+    padding : 0;
+}
+
+#GamebananaTab img {
+    -webkit-filter: grayscale(1);
+    opacity: 0.5;
+}
+
+#NetworkLinks #GamebananaTab img:hover {
+    opacity: 1;
+    -webkit-filter: brightness(0.5) grayscale(0);
+}
+
+#NetworkLinks img:hover {
+-webkit-filter: brightness(0.5) sepia(1);
+}
+
+#NetworkLinks img {
+    transition: opacity 0.2s, -webkit-filter 0.4s;
+}
+
+#SectionLinks, #NetworkLinks, #NetworkLinks #GamebananaTab {
+    background: transparent;
+    padding: 0;
+}
+
+#DropdownMenuSubNavigator
+{
+    position: absolute;
+    left: 10px;
+    top: 180px;
+    padding : 0;
+    width : 120px;
+}
+
+#DropdownMenuSubNavigator .sf-menu li:hover,
+#DropdownMenuSubNavigator .sf-menu ul li,
+#DropdownMenuSubNavigator .sf-menu ul li:hover
+{
+    background: transparent;
+}
+
+#DropdownMenuSubNavigator li.TitleOnly
+{
+    display : block;
+    margin : 0;
+    padding : 0;
+    padding-top : 10px;
+    text-indent : 10px;
+    text-transform : uppercase;
+    font-weight : bold;
+}
+
+#DropdownMenuSubNavigator .sf-menu ul
+{
+    position : static;
+    display : block !important;
+    visibility : visible !important;
+    background: rgb(30,30,30);
+    margin-top : 10px;
+    text-transform : none;
+    text-indent : 0;
+}
+
+#DropdownMenuSubNavigator .sf-menu ul li a
+{
+	display : block;
+    border-bottom : 1px solid rgb(20,20,20);
+    border-left : 3px solid transparent;
+}
+
+#DropdownMenuSubNavigator .sf-menu ul li:last-child
+{
+    border-bottom : 0;
+}
+
+#DropdownMenuSubNavigator li.ActiveEntry a
+{
+    font-weight : normal;
+}
+
+#DropdownMenuSubNavigator li.TitleOnly:nth-child(1), #DropdownMenuSubNavigator li.TitleOnly:nth-child(1):hover
+{
+	background : darkslategray;
+}
+
+#DropdownMenuSubNavigator li.TitleOnly:nth-child(1), #DropdownMenuSubNavigator li.TitleOnly:nth-child(1):hover
+{
+	background : darkslategray;
+}
+
+#DropdownMenuSubNavigator .sf-menu li:nth-of-type(1) li a:hover
+{
+	color : darkslategray;
+	border-left-color : darkslategray;
+}
+
+#DropdownMenuSubNavigator li.TitleOnly:nth-child(2), #DropdownMenuSubNavigator li.TitleOnly:nth-child(2):hover
+{
+	background : brown;
+}
+
+#DropdownMenuSubNavigator .sf-menu li:nth-of-type(2) li a:hover
+{
+	color : brown;
+	border-left-color : brown;
+}
+
+#DropdownMenuSubNavigator li.TitleOnly:nth-child(3), #DropdownMenuSubNavigator li.TitleOnly:nth-child(3):hover
+{
+	background : darkgoldenrod;
+}
+
+#DropdownMenuSubNavigator .sf-menu li:nth-of-type(3) li a:hover
+{
+	color : darkgoldenrod;
+	border-left-color : darkgoldenrod;
+}
+
+#DropdownMenuSubNavigator li.TitleOnly:nth-child(4), #DropdownMenuSubNavigator li.TitleOnly:nth-child(4):hover
+{
+	background : rgb(32,112,192);
+}
+
+#DropdownMenuSubNavigator .sf-menu li:nth-of-type(4) li a:hover
+{
+	color : rgb(32,112,192);
+	border-left-color : rgb(32,112,192);
+}
+
+#DropdownMenuSubNavigator li.TitleOnly:nth-child(5), #DropdownMenuSubNavigator li.TitleOnly:nth-child(5):hover
+{
+	background : rgb(112,32,192);
+}
+
+#DropdownMenuSubNavigator .sf-menu li:nth-of-type(5) li a:hover
+{
+	color : rgb(112,32,192);
+	border-left-color : rgb(112,32,192);
+}
+
+#HeaderRow
+{
+	background	: rgb(30,40,30);
+	width		: 100%;
+}
+
+#HeaderRow .Module .Content
+{
+	background	: transparent;
+	box-shadow	: none;
+}
+
+#Menu .Content article
+{
+	display		: flex;
+}
+
+#Menu a
+{
+	display		: flex;
+	align-items	: center;
+	margin		: 0 20px;
+}
+
+#Menu p
+{
+	font		: bold 20px Candara;
+	color		: rgb(120,160,120);
+}
+
+#Menu img
+{
+	-webkit-animation	: pulsate 5s linear infinite;
+}
+
+#Menu a:hover img
+{
+	-webkit-animation	: none;
+	-webkit-filter		: brightness(1.5);
+}
+
+#Menu a:hover p
+{
+	colo	: rgb(100,255,100);
+}
+
+@-webkit-keyframes pulsate
+{
+	0%, 45%, 55%, 100% { -webkit-filter : brightness(1); }
+	50% { -webkit-filter : brightness(2); }
+}

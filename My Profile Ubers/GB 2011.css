@@ -1,0 +1,245 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+
+@font-face
+{
+    font-family: 'Omniscript';
+    src: url('http://files.gamebanana.com/bitpit/omniscriptregular-webfont.ttf');
+}
+
+body
+{
+    background-color: #181A1C;
+    color: #E2E2E2;
+    font: 12px 'Droid Sans';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+div.Module
+{
+    border : 1px solid black;
+    background : black;
+}
+
+.Module > h3
+{
+    border: 1px solid #466675;
+    padding: 4px;
+    font-size: 13px;
+    background: linear-gradient(#334852, #233138);
+    text-transform : capitalize;
+    margin-bottom : 1px;
+}
+
+.Module .Content
+{
+    border: 1px solid #1F2E35;
+    background: #151E23;
+    padding: 2px;
+    margin-left : 0;
+}
+
+#PostsListModule > .Content > ul > li
+{
+    padding: 0;
+    list-style-type: none;
+    margin: 15px;
+    border: 3px solid #666666;
+    outline: 1px solid black;
+    background: #191D1F;
+}
+
+#PostsListModule .PostHeader
+{
+    padding: 10px 0 10px 10px;
+    background: #292F33;
+}
+
+.RichText
+{
+    font-family : 'Omniscript';
+}
+
+#HeaderWrapper, #FooterWrapper
+{
+    background: #222222;
+    border: 1px solid #444444;
+    background: linear-gradient(#222222,#1A1A1A);
+    box-shadow: 0 0 25px #000000;
+}
+
+#HeaderWrapper
+{
+    margin : 10px 0;
+}
+
+#FooterWrapper
+{
+    opacity: 0.3;
+}
+
+#FooterWrapper:hover
+{
+    opacity : 1;
+}
+
+button
+{
+    font:bold 15px 'Droid Sans';
+    padding:3px;
+    background:#333333;
+    color:#FFD800;
+    outline:1px solid black;
+    border:2px outset #FFD800;
+    cursor:pointer;
+    background:linear-gradient(#444,#222);
+}
+
+button:hover
+{
+    border:2px solid #FD70E1;
+    color:#FD70E1;
+    background:linear-gradient(#444,#222);
+}
+
+#HeaderWrapper, #FooterWrapper
+{
+    background: #222222;
+    border: 1px solid #444444;
+    background: linear-gradient(#222222,#1A1A1A);
+    box-shadow: 0 0 25px #000000;
+}
+
+#HeaderWrapper
+{
+    margin : 10px 0;
+}
+
+#FooterWrapper
+{
+    opacity: 0.3;
+}
+
+#FooterWrapper:hover
+{
+    opacity : 1;
+}
+
+button
+{
+    font:bold 15px 'Droid Sans';
+    padding:3px;
+    background:#333333;
+    color:#FFD800;
+    outline:1px solid black;
+    border:2px outset #FFD800;
+    cursor:pointer;
+    background:linear-gradient(#444,#222);
+}
+
+button:hover
+{
+    border:2px solid #FD70E1;
+    color:#FD70E1;
+    background:linear-gradient(#444,#222);
+}
+
+#NavigatorTabs span:nth-child(2)
+{
+    display : none;
+}
+
+#NavigatorTabs li
+{
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    padding: 2px;
+    margin-right: 5px;
+    cursor: pointer;
+    outline: 1px solid black;
+    background: #222222;
+    border: 1px solid #454545;
+}
+
+#NavigatorTabs li:hover
+{
+    background: #4D4D4D;
+    border: 1px solid #888888;
+}
+
+#NavigatorTabs li.ActiveTab
+{
+    border: 1px solid #466675;
+    background: linear-gradient(#334852, #233138);
+}
+
+#NavigatorTabs li.TabHasUpdates
+{
+    background: #701E24;
+    border: 1px solid #F1404C;
+}
+
+#NavigatorTabs li.TabHasUpdates:hover
+{
+    background: #C73640;
+    border: 1px solid #FC8F96;
+}
+
+.PageNavigation
+{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #294149;
+    outline: 1px solid black;
+    background: linear-gradient(#1C2A30, #141D21);
+}
+
+input
+{
+    font: 14px 'Courier New';
+    color: #BEBEBE;
+    margin-right: 3px;
+    padding: 3px;
+    outline: 1px solid #444444;
+    border: 2px solid black;
+    background: #111111;
+}
+
+.PageNavigation li:not(.InBetweenPages)
+{
+    display: inline;
+    outline: 1px solid #344E59;
+    border: 1px solid black;
+    background: #0F161A;
+    margin-right: 3px;
+}
+
+.PageNavigation li.CurrentPage
+{
+    outline: 2px solid #4A7080;
+    padding: 1px 5px 1px 5px;
+    background: #1B2830;
+}
+
+.PageNavigation li:not(.InBetweenPages):hover
+{
+    outline: 2px solid #4A7080;
+}
+
+.RichText blockquote
+{
+    border: 1px solid #0B1012;
+    font-style: italic;
+    font-size: 11px;
+    color: grey;
+    padding: 5px;
+    background: #0E1417;
+    border-left: 2px solid #666666;
+    opacity : 1;
+}

@@ -1,0 +1,129 @@
+/******************************************/
+/* Roy Darkle                             */
+/* Original theme for Steam by Ryan Thaut */
+/* CSS by ParaBolt                        */
+/* Version : 05-04-2022                   */
+/******************************************/
+
+:root
+{
+	--Color1                           : rgb(19 20 22);
+	--MainGradient                     : linear-gradient(var(--Color1) 10%, rgb(14 47 80), var(--Color1) 90%);
+	--BodyBackground                   : var(--MainGradient);
+	--BodyWrapperBackground            : unset;
+	--PrimaryNavBackgroundColor        : var(--Color1);
+	--SecondaryNavBackgroundColor      : var(--Color1);
+	--AuxiliaryColumnBackground        : unset;
+	--AuxiliaryColumnModuleBorderColor : rgb(255 255 255);
+	--ButtonBackground                 : linear-gradient(rgb(67 67 67), rgb(55 55 55) 50%, rgb(36 36 36) 50%, rgb(13 13 13));
+	--ButtonHoverBackgroundColor       : linear-gradient(rgb(0 65 131), rgb(0 54 109) 50%, rgb(0 36 73) 50%, rgb(0 15 31));
+	--InputBackgroundColor             : var(--Color1);
+	--InputHoverBackgroundColor        : var(--Color1);
+	--InputFocusBackgroundColor        : var(--Color1);
+	--TabBackground                    : linear-gradient(rgb(65 65 65), rgb(20 21 23));
+	--NavPaneTitleFontSize             : 1.25em;
+	--LinkColor                        : rgb(201 224 250);
+	--LinkHoverColor                   : rgb(255 255 255);
+}
+
+.PageModule
+{
+	margin        : 1em;
+	border-radius : 3px;
+	box-shadow    : 0 0 0 1px black;
+	border        : 1px solid rgb(255 255 255);
+	padding       : 0;
+}
+
+.PageModule > h2
+{
+	background    : linear-gradient(rgb(126 123 118), rgb(77 78 79) 50%, rgb(35 35 35) 50%);
+	margin-bottom : 0;
+	color         : #FFF;
+	text-align    : center;
+}
+
+#SecondaryNav header
+{
+	background : linear-gradient(rgb(126 123 118), rgb(77 78 79) 50%, rgb(35 35 35) 50%);
+	color      : #FFF;
+}
+
+.PageModule > h2::after
+{
+	content : unset;
+}
+
+.PageModule > .Content
+{
+	background : var(--MainGradient);
+}
+
+.PostsListModule .Posts > li .PostTools
+{
+	opacity : 1;
+}
+
+.PostTools
+{
+	--ButtonBackground           : linear-gradient(rgb(159 159 159), rgb(103 103 103) 50%, rgb(42 42 42) 50%, rgb(97 97 97));
+	--ButtonHoverBackgroundColor : linear-gradient(rgb(109 153 205), rgb(49 97 152) 50%, rgb(20 40 62) 50%, rgb(46 91 143));
+}
+
+.PostTools button
+{
+	box-shadow : 0 0 0 1px rgb(255 255 255 / 50%) inset, 0 0 0 1px black;
+}
+
+button
+{
+	text-transform : uppercase;
+}
+
+button,
+[contenteditable],
+input
+{
+	box-shadow     : 0 0 2px rgba(255 255 255 / 50%) inset, 0 0 5px rgb(0 64 128);
+}
+
+.ExtendedContentButton
+{
+	background : var(--ButtonBackground);
+}
+
+.Tab
+{
+	border        : 0;
+	box-shadow    : 0 0 2px rgba(255 255 255 / 50%) inset, 0 0 0 1px black;
+	margin-bottom : -1px;
+}
+
+input:checked + .Tab
+{
+	border  : 0;
+	z-index : 2;
+}
+
+.Tabs
+{
+	overflow      : hidden;
+	flex-wrap     : wrap;
+	border-bottom : 0;
+}
+
+.Tab:hover
+{
+	--TabBackground : linear-gradient(rgb(0 64 128), rgb(19 20 22));
+}
+
+.Tabs::after
+{
+	content           : "";
+	width             : 100%;
+	height            : 1px;
+	page-break-before : always;
+	align-self        : flex-end;
+	background        : #404040;
+	z-index           : 1;
+}

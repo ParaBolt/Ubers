@@ -1,0 +1,540 @@
+/***********/
+/* @ Rules */
+/***********/
+
+
+
+@font-face
+{
+	font-family		: 'Nosifer';
+	font-style		: normal;
+	font-weight		: 400;
+	src			: local('Nosifer'), local('Nosifer-Regular'), url(http://fonts.gstatic.com/s/nosifer/v4/fwXLs672oucg0HdjY9ErAg.woff) format('woff');
+}
+
+@font-face
+{
+	font-family		: 'Denk One';
+	font-style		: normal;
+	font-weight		: 400;
+	src			: local('Denk One'), local('DenkOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/denkone/v2/ahLepySZXU_KFQaVZ6XDvPesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+
+
+/****************/
+/* Remove Stuff */
+/****************/
+
+
+
+div#TopBanner,
+div#Footer,
+div#SubdomainMenus,
+div#SectionLinks,
+div#SiteSearch,
+div#ImportantLinks,
+ul#ImportantLinks
+{
+	display			: none !important;
+}
+
+
+
+/********/
+/* Body */
+/********/
+
+
+
+body
+{
+	background		: url('http://fc08.deviantart.net/fs71/f/2012/113/9/0/fiery_flower___hdr_render_by_thargor6-d4xbva9.jpg') fixed no-repeat !important;
+	background-size		: cover !important;
+}
+
+
+
+/*********/
+/* Links */
+/*********/
+
+
+
+a
+{
+	color			: slateblue;
+}
+
+a:hover
+{
+	color			: white;
+	text-decoration		: underline;
+	text-shadow		: 0px 0px 5px;
+}
+
+
+
+/***********/
+/* Buttons */
+/***********/
+
+
+
+button
+{
+	background		: linear-gradient(#111,#000);
+	border			: 1px solid !important;
+	box-shadow		: 0px 0px 5px inset;
+	color			: darkgoldenrod !important;
+}
+
+button:hover
+{
+	border			: 1px solid !important;
+	color			: goldenrod !important;
+}
+
+
+
+/****************/
+/* Base Styling */
+/****************/
+
+
+
+div#Header
+{
+	background		: rgba(0,0,0,0.7);
+	border			: 1px solid black;
+	box-shadow		: 0px 0px 10px black;
+	margin			: 20px 0px;
+}
+
+div#Header
+{
+	padding			: 20px;
+}
+
+div#CoreStrip
+{
+	background		: transparent;
+}
+
+
+
+/*******************/
+/* GB Logo Changes */
+/*******************/
+
+
+
+div#Logo
+{
+	float			: right;
+}
+
+
+div#Logo a img
+{
+	content			: url('http://i.cubeupload.com/EZgqC6.png');
+}
+
+div#Logo p
+{
+	height			: 1.2em;
+	overflow		: hidden;
+}
+
+div#Logo p::before
+{
+	content			: "The Online Abode of Raving Idiots\A";
+	white-space		: pre-wrap;
+}
+
+
+
+/********************/
+/* Page Title Edits */
+/********************/
+
+
+
+h2#PageTitle
+{
+	padding-top		: 25px;
+	font-family		: 'Nosifer';
+	font-variant		: small-caps;
+	font-size		: 50px;
+	line-height		: 50px;
+	text-align		: center;
+	text-shadow		: 0px 5px 20px orange, 0px -5px 20px orangered, 0px 5px 20px orange, 0px -5px 20px orangered;
+}
+
+div#TitleBreadcrumb
+{ 
+	font-family		: 'Nosifer';
+	font-variant		: small-caps;
+	font-size		: 25px !important;
+	text-align		: center;
+}
+
+#DropdownMenuSubNavigator ul
+{
+	text-align		: center;
+}
+
+#DropdownMenuSubNavigator ul ul
+{
+	text-align		: left;
+}
+
+#DropdownMenuSubNavigator ul li
+{
+	float			: none;
+	display			: inline-block;
+}
+
+#DropdownMenuSubNavigator > ul > li
+{
+	padding			: 10px;
+	width			: 100px;
+	background		: linear-gradient(#111,#000);
+	border			: 1px solid;
+	box-shadow		: 0px 0px 5px inset;
+	color			: orangered;
+}
+
+#DropdownMenuSubNavigator > ul > li:hover
+{
+	cursor			: pointer;
+	background		: linear-gradient(#111,#000);
+	border			: 1px solid;
+	color			: orange;
+}
+
+
+
+/****************/
+/* Avatar Edits */
+/****************/
+
+
+
+html#Club_Profile div.AvatarWrapper div.AvatarTop,
+html#Club_Profile div.AvatarWrapper div.AvatarBase,
+html#Club_Profile div.AvatarWrapper img.LevelBar
+{
+	display			: none;
+}
+
+html#Club_Profile div.AvatarWrapper.Online img.Avatar
+{
+	border			: 2px solid orange;
+	border-radius		: 99px;
+}
+
+html#Club_Profile div.AvatarWrapper.Offline img.Avatar
+{
+	border			: 2px solid #999999;
+	border-radius		: 99px;
+}
+
+html#Club_Profile div.AvatarWrapper img.Avatar:hover
+{
+	border			: 2px solid orangered;
+	box-shadow		: none;
+}
+
+
+
+/*************************/
+/* Global Module Styling */
+/*************************/
+
+
+
+div.Module > h3, div#MainContent, div.Module div.Content,
+div#PostAddFormRequesterModule div.Content,
+div#PostsListModule div.Content,
+div#PostsListModule div.Content > ul > li,
+div#PostsListModule > div.Content > ul > li > div.PostHeader,
+div#PostsListModule > div.Content > ul > li > article,
+div#shout div.Content
+{
+	background		: none;
+	border			: none;
+	box-shadow		: none;
+}
+
+div.Module,
+body article blockquote
+{
+	background		: rgba(0,0,0,0.8);
+
+	border			: 1px solid black;
+	box-shadow		: 0px 0px 10px black;
+
+	transition		: all 0.3s ease-in-out;
+}
+
+div.Module, div#PostsListModule > ul > li
+{
+	margin			: 20px 10px;
+}
+
+div.Module > h3, div#PostsListModule div.PostHeader
+{
+	margin-bottom		: 5px;
+}
+
+div.Module > h3,
+div.Module > h3 > a
+{
+	color			: yellow;
+	font-family		: 'Denk One';
+	font-size		: 20px;
+	text-shadow		: 0px 0px 3px red, 0px 0px 3px red, 0px 0px 3px red, 0px 0px 3px red, 0px 0px 3px red;
+}
+
+div#PostAddFormRequesterModule
+{
+	text-align		: center;
+}
+
+
+
+/***********************/
+/* Team Members Module */
+/***********************/
+
+
+
+html#Club_Profile div#TeamMembersListModule td.Member
+{
+	width			: 250px;
+}
+
+html#Club_Profile div#TeamMembersListModule thead
+{
+	display			: none;
+}
+
+div#TeamMembersListModule table tr:nth-child(2n)
+{
+	background		: transparent;
+}
+
+div#TeamMembersListModule table, td
+{
+	border			: 0;
+}
+
+
+
+/************/
+/* Shoutbox */
+/************/
+
+
+
+div#tpm__sShoutbox > div.Module > h3 > a
+{
+	height			: 1.1em;
+	overflow		: hidden;
+	display			: inline-block;
+}
+
+div#tpm__sShoutbox > div.Module > h3 > a::before
+{
+	content			: 'Shitbox\A';
+	white-space		: pre-wrap;
+}
+
+div#shout table,
+div#shout tr,
+div#shout td
+{
+	background		: transparent;
+	border			: 0;
+}
+
+div#shout td:nth-of-type(1)
+{
+	color			: yellowgreen;
+}
+
+div#shout td:nth-of-type(2)
+{
+	color			: tomato;
+}
+
+
+
+/*********************/
+/* Posts List Module */
+/*********************/
+
+
+
+div#PostsListModule article p
+{
+	color			: red;
+	font-family		: 'Century Gothic';
+}
+
+div#PostsListModule article blockquote p
+{
+	color			: orangered;
+}
+
+div.PostTools
+{
+	float			: right;
+}
+
+#PostsListModule blockquote > p > strong:after
+{
+	display			: block;
+	content			: "...";
+	margin-bottom		: 5px;
+}
+
+#PostsListModule blockquote
+{
+	max-height		: 3.5em;
+	overflow		: hidden;
+	transition		: max-height 1s ease-in-out;
+}
+
+#PostsListModule blockquote:hover
+{
+	max-height		: 100em;
+}
+
+div#PostsListModule ul.PostStamps li
+{
+	background		: black;
+	border			: 1px solid orangered;
+	color			: tomato;
+}
+
+
+
+/*********/
+/* Modal */
+/*********/
+
+
+
+div#Modal
+{
+	position		: fixed;
+	z-index			: 999;
+	top			: 150px;
+	left			: 400px;
+	width			: 400px;
+	background		: rgba(0,0,0,0.8);
+	border			: 1px solid black;
+	box-shadow		: 0px 0px 10px black;
+}
+
+div#Modal fieldset#Article
+{
+	background		: transparent;
+	border			: none;
+}
+
+div.InputHelp,
+fieldset#IsAnonymous
+{
+	display			: none;
+}
+
+fieldset
+{
+	text-align		: center;
+}
+
+
+
+/**************/
+/* Scrollbars */
+/**************/
+
+
+
+::-webkit-scrollbar
+{
+	width			: 10px;
+}
+
+::-webkit-scrollbar-track
+{
+	background		: transparent;
+}
+
+body::-webkit-scrollbar-track
+{
+	background		: black;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background		: rgb(64,32,0);
+	border			: 1px solid orange;
+	box-shadow		: 0px 0px 10px orange;
+}
+
+
+
+/*****************/
+/* Member Titles */
+/*****************/
+
+
+
+div#PostsListModule div.Poster a[href*="1244443"]:after		/* Ring-A-Ding Rampage */
+{
+	content			: " (Taste Me)";
+}
+
+div#PostsListModule div.Poster a[href*="1235118"]:after		/* Teh Thrasher */
+{
+	content			: " (MetalGoof)";
+}
+
+div#PostsListModule div.Poster a[href*="1291525"]:after		/* Emilio */
+{
+	content			: " (No Show)";
+}
+
+div#PostsListModule div.Poster a[href*="1320279"]:after		/* Clener74 */
+{
+	content			: " (Invisible Upic Guy)";
+}
+
+div#PostsListModule div.Poster a[href*="1332419"]:after		/* Raul! */
+{
+	content			: " (Aye Aye Cap'n!)";
+}
+
+div#PostsListModule div.Poster a[href*="1298547"]:after		/* Quinsicut */
+{
+	content			: " (Banged Up Randomite)";
+}
+
+div#PostsListModule div.Poster a[href*="1370489"]:after		/* Sammeh */
+{
+	content			: " (FaceFucker)";
+}
+
+div#PostsListModule div.Poster a[href*="1253092"]:after		/* R E X */
+{
+	content			: " (You Don't Say?)";
+}
+
+div#PostsListModule div.Poster a[href*="1370137"]:after		/* ElysiumLeoSK */
+{
+	content			: " (Eat Dick, MORON!)";
+}

@@ -1,0 +1,99 @@
+@font-face
+{
+	font-family	: 'Carbon Phyber';
+	src		: url('http://files.gamebanana.com/bitpit/carbonphyber.ttf');
+}
+
+body
+{
+	background		: url('http://files.gamebanana.com/bitpit/bg2_2.jpg');
+}
+
+div.Module
+{
+	background		: #1A1C1F;
+	border			: 1px solid rgba(192, 128, 255, 0.4);
+	box-shadow		: 0px 0px 2px black inset, 0px 0px 10px black;
+}
+
+div.Module > h3
+{
+	background		: rgba(192, 128, 255, 0.2);
+	font-family		: Candara;
+	color			: tan;
+	letter-spacing		: 0;
+}
+
+div.Module div.Content
+{
+	background		: rgba(64, 32, 128, 0.2);
+}
+
+body article p
+{
+	font-family		: Calibri;
+	color			: tan;
+	font-size		: 13px;
+}
+
+#NavigatorPanes > li
+{
+	background		: rgb(32, 16, 16);
+	font-size		: 11px;
+	font-family		: 'Calibri';
+		border			: 1px solid rgb(112, 80, 80);
+	box-shadow		: 0px 0px 2px black inset, 0px 0px 10px black;
+}
+
+#NavigatorPanes > li > h4
+{
+	background		: rgb(96, 64, 64);
+	color			: thistle;
+	font-family		: 'Candara';
+	letter-spacing		: 0;
+	padding : 10px;
+}
+
+#NavigatorTabs li:hover, #NavigatorTabs li.ActiveTab
+{
+	background		: rgb(32, 64, 32);
+	border			: 1px solid rgb(48, 96, 48);
+}
+
+#NavigatorTabs li
+{
+	background	: rgb(32, 32, 64);
+	box-shadow	: 0 0 3px black, 0 0 1px black inset;
+	border		: 1px solid rgb(48, 48, 96);
+}
+
+#PageTitleWrapper h1
+{
+	font		: 60px/60px 'Carbon Phyber';
+	color		: rgb(112, 56, 168);
+	text-shadow	: 0 0 1px rgb(32, 16, 48), 0 0 1px rgb(32, 16, 48), 0 0 1px rgb(32, 16, 48), 0 0 1px rgb(32, 16, 48), 0 0 1px rgb(32, 16, 48), 0 0 2px rgb(32, 16, 48), 0 0 2px rgb(32, 16, 48), 0 0 2px rgb(32, 16, 48), 0 0 2px rgb(32, 16, 48), 0 0 5px rgb(32, 16, 48), 0 0 5px rgb(32, 16, 48), 0 0 10px rgb(32, 16, 48);
+}
+
+a
+{
+	color			: rgb(128, 192, 192);
+}
+
+a:hover
+{
+	color			: rgb(192, 192, 224);
+}
+
+#PostsListModule ul.PostStamps li
+{
+	background		: transparent;
+	display			: inline-block;
+	font			: 10px 'Candara';
+	box-shadow		: 1px 0 violet, 1px 0 violet inset;
+	border-radius		: 99px;
+	padding-right		: 4px;
+	color			: rgb(128, 192, 192);
+	margin			: 0;
+	padding			: 0;
+	padding-right		: 4px;
+}

@@ -1,0 +1,163 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,800);
+
+body
+{
+	background		: black url('http://www.themebin.com/wp-content/uploads/hd-wallpapers/1920x1200/Ultraparallel-Quasar-Blue-1920x120.jpg') fixed no-repeat;
+	background-size		: cover;
+	font-family		: 'Raleway';
+}
+ 
+.Module > h3,
+.Module .Content,
+.Module > .LogMessages,
+#NavigatorPanes article,
+#NavigatorPanes h4,
+.Modal .Toolbar li,
+.Modal .Contents,
+#DropdownMenuSubNavigator,
+#PageTitleWrapper,
+#TitleBreadcrumb,
+#NetworkLinks
+{
+	background		: transparent;
+}
+ 
+.Module,
+#PostsListModule .Content > ul > li,
+#PostsListModule .PageNavigation,
+#NavigatorPanes > li, 
+.tooltipster-default
+{
+	background		: rgba(0,0,0,.5);
+	border-radius		: 20px;
+	border			: 2px solid rgb(64,128,128)
+}
+ 
+.tooltipster-default
+{
+	background		: rgba(0,0,0,.7);
+}
+ 
+#PostsListModule
+{
+	background		: transparent;
+	border			: 0;
+}
+ 
+.Module > h3
+{
+	letter-spacing		: 0;
+	color			: white;
+}
+ 
+#PostsListModule .Content > ul > li
+{
+	transform		: scale(.95);
+	margin			: 10px 0;
+	transition		: all .2s ease-in-out;
+}
+ 
+#PostsListModule .Content > ul > li:hover
+{
+	transform : none;
+}
+ 
+#PostsListModule ul.PostStamps li
+{
+	border-left		: 2px solid rgb(192,192,255);
+	border-right		: 2px solid rgb(192,192,255);
+	background		: transparent;
+	border-radius		: 99px;
+	font-size		: 10px;
+	padding			: 0 5px 0 0;
+}
+ 
+/* Avatar */
+ 
+.Avatar
+{
+	border-radius	: 99px;
+	overflow	: hidden;
+	border		: 2px solid;
+}
+ 
+.Avatar.Online
+{
+	border-color	: rgb(0,224,255);
+}
+ 
+.Avatar.Offline
+{
+	border-color	: grey;
+}
+ 
+.Avatar:hover
+{
+	border-color	: white;
+	box-shadow	: 0 0 10px rgb(192,192,255);
+}
+
+/* Buttons */
+
+.AjaxFormRequester
+{
+	font-size	: 16px;
+	width		: auto;
+}
+ 
+#PostAddFormRequesterModule, .Modal fieldset, #PmMeModule
+{
+	text-align	: center;
+}
+ 
+.Modal fieldset *:not(button)
+{
+	text-align	: initial;
+}
+ 
+button
+{
+	background	: linear-gradient(rgb(0,150,150), rgb(0,100,100));
+	border		: 2px solid rgb(0,150,150);
+	color		: rgb(255,255,96);
+	border-radius	: 10px;
+	font-family	: 'Raleway';
+}
+ 
+button:hover
+{
+	background	: linear-gradient(rgb(0,100,100), rgb(0,75,75));
+	border		: 2px solid rgb(0,100,100) !important;
+	color		: white !important;
+}
+ 
+.Modal .CloseModal
+{
+	background	: linear-gradient(rgb(150,75,75), rgb(100,50,50));
+	border		: 2px solid rgb(150,75,75);
+	color		: rgb(255,128,0);
+}
+ 
+.Modal .CloseModal:hover
+{
+	background	: linear-gradient(rgb(100,50,50), rgb(75,35,35));
+	border		: 2px solid rgb(100,50,50) !important;
+}
+
+.SmallButton
+{
+	background	: linear-gradient(rgb(0,75,150), rgb(0,50,100));
+	border		: 2px solid rgb(0,75,150);
+	color		: rgb(0,192,255);
+}
+
+.SmallButton:hover
+{
+	background	: linear-gradient(rgb(0,50,100), rgb(0,35,75));
+	border		: 2px solid rgb(0,50,100) !important;
+}
+
+.SmallButton + span
+{
+	display		: none;
+}

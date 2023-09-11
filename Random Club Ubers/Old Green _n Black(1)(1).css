@@ -1,0 +1,108 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 14:30:42 Aug 9, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 8:10:29 Mar 1, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+.GenericPreviewListModule li:nth-child(2n+1), 
+body, div.Module > h3, .Content, .PageNavigation, #PostsListModule .Content > ul > li, .PostHeader, #PostsListModule article, 
+tbody td,
+#PostsListModule div.PostHeader,
+#PostsListModule article,
+div.Module div.Content,
+#NavigatorPanes h4,
+.MultipleRowListModule div.PageNavigation,
+#PostsListModule div.PostHeader,
+#LevelsModule h1,
+div.Module h3,
+#PostAddFormRequesterModule button.ModalLauncher,
+#PostAddFormModule button,
+body article blockquote,
+#LevelsModule h1,
+.ModalToolbar, 
+.Modal
+{
+
+  background-color: #00a8ff;
+  background: url(/web/20130809143042/http://files.gamebanana.com/Club/uberstyles/images/linear_bg_2.png);
+  background-repeat: repeat-x;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000000), to(#111111));
+  background: -webkit-linear-gradient(top, #000000, #111111);
+  background: -moz-linear-gradient(top, #000000, #111111);
+  background: -ms-linear-gradient(top, #000000, #111111);
+  background: -o-linear-gradient(top, #000000, #111111);
+  border : green;
+  border-radius: 16px;
+  box-shadow: 0px 0px 10px #00ff18 inset;
+}
+
+#MainContent {
+    box-shadow:none;
+    border:none;
+    background:none;
+}
+
+div.AvatarWrapper { position: relative; width: 74px; height: 52px; }
+
+div.AvatarWrapper a, img.Avatar, img.OnlineAvatar, img.OfflineAvatar, div.AvatarWrapper a:hover, img.Avatar:hover, img.OnlineAvatar:hover, img.OfflineAvatar:hover { border: 0; outline: 0; }
+
+div.AvatarWrapper div.AvatarTop { position: absolute; top: 0; right: 0; }
+
+div.AvatarWrapper div.AvatarMiddle { top: 0; left: 0; }
+
+div.AvatarWrapper div.AvatarBase, div.AvatarWrapper img.OnlineIndicator, div.AvatarWrapper div.AvatarMiddle img.LevelBar { display: none; }
+
+div.AvatarWrapper img.Avatar { background: url('/web/20130809143042/http://files.gamebanana.com/bitpit/avatar_offline.png') no-repeat top left; padding-left: 10px; margin: 0; box-shadow: none !important; width: 52px; height: 52px; }
+
+div.Online img.Avatar { background: url('/web/20130809143042/http://files.gamebanana.com/bitpit/avatar_online.png') no-repeat top left !important; }
+
+div.AvatarWrapper div.AvatarTop { position: absolute; top: 0; right: 0; width: 5px; height: 52px; overflow: hidden; }
+
+div.AvatarWrapper div.AvatarTop img.PointsLevelBar { width: 5px; height: 52px; background-image: url('/web/20130809143042/http://files.gamebanana.com/bitpit/avatar_points.png'); }
+
+img.PointsLevelBar1 { background-position: 0 0; }
+
+img.PointsLevelBar2 { background-position: -5px 0; }
+
+img.PointsLevelBar3 { background-position: -10px 0; }
+
+img.PointsLevelBar4 { background-position: -15px 0; }
+
+img.PointsLevelBar5 { background-position: -20px 0; }
+
+img.PointsLevelBar6 { background-position: -25px 0; }
+
+img.PointsLevelBar7 { background-position: -30px 0; }
+
+img.PointsLevelBar8 { background-position: -35px 0; }
+
+img.PointsLevelBar9 { background-position: -40px 0; }
+
+body { text-color: 0 0 3px red; }
+body { text-shadow: #FF0000; }
+body {  }
+
+body article p
+{
+color : rgb(225,0,0);
+font-family: "Century Gothic", "CenturyGothic", "AppleGothic", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+
+}
+
+h2#PageTitle { 
+font-size: 40px;
+line-height: 50px;
+text-shadow: 0px 0px 20px green, 0px 0px 40px green;
+font-family: "Century Gothic", "CenturyGothic", "AppleGothic", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+div#TitleBreadcrumb { 
+font-size: 15px;
+}

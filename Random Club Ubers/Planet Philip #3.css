@@ -1,0 +1,678 @@
+@import "http://ilikestargateswebsite.webs.com/CSS/spoilerwhite.css";
+
+/**********/
+/* Layout */
+/**********/
+
+
+div#Wrapper, div#ColumnGrid
+{
+	width		: auto;
+}
+
+div#Row1
+{
+	margin-bottom	: 20px;
+}
+
+div.EquiCol
+{
+	width		: 375px;
+	margin-left	: 20px;
+}
+
+div.ThinCol
+{
+	width		: 90px;
+	margin-left	: 20px;
+}
+
+div.WideCol
+{
+	width		: 1065px;
+	margin-left	: 20px;
+}
+
+div.SingleRowProfileModule:not(#LeadershipModule)
+{
+	margin-top	: 20px;
+}
+
+div.SingleRowProfileModule:not(#LeadershipModule) div.Content
+{
+	height		: 200px;
+}
+
+div#TopBanner,
+div#Footer,
+div#SubdomainMenus,
+div#SectionLinks,
+div#SiteSearch,
+div#ImportantLinks,
+div#TitlebarBanner
+{
+	display		: none;
+}
+
+
+/***********/
+/* Content */
+/***********/
+
+
+
+body
+{
+	background	: #1B1B1B !important;
+	color		: #999999;
+}
+
+div#CoreStrip
+{
+	margin-top	: 20px;
+	padding		: 20px;
+	background	: #1B1B1B;
+	border		: 1px solid #333333;
+}
+
+div#Logo
+{
+	float		: right;
+}
+
+a#TheSacredBanana
+{
+	position	: absolute;
+	right		: 320px;
+}
+
+div#MainContent,
+div.Module > h3,
+div.Module div.Content,
+div#PostAddFormRequesterModule,
+div#PostsListModule,
+div#PostsListModule div.Content > ul > li,
+div#PostsListModule div.PostHeader,
+div#PostsListModule article,
+div#PostsListModule blockquote
+{
+	background	: transparent;
+	border		: 0;
+	box-shadow	: none;
+}
+
+div#PostsListModule div.Content > ul > li
+{
+	margin-bottom	: 20px;
+}
+
+div.Module,
+div#PostsListModule div.Content > ul > li
+{
+	border		: 1px solid #333333;
+}
+
+div.Module:hover,
+div#PostsListModule div.Content > ul > li:hover
+{
+	border		: 1px solid #0063FF;
+}
+
+div.Module > h3, div#PostsListModule div.PostHeader
+{
+	border-bottom	: 1px solid #333333;
+}
+
+div#PostsListModule footer
+{
+	border-top	: 1px solid #333333;
+	padding-top	: 15px;
+}
+
+div#PostsListModule div.PostHeader a
+{
+	color		: white;
+}
+
+div#PostsListModule div.PostHeader a:hover
+{
+	color		: #0063FF;
+}
+
+div#PostsListModule article a
+{
+	color		: white;
+}
+
+div#PostsListModule article a:hover
+{
+	text-decoration : underline;
+}
+
+div#PostsListModule article blockquote
+{
+	background	: #151515;
+	border		: 1px solid #333333;
+}
+
+div#PostsListModule article blockquote p strong
+{
+	color		: #00AAFF;
+}
+
+div#PostsListModule ul.PostStamps li
+{
+	border		: 1px solid #333333;
+	border-radius	: 0;
+	background	: none;
+	color		: #999999;
+}
+
+div#PostsListModule ul.PostStamps li:hover
+{
+	border		: 1px solid #0033FF;
+	background	: none;
+	color		: #00AAFF;
+}
+
+div#IdentityModule article
+{
+	padding-top	: 40px;
+}
+
+div#BlurbText
+{
+	height		: 180px;
+	overflow-y	: hidden;
+}
+
+div#BlurbText:hover
+{
+	overflow-y	: scroll;
+}
+
+div#StatsModule dt
+{
+	margin-top		: 15px;
+	border-bottom		: 1px solid #333333;
+	color			: #666666;
+}
+
+
+
+/******************************************/
+/* Team Members Module, Leadership Module */
+/******************************************/
+
+
+
+#Club_Profile #LeadershipModule h3,
+#Club_Profile #LeadershipModule .Owner > a,
+#Club_Profile #LeadershipModule li > a,
+#Club_Profile #LeadershipModule dt,
+#Club_Profile #TeamMembersListModule h3,
+#Club_Profile #TeamMembersListModule .Member > a,
+#Club_Profile #TeamMembersListModule thead,
+#Club_Profile #TeamMembersListModule td:nth-of-type(2),
+#Club_Profile #TeamMembersListModule td:nth-of-type(3)
+{
+	display			: none;
+}
+
+#Club_Profile #TeamMembersListModule td,
+#Club_Profile #TeamMembersListModule table,
+#Club_Profile #TeamMembersListModule tr
+{
+	border			: 0;
+	background		: transparent;
+}
+
+#Club_Profile #LeadershipModule li
+{
+	margin			: 0;
+	margin-top		: 10px;
+}
+
+#Club_Profile #LeadershipModule ul
+{
+	padding			: 0;
+}
+
+#Club_Profile #LeadershipModule dd,
+#Club_Profile #LeadershipModule dl
+{
+	margin			: 0;
+}
+
+#Club_Profile #LeadershipModule
+{
+	margin-bottom		: 20px;
+}
+
+#Club_Profile #LeadershipModule .Content:before
+{
+	content			: "Leaders";
+}
+
+#Club_Profile #TeamMembersListModule .Content:before
+{
+	content			: "Members";
+}
+
+#Club_Profile #LeadershipModule .Content:before,
+#Club_Profile #TeamMembersListModule .Content:before
+{
+	display			: block;
+	margin-bottom		: 15px;
+	padding-bottom		: 5px;
+	border-bottom		: 1px solid #333333;
+	text-align		: center;
+	font-weight		: bold;
+	font-size		: 14px;
+}
+
+#Club_Profile .LevelBar,
+#Club_Profile .OnlineIndicator
+{
+	display			: none;
+}
+
+#Club_Profile .AvatarWrapper.Online img
+{
+	border			: 2px solid #00AAFF;
+	border-radius		: 99px;
+}
+
+#Club_Profile .AvatarWrapper.Offline img
+{
+	border			: 2px solid #999999;
+	border-radius		: 99px;
+}
+
+#Club_Profile .AvatarWrapper img:hover
+{
+	border			: 2px solid white;
+	box-shadow		: none !important;
+}
+
+#Club_Profile div.AvatarWrapper img.Avatar
+{
+	margin-left		: 7px;
+}
+
+
+
+/**********************/
+/* Post Form Launcher */
+/**********************/
+
+
+
+div#PostAddFormRequesterModule button,
+div#PostAddFormModule button
+{
+	width			: 95%;
+	border			: 1px solid #333333;
+	border-radius		: 0;
+	outline			: 0;
+	box-shadow		: none;
+	color			: #999999;
+	margin			: 20px;
+}
+
+div#PostAddFormRequesterModule button:hover,
+div#PostAddFormModule button:hover
+{
+	color			: #00AAFF !important;
+	border			: 1px solid #0033FF !important;
+}
+
+
+
+/*********/
+/* Modal */
+/*********/
+
+
+
+#Modal
+{
+	border			: 0;
+	box-shadow		: none;
+	background		: #1B1B1B;
+}
+
+#PostAddFormModule,
+#PostEditFormModule,
+#PostQuoteFormModule
+{
+	border			: 0 !important;
+}
+
+#PostAddFormModule fieldset,
+#PostEditFormModule fieldset,
+#PostQuoteFormModule fieldset
+{
+	border			: 1px solid #333333;
+	background		: #151515;
+}
+
+#PostAddFormModule legend,
+#PostEditFormModule legend,
+#PostQuoteFormModule legend
+{
+	text-align		: center;
+	color			: #999999;
+}
+
+.InputHelp,
+#PostAddFormModule legend sup,
+#PostEditFormModule legend sup,
+#PostQuoteFormModule legend sup
+{
+	display			: none;
+}
+
+textarea
+{
+	resize			: none;
+	border			: none;
+	background		: black;
+	color			: white;
+}
+
+textarea:focus
+{
+	box-shadow		: 0px 0px 10px white inset;
+	outline			: 0;
+}
+
+.markItUpHeader li
+{
+	background		: #BBBBBB !important;
+	border			: 2px solid #333333 !important;
+	border-radius		: 99px;
+	padding			: 5px;
+}
+
+.markItUpHeader li:hover
+{
+	border			: 2px solid #002277 !important;
+	background		: #00AAFF !important;
+}
+
+.Submit
+{
+	background		: none !important;
+	border			: 0 !important;
+}
+
+
+
+/******************/
+/* Owner's Avatar */
+/******************/
+
+
+
+/*div.AvatarMiddle a[href="http://gamebanana.com/members/1291525"] img
+{
+	content			: url('http://i.cubeupload.com/sub5Im.png');
+}*/
+
+
+
+/***********************/
+/* GB Logo Replacement */
+/***********************/
+
+
+
+#Logo a img
+{
+	content			: url('http://i.cubeupload.com/EZgqC6.png');
+}
+
+
+
+/***********************/
+/* Page Title and Menu */
+/***********************/
+
+
+
+#PageTitle, #TitleBreadcrumb
+{
+	text-align		: center;
+	font-variant		: small-caps;
+}
+
+#PageTitle
+{
+	font-size		: 80px !important;
+	line-height		: 100px !important;
+}
+
+div#TitleBreadcrumb
+{
+	font-size		: 20px;
+	margin-bottom		: 20px;
+}
+
+#DropdownMenuSubNavigator > ul
+{
+	text-align		: center;
+}
+
+nav#DropdownMenuSubNavigator > ul > li
+{
+	float			: none;
+}
+
+
+
+/*************/
+/* Shout Box */
+/*************/
+
+
+
+#tpm__sShoutbox #shout table
+{
+	border		: 0;
+}
+
+#tpm__sShoutbox #shout table td
+{
+	border		: none;
+	background	: none;
+	letter-spacing	: 1px;
+	padding		: 10px;
+}
+
+#tpm__sShoutbox #shout .Module
+{
+	border		: none !important;
+}
+
+#tpm__sShoutbox #shout tr
+{
+	background	: none;
+}
+
+
+
+/**************/
+/* Scroll Bar */
+/**************/
+
+
+
+::-webkit-scrollbar
+{
+	width		: 5px;
+}
+
+::-webkit-scrollbar:horizontal
+{
+	height		: 5px;
+}
+
+::-webkit-scrollbar-track
+{
+	background	: #2B2B2B;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background	: #3b3b3b;
+}
+
+div#PostsListModule article p img
+{
+	height		: 50%;
+	width		: 50%;
+}
+
+
+
+/******************/
+/* Adds HTML Code */
+/******************/
+
+
+
+overline, o
+{
+	text-decoration:overline;
+}
+
+
+hl, highlight
+{
+	color:black;
+	background-color:#ffff00;
+}
+
+hl.cyan, highlight.cyan
+{
+	background-color:cyan;
+}
+
+hl.lime, highlight.lime
+{
+	background-color:lime;
+}
+
+hl.orange, highlight.orange
+{
+	background-color:orange;
+}
+
+edit:before
+{
+	content:'Edited:';
+	color:#444444;
+	font-size: x-small;
+	display: block;
+}
+
+imgreset img
+{
+	width:auto !important;
+	height:auto !important;
+}
+
+
+
+/******************/
+/* Navigator Tabs */
+/******************/
+
+#NavigatorPanes > li
+{
+	background	: #1B1B1B;
+	border		: 1px solid #333333;
+}
+
+#NavigatorPanes article
+{
+	background	: none;
+	border		: none;
+}
+
+#NavigatorPanes h4
+{
+	background	: none;
+	border		: none;
+	border-bottom	: 1px solid #333333;
+}
+
+
+
+/*************************/
+/* Club Settings Profile */
+/*************************/
+
+
+
+div#MainContent
+{
+	border		: 1px solid #333333;
+	margin		: 20px 0px;
+}
+
+div#SettingsPortalModule,
+html.Settings_Appearance div.Module,
+html.Settings_Modules div.Module,
+html.Settings_Team div.Module
+{
+	border		: 0;
+	margin-top	: 70px;
+}
+
+div#SettingsPortalModule div.Content
+{
+	text-align	: center;
+}
+
+li.Category
+{
+	border		: 1px solid #333333;
+	text-align	: left;
+	padding		: 10px;
+	margin		: 10px;
+}
+
+li.Category h4
+{
+	border-bottom	: 1px solid #333333;
+	padding-bottom	: 5px;
+	margin-bottom	: 10px;
+
+	font-variant	: small-caps;
+	font-size	: 15px;
+}
+
+li.Category li
+{
+	list-style-type	: none;
+}
+
+div.PageNavigation
+{
+	padding		: 10px;
+	margin		: 20px;
+	border		: 1px solid #333333;
+	box-shadow	: none;
+}
+
+a
+{
+	color		: #00AAFF;
+}
+
+a:hover
+{
+	color		: white;
+}

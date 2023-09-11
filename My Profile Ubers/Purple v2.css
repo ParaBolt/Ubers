@@ -1,0 +1,124 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body
+{
+    background : rgb(20,10,20);
+    background-size : cover;
+}
+
+.ContentColumn
+{
+    padding-top : 15px;
+}
+
+.Module .Content, .Module > h3
+{
+    background : 0;
+}
+
+.Module .Content,
+.Module > .LogMessages
+{
+	margin : 0;
+}
+
+#PostsListModule
+{
+    border : 0;
+}
+
+.Module, #PostsListModule .Content > ul > li
+{
+    border : 2px solid rgb(150,105,150);
+    margin-bottom : 15px;
+}
+
+.Module > h3
+{
+    font : 20px 'SAO UI';
+    letter-spacing : 0.05em;
+    padding : 5px;
+    border-left :0;
+    margin-bottom : 0;
+    border-bottom : 2px solid rgb(150,105,150);
+    color: rgb(240, 150, 180);
+}
+
+#tpm__sViewCount b.RedColor,
+#tpm__sViewCount img,
+#tpm__sViewCount br
+{
+    display : none;
+}
+
+#tpm__sViewCount .Content center, #tpm__sViewCount font
+{
+    visibility : hidden;
+    font-size : 1px;
+}
+
+#tpm__sViewCount font b
+{
+    visibility : visible !important;
+    display : block;
+    font-size : 20px;
+    font-weight : normal;
+    margin-top : -3px;
+    font : 20px 'SAO UI';
+    text-transform : uppercase;
+    color : rgb(180,180,240);
+}
+
+a
+{
+    color : rgb(180,180,240);
+}
+
+a:hover
+{
+    color : white;
+}
+
+.MemberLink
+{
+    font : 20px 'SAO UI';
+    text-transform : uppercase;
+}
+
+.Content, li, h3, p, button, #PostsListModule article .LabelStat.Date, span
+{
+    font-family : 'Montserrat';
+}
+
+#PointsModule span.Score
+{
+    font : 25px 'SAO UI';
+}
+
+dt
+{
+    font-weight : 700;
+    color : rgb(200,150,200);
+    border-bottom : 2px solid rgb(150,150,200);
+}
+
+table thead
+{
+    background : transparent;
+    color : orange;
+}
+
+table tr
+{
+    border-bottom : 2px solid rgb(150,105,150);
+}
+
+dl, td.ItemCount, td.TransactionDate
+{
+    color : rgb(100,150,200);
+}
+
+dd, p
+{
+    font-size : 13px;
+}

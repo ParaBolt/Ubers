@@ -1,0 +1,512 @@
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 400;
+  src: local('MontserratAlternates-Regular'), url(http://fonts.gstatic.com/s/montserratalternates/v4/z2n1Sjxk9souK3HCtdHukpy2IC1KoJIC5P3EDKbgI_s.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 700;
+  src: local('MontserratAlternates-Bold'), url(http://fonts.gstatic.com/s/montserratalternates/v4/YENqOGAVzwIHjYNjmKuAZmksDjUaR4oq4rjDTNt60Dr3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body
+{
+    background : #111;
+    color : #999;
+    font-family: 'Montserrat Alternates';
+    height: 100%;
+}
+
+#Wrapper
+{
+    width: auto;
+}
+
+#MainContentHeader, #MainContent
+{
+    width : 1000px;
+}
+
+a
+{
+    color : #666;
+}
+
+a:hover
+{
+    color : #FFF;
+}
+
+.Module > h3, .Module .Content, #NetworkLinks, #CoreStrip, #PageTitleWrapper, #DropdownMenuSubNavigator, #TitleBreadcrumb, .Modal .Toolbar li, .Modal .Contents
+{
+    background : transparent;
+}
+
+.Module
+{
+    border : 1px solid #333;
+}
+
+.Module:not(#PostsListModule):not(#PostAddFormRequesterModule):hover
+{
+    border-color : #0063FF
+}
+
+.Module > h3
+{
+    border-bottom : 1px solid #333;
+    font-size : 14px;
+}
+
+h3 a, h5 a, .Tooltip a
+{
+      color: #0063FF;
+}
+
+h3 a:hover, h5 a:hover, .Tooltip a:hover
+{
+    text-decoration: underline;
+    color: #FF8D01;
+}
+
+#PostAddFormRequesterModule
+{
+    border-bottom : 0;
+}
+
+#PostsListModule .Content > ul > li
+{
+    background : #090909;
+    border : 1px solid #333;
+    margin : 10px;
+}
+
+#PostsListModule article blockquote
+{
+    border : 1px solid #333;
+    opacity : 1;
+}
+
+#PostsListModule .PostHeader
+{
+    padding : 10px;
+    margin-bottom : 10px;
+    border-bottom : 1px solid #333;
+}
+
+#PostsListModule footer
+{
+    border-top : 1px solid #333;
+    padding-top : 5px;
+}
+
+#PostsListModule footer img
+{
+    vertical-align : -75%;
+}
+
+.PageNavigation
+{
+    margin : 10px;
+    border : 1px solid #333;
+    padding : 10px;
+}
+
+.PageNavigation li a, .PageNavigation li.CurrentPage, li.InBetweenPages
+{
+    display : inline-block;
+    margin : 3px;
+    width : 25px;
+    padding : 5px;
+}
+
+.PageNavigation li a, .PageNavigation li.CurrentPage
+{
+    border : 1px solid;
+    color : #FFF;
+    font-weight : bold;
+}
+
+.PageNavigation li.CurrentPage
+{
+    background : #0063FF;
+    border-color : #000;
+}
+
+.PageNavigation li a
+{
+    background : #090909;
+    border-color : #333;
+}
+
+.PageNavigation li a:hover
+{
+    background : #0063FF;
+}
+
+#NavigatorPanes li a + span, span.Score, td.ItemCount {
+    color: #00AAFF;
+}
+
+table tr
+{
+    border-bottom-color : #333;
+}
+
+tr:last-child
+{
+    border-bottom : 0;
+}
+
+#MainContentHeader, #MainContent
+{
+    border : 1px solid #333;
+    margin : 10px auto 30px auto;
+    padding : 10px;
+}
+
+#FooterWrapper, #HeaderWrapper
+{
+    background : #000;
+    margin : 0;
+    padding : 10px;
+}
+
+#FooterWrapper
+{
+    margin-bottom : -100px;
+}
+
+#HeaderWrapper
+{
+  background: #000 url(http://files.gamebanana.com/bitpit/hdr_bg.jpg) repeat-x;
+  border-bottom : 1px solid #000;
+  padding-bottom : 0;
+}
+
+#MainContent
+{
+    margin-top : 0;
+    border-top : 0;
+}
+
+#MainContentHeader
+{
+    margin-bottom : 0;
+    border-bottom : 0;
+    text-align : center;
+}
+
+#AdStrip
+{
+    height : 0;
+}
+
+#ColumnGrid
+{
+    width : auto;
+    margin : auto;
+}
+
+.ContentColumn
+{
+   width : 49.5% !important;
+   margin-right : 10px;
+}
+
+h1#PageTitle {
+    font-variant: small-caps;
+    font-size: 50px;
+}
+
+#NavigatorPanes > li
+{
+    border : 1px solid #333;
+    top : 0px !important;
+}
+
+#NavigatorPanes > li > h4 {
+    border-bottom: 1px solid #333;
+    padding : 5px;
+}
+
+button {
+  font-family: Montserrat Alternates;
+  border: 1px solid #333;
+  border-radius: 0;
+  padding: 5px;
+  background: #090909;
+}
+
+button:hover {
+    border-color: #0063FF;
+    color : #FF8D01 !important;
+}
+
+.Avatar.Online, .Avatar.Offline
+{
+    border : 0;
+}
+
+.Avatar img
+{
+    border : 4px solid black;
+    outline : 1px solid #333;
+    height : 45px;
+}
+
+.Avatar.Online img
+{
+    outline-color : #00A9FF;
+}
+
+#NavigatorTabs li
+{
+    background : #090909;
+    border : 1px solid #333;
+}
+
+#NavigatorTabs li.ActiveTab
+{
+ border-color : 1px solid #00AAFF;
+}
+
+#NavigatorTabs li:hover, #NavigatorTabs li.ActiveTab
+{
+    background : #090909;
+    border-color : #0063FF;
+}
+
+#DropdownMenuSubNavigator
+{
+  padding : 0;
+  border : 0;
+  background: linear-gradient(rgb(7,42,84), rgb(6,56,109));
+}
+
+#DropdownMenuSubNavigator li.TitleOnly, #DropdownMenuSubNavigator li a, #DropdownMenuSubNavigator .sf-menu .ActiveEntry a
+{
+    color : white;
+}
+
+#DropdownMenuSubNavigator .sf-menu > li, #DropdownMenuSubNavigator li a:hover
+{
+    background: transparent;
+}
+
+#DropdownMenuSubNavigator li.TitleOnly
+{
+    margin-right : -2px;
+    padding : 5px;
+}
+
+#DropdownMenuSubNavigator > ul > li
+{
+    border-left : 1px solid black;
+}
+
+#DropdownMenuSubNavigator > ul > li > a
+{
+    border-right : 1px solid black;
+}
+
+#DropdownMenuSubNavigator .sf-menu ul > li:not(:last-child)
+{
+    border-bottom : 1px solid black;
+}
+
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry, #DropdownMenuSubNavigator .sf-menu ul > li
+{
+    background: linear-gradient(rgb(7,42,84), rgb(6,56,109));
+}
+
+#DropdownMenuSubNavigator .sf-menu li:hover
+{
+    background : linear-gradient(rgb(11,64,130), rgb(9,86,164));
+}
+
+.tooltipster-default
+{
+  background:#111;
+  border : 1px solid #333;
+}
+
+.Tooltip a
+{
+    color : #0063FF;
+}
+
+ul#ImportantLinks a
+{
+    border-color : #333;
+}
+
+ul#ImportantLinks a:hover
+{
+    border-color : #0063FF !important;
+    color : #FF8D01 !important;
+}
+
+#NavigatorPanes > li > div > ul
+{
+  margin : 0;
+  margin-bottom: 10px;
+}
+
+#NavigatorPanes > li > div > ul:last-child
+{
+  margin-bottom : 0;
+}
+
+#NavigatorPanes > li > div
+{
+  padding: 10px;
+}
+
+.Modal
+{
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.Submit
+{
+    padding : 5px;
+}
+
+div.GenericPreviewListModule li
+{
+    border-bottom : 1px solid #333;
+}
+
+div.GenericPreviewListModule li:last-child
+{
+    border-bottom : 0;
+}
+
+#SubmissionCountsModule .Content {
+    padding: 0;
+}
+
+#PostsListModule .LabelState.IsModerator
+{
+    color : #00AAFF;
+    border : 1px solid;
+}
+
+.Avatar
+{
+    width : auto;
+    height : auto;
+}
+
+#BuddiesModule .Avatar img
+{
+    width: 40px;
+    height: 40px;
+}
+
+#NetworkPane ul#OnlineBuddies li img
+{
+    border : 3px solid black;
+    outline : 1px solid #00AAFF;
+}
+
+body .Medal
+{
+    outline : 1px solid #333;
+    border : 4px solid #000;
+    border-radius : 0;
+    width : 48px;
+    height : 48px;
+}
+
+#MedalsPane li img
+{
+    width : 29.76px;
+    height : 29.76px;
+}
+
+body .RareMedal
+{
+    outline-color : #00AAFF;
+}
+
+#PostsListModule ul.PostStamps li
+{
+  background : #111;
+  border : 1px solid #333;
+  font-size : 11px;
+  padding : 2px;
+  padding-right : 6px;
+}
+
+div.FullStampsDisplay
+{
+  text-align : center;
+}
+
+div.FullStampsDisplay ul li.Stamp div
+{
+  background : #111;
+  border : 1px solid #333;
+}
+
+div.FullStampsDisplay ul
+{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#PostsListModule .PostStamps
+{
+	text-align : right;
+}
+
+div#tpm__sChat .Module {
+    background-color: #111;
+    border : 1px solid #333 !important;
+}
+
+#ScriptPreviewListModule code {
+    color: #999;
+    background-color: #090909;
+    border: 1px solid #333;
+}
+
+
+/***/
+
+:root
+{
+	--BodyBackground : #111;
+	--DefaultTextColor : #999;
+	--AuxiliaryColumnBackground : transparent;
+	--AuxiliaryColumnBorder : none;
+	--NavBackgroundColor : transparent;
+	--LinkColor : #0063FF;
+	--LinkHoverColor : #FF8D01;
+}
+
+row > column > .PageModule
+{
+	border : 1px solid #333;
+	padding: 0;
+}
+
+row > column > .PageModule > h3
+{
+	border-bottom : 1px solid #333;
+	padding : .25em;
+}
+
+row > column > .PageModule > h3::after
+{
+	content : unset;
+}

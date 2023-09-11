@@ -1,0 +1,385 @@
+/****************************/
+/* Design by AeroIncarnated */
+/* CSS by ParaBolt          */
+/* Version : 10-01-2021     */
+/****************************/
+
+
+/*********/
+/* FONTS */
+/*********/
+
+@font-face
+{
+	font-family  : 'Target Outline';
+	src          : url('https://files.gamebanana.com/bitpit/tarrgetout.ttf');
+	font-display : swap;
+}
+
+@font-face
+{
+	font-family  : 'Vipnagorgialla';
+	src          : url('https://files.gamebanana.com/bitpit/vipnagorgialla_rg.otf');
+	font-display : swap;
+}
+
+/*************/
+/* VARIABLES */
+/*************/
+
+:root
+{
+	--GreenPrimary                        : #00FF9C;
+	--GreenSecondary                      : #64FF68;
+	--GreenShadow                         : #18FF00;
+	--GreenDarkBG                         : #001009;
+	--FontPrimary                         : 'Target Outline';
+	--FontSecondary                       : 'Vipnagorgialla';
+	--BodyBackground                      : #000 url('https://files.gamebanana.com/bitpit/aerogif.gif') center/cover fixed;
+	--BodyWrapperBackground               : transparent;
+	--AuxiliaryColumnBackground           : transparent;
+	--ModuleBorderColor                   : transparent;
+	--AuxiliaryColumnModuleBorderColor    : transparent;
+	--LinkColor                           : var(--GreenPrimary);
+	--LinkHoverColor                      : #FFF;
+	--ContentGridBG                       : #000;
+	--FooterBG                            : #000;
+	--PrimaryNavBackgroundColor           : #000;
+	--SecondaryNavBackgroundColor         : #000;
+	--NavUpdatesIndicatorColor            : #006639;
+	--NavPaneBackgroundColor              : var(--GreenDarkBG);
+	--SubNavigatorBackgroundColor         : #000;
+	--SubNavigatorDropdownBackgroundColor : var(--GreenDarkBG);
+	--BoxBorder                           : 3px solid var(--GreenPrimary);
+	--BoxShadow                           : inset 0 0 10px var(--GreenSecondary), 0 0 20px var(--GreenShadow);
+	--BoxShadowSmall                      : inset 0 0 10px var(--GreenSecondary), 0 0 10px var(--GreenShadow);
+	--TextShadow                          : 0 0 10px var(--GreenSecondary),       0 0 20px var(--GreenShadow);
+	--TextShadowSmall                     : 0 0 10px var(--GreenSecondary);
+	--PageTitleFontSize                   : 4em;
+	--PageTitleColor                      : var(--GreenSecondary);
+	--SubNavigatorFontSize                : 1.35em;
+	--SubNavigatorActiveTabBorderColor    : transparent;
+	--SubNavigatorTabHoverBorderColor     : transparent;
+	--ScrollbarTrackBG                    : #000;
+	--ScrollbarThumbBG                    : var(--GreenPrimary);
+}
+
+/****************/
+/* CONTENT GRID */
+/****************/
+
+#ContentGrid
+{
+	background : var(--ContentGridBG);
+}
+
+#ContentGrid #RowOne
+{
+	align-items   : center;
+	text-align    : center;
+	margin-bottom : 1em;
+}
+
+#ContentGrid .RowOneImg
+{
+	max-height : 450px;
+}
+
+#ContentGrid,
+#ContentGrid #IdentityModule
+{
+	padding    : 1em;
+	border     : var(--BoxBorder);
+	box-shadow : var(--BoxShadow);
+}
+
+#ContentGrid #RowTwo
+{
+	gap : 1em;
+}
+
+#ContentGrid #RowTwo column
+{
+	background-position : bottom right;
+	background-repeat   : no-repeat;
+	border              : var(--BoxBorder);
+	box-shadow          : var(--BoxShadowSmall);
+	min-width           : unset;
+	flex                : 1;
+	padding             : 1em;
+}
+
+#ContentGrid #RowTwoColOne
+{
+  background-image : url('https://files.gamebanana.com/bitpit/5_f2d11.png');
+  background-color : #2C004A;
+}
+
+#ContentGrid #RowTwoColTwo
+{
+  background-image : url('https://files.gamebanana.com/bitpit/3_60259.png');
+  background-color : #004A0A;
+}
+
+#ContentGrid #RowTwoColThree
+{
+  background-image : url('https://files.gamebanana.com/bitpit/4_2ac77.png');
+  background-color : #18004A;
+}
+
+#RowTwo .PageModule > h3
+{
+	display : none;
+}
+
+#RowTwo column::before
+{
+	display                   : block;
+	text-align                : center;
+	font-size                 : 2em;
+	font-family               : 'Vipnagorgialla';
+	color                     : transparent;
+	-webkit-text-stroke-color : var(--LinkColor);
+	-webkit-text-stroke-width : 1px;
+	text-shadow               : var(--TextShadow);
+}
+
+#RowTwo #RowTwoColOne::before
+{
+	content : 'Contact Info';
+}
+
+#RowTwo #RowTwoColTwo::before
+{
+	content : 'Submissions';
+}
+
+#RowTwo #RowTwoColThree::before
+{
+	content : 'Friends';
+}
+
+/**********/
+/* FOOTER */
+/**********/
+
+#PageFooter
+{
+	margin-top : 2em;
+	padding    : 1em;
+	border     : var(--BoxBorder);
+	box-shadow : var(--BoxShadow);
+	background : var(--FooterBG);
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+#MainContentHeader
+{
+	text-align : center;
+}
+
+#Breadcrumb
+{
+  display : none;
+}
+
+/* LOGO CHANGE */
+
+#GbLogo
+{
+	display : none;
+}
+
+#BananaNavModule widget a:after
+{
+	content : url('https://files.gamebanana.com/bitpit/23_5fae7.png');
+}
+
+/* PAGE TITLE */
+
+#HeadlineWrapper overlay h1
+{
+	font-family : var(--FontPrimary);
+	text-shadow : var(--TextShadow);
+}
+
+#HeadlineWrapper overlay h1::after
+{
+	color     : var(--LinkColor);
+	font-size : .75em;
+	display   : block;
+	content   : 'Welcome To The Next Level';
+}
+
+/* SUBNAVIGATOR AND NAV PANES TEXT */
+
+#SubNavigator li div,
+#PrimaryNav h4,
+#SecondaryNav h4
+{
+	font-family               : var(--FontSecondary);
+	color                     : transparent;
+	-webkit-text-stroke-color : var(--LinkColor);
+	-webkit-text-stroke-width : 1px;
+	text-shadow               : var(--TextShadow);
+}
+
+#PrimaryNav h4,
+#SecondaryNav h4
+{
+	text-shadow               : var(--TextShadowSmall);
+}
+
+/*********/
+/* ICONS */
+/*********/
+
+.sf-menu > li > a spriteicon,
+.sf-menu > .TitleOnly > spriteicon,
+#SecondaryNav icon spriteIcon
+{
+	background-position : center !important;
+	background-size     : contain !important;
+	background-repeat   : no-repeat !important;
+	width               : 32px;
+	height              : 32px;
+	filter              : unset;
+}
+
+.sf-menu > li > a .ProfileIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/18_718c2.png');
+}
+
+.sf-menu > li > a .App
+{
+	background : url('https://files.gamebanana.com/bitpit/8_a75cf.png');
+}
+
+.sf-menu > .TitleOnly > .NetworkTabIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/20_dcc36.png');
+}
+
+.sf-menu > .TitleOnly > .PointsIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/19_23a13.png');
+}
+
+.sf-menu > .TitleOnly > .StatsTabIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/17_e32b3.png');
+}
+
+.sf-menu > .TitleOnly > .SectionsTabIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/16_95fc6.png');
+}
+
+.sf-menu > li > a .FeaturedIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/12_28fb9.png');
+}
+
+.sf-menu > li > a .SpannerIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/11_329a8.png');
+}
+
+.sf-menu > .TitleOnly > .AdminIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/9_8648f.png');
+}
+
+.NavModuleIcon.AlertsNavModuleIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/7_4e551.png');
+}
+
+#SecondaryNav .NavModuleIcon.BananaNavModuleIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/15_894f1.png');
+}
+
+.NavModuleIcon.BuddiesNavModuleIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/1_f535b.png');
+}
+
+.NavModuleIcon.SubmissionsNavModuleIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/15_894f1.png');
+}
+
+.NavModuleIcon.ActivityNavModuleIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/5_23f72.png');
+}
+
+.NavModuleIcon.RemindersNavModuleIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/6_9efcf.png');
+}
+
+.NavModuleIcon.MedalsNavModuleIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/3_a8046.png');
+}
+
+.NavModuleIcon.MessagesNavModuleIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/2_ff309.png');
+}
+
+.NavModuleIcon.BuddiesNavModuleIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/1_f535b.png');
+}
+
+.NavModuleIcon.ManageNavModuleIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/13_95d7d.png');
+}
+
+.NavModuleIcon.AdminNavModuleIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/9_8648f.png');
+}
+
+.NavModuleIcon.InstallersNavModuleIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/14_44fd9.png');
+}
+
+.NavModuleIcon.NavOptionsNavModuleIcon
+{
+	background : url('https://files.gamebanana.com/bitpit/10_5f759.png');
+}
+
+/**************/
+/* SCROLLBARS */
+/**************/
+
+::-webkit-scrollbar
+{
+	width  : 7px;
+}
+
+::-webkit-scrollbar-track
+{
+	background : var(--ScrollbarTrackBG);
+}
+
+::-webkit-scrollbar-thumb
+{
+	background : var(--ScrollbarThumbBG);
+}
+
+*
+{
+	scrollbar-color : var(--ScrollbarThumbBG) var(--ScrollbarTrackBG);
+	scrollbar-width : thin;
+}

@@ -1,0 +1,29 @@
+body
+{
+    background : url('http://files.gamebanana.com/bitpit/indian-flag_grungeabstract.jpg') 
+
+fixed center;
+}
+
+.Module > h3
+{
+    background: -webkit-linear-gradient(orange 35%, white, green 65%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font : bold 25px 'samarkan';
+	border : 0;
+	border-radius : 10px;
+	-webkit-text-stroke : 1px transparent;
+	letter-spacing : 0;
+	text-align : left;
+}
+
+.Module
+{
+	background : linear-gradient(black, rgba(0,0,0,0.5) 50px)
+}
+
+.Module .Content
+{
+	background : transparent;
+}

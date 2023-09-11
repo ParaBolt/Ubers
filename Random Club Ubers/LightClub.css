@@ -1,0 +1,608 @@
+@import url(http://fonts.googleapis.com/css?family=Happy+Monkey);
+
+body
+{
+  padding:0 10px;
+  word-wrap:break-word;
+  background:url(http://puu.sh/ihl1X/c1423c7402.gif);
+  color:#E2E2E2;
+}
+
+body *,#PostsListModule article .LabelStat.Date,div.GenericPreviewListModule li a
+{
+  font-family:"Happy Monkey";
+}
+
+#NetworkLinks,#NetworkLinks #GamebananaTab
+{
+  background:none;
+}
+
+#NetworkLinks li:not(#GamebananaTab)
+{
+  display:none;
+}
+
+#GamebananaTab img
+{
+  content:url('http://i.imgur.com/xtGluH6.png');
+}
+
+#DropdownMenuSubNavigator
+{
+  padding:10px;
+  text-align:center;
+  background:none;
+}
+
+#CoreStrip
+{
+  margin-top:-55px;
+  margin-left:400px;
+}
+
+#NavigatorTabs menu li img
+{
+  visibility:hidden;
+}
+
+ul#ImportantLinks,#FooterLinks,#FooterWrapper,#SectionLinks,#PageTitle,#TitleBreadcrumb,#TopBanner
+{
+  display:none!important;
+}
+
+div.Module>h3
+{
+  background:none;
+  border:2px solid #ffc4c4;
+  border-radius:5px;
+  color:white;
+  font-size:20px;
+  font-weight:bold;
+  position:relative;
+  text-shadow:0 0 5px red,0 0 5px red;
+}
+
+.Module div.Content,.Module>.LogMessages
+{
+  background:#181818;
+  border:2px solid black;
+  overflow-x:none;
+  overflow-y:auto;
+  padding:10px;
+}
+
+#PostsListModule footer
+{
+  display:none;
+}
+
+*
+{
+  cursor:url(http://i.imgur.com/WP9bKHc.png),default!important;
+  color:white;
+}
+
+a
+{
+  color:#D3D3D3;
+  text-shadow:0 0 5px red,0 0 5px red;
+}
+
+a:hover
+{
+  cursor:url(http://i.imgur.com/6bqqZoG.png),default!important;
+  color:#FF1F1F;
+  text-shadow:0 0 5px black,0 0 5px black;
+}
+
+a[title=Join]
+{
+  display:block;
+  width:184px;
+  height:30px;
+  margin:20px auto;
+  background:url(http://i.imgur.com/AyN5ixn.png);
+  transition:background .3s;
+}
+
+a[title=Join]:hover
+{
+  background:url(http://i.imgur.com/GxOaZFn.png);
+}
+
+#PostsListModule article blockquote
+{
+  border:2px solid grey;
+  border-radius:10px;
+  transition:all .3s;
+  opacity:1;
+}
+
+#PostsListModule article blockquote:hover
+{
+  box-shadow:0 0 5px red,0 0 5px red inset;
+  border-color:white;
+}
+
+shysmile::before
+{
+  content:url('http://i.imgur.com/lsJ6FMl.png');
+  width:24px;
+  height:24px;
+}
+
+smile::before
+{
+  content:url('http://i.imgur.com/EJB8UDL.png');
+  width:24px;
+  height:24px;
+}
+
+tease::before
+{
+  content:url('http://i.imgur.com/xeKPBU5.png');
+  width:24px;
+  height:24px;
+}
+
+wink::before
+{
+  content:url('http://i.imgur.com/xE36FX3.png');
+  width:24px;
+  height:24px;
+}
+
+sad::before
+{
+  content:url('http://i.imgur.com/qUCmCKP.png');
+  width:24px;
+  height:24px;
+}
+
+poker::before
+{
+  content:url('http://i.imgur.com/Izqj6jp.png');
+  width:24px;
+  height:24px;
+}
+
+neutral::before
+{
+  content:url('http://i.imgur.com/5VyT2ul.png');
+  width:24px;
+  height:24px;
+}
+
+laugh::before
+{
+  content:url('http://i.imgur.com/EZZ6Ddz.png');
+  width:24px;
+  height:24px;
+}
+
+relief::before
+{
+  content:url('http://i.imgur.com/EUXP9c7.png');
+  width:24px;
+  height:24px;
+}
+
+cry::before
+{
+  content:url('http://i.imgur.com/k57zcck.png');
+  width:24px;
+  height:24px;
+}
+
+laughhard::before
+{
+  content:url('http://i.imgur.com/JOPw5Tp.png');
+  width:24px;
+  height:24px;
+}
+
+shock::before
+{
+  content:url('http://i.imgur.com/aBeSFgv.png');
+  width:24px;
+  height:24px;
+}
+
+embarrass::before
+{
+  content:url('http://i.imgur.com/qGakNMP.png');
+  width:24px;
+  height:24px;
+}
+
+kiss::before
+{
+  content:url('http://i.imgur.com/qivNiKf.png');
+  width:24px;
+  height:24px;
+}
+
+yummy::before
+{
+  content:url('http://i.imgur.com/gmUdXXW.png');
+  width:24px;
+  height:24px;
+}
+
+love::before
+{
+  content:url('http://i.imgur.com/tDc6TEl.png');
+  width:24px;
+  height:24px;
+}
+
+angry::before
+{
+  content:url('http://i.imgur.com/DMqlq2Q.png');
+  width:24px;
+  height:24px;
+}
+
+angel::before
+{
+  content:url('http://i.imgur.com/L9jxSxW.png');
+  width:24px;
+  height:24px;
+}
+
+devil::before
+{
+  content:url('http://i.imgur.com/HqVXBKO.png');
+  width:24px;
+  height:24px;
+}
+
+shit::before
+{
+  content:url('http://i.imgur.com/N9SsnhA.png');
+  width:24px;
+  height:24px;
+}
+
+beer::before
+{
+  content:url('http://i.imgur.com/Pr9nbzQ.png');
+  width:24px;
+  height:24px;
+}
+
+cheers::before
+{
+  content:url('http://i.imgur.com/vpbqadh.png');
+  width:24px;
+  height:24px;
+}
+
+.Module .Content .ResizedImageWrapper a
+{
+  display:none!important;
+}
+
+.ButtonLike
+{
+  background:none;
+  border:2px solid #ffc4c4;
+  border-radius:5px;
+  color:white;
+  font-size:20px;
+  font-weight:bold;
+  position:relative;
+  text-shadow:0 0 5px red,0 0 5px red;
+}
+
+.ButtonLike:hover
+{
+  background:none;
+  border:2px solid #e84141;
+  border-radius:5px;
+  color:#e84141;
+  font-size:20px;
+  font-weight:bold;
+  position:relative;
+  text-shadow:0 0 5px red,0 0 5px red;
+}
+
+Button
+{
+  background:none;
+  border:2px solid #ffc4c4;
+  border-radius:5px;
+  color:white;
+  font-size:20px;
+  font-weight:bold;
+  position:relative;
+  text-shadow:0 0 5px red,0 0 5px red;
+}
+
+Button:hover
+{
+  background:none;
+  border:2px solid #e84141;
+  border-radius:5px;
+  color:#e84141!important;
+  font-size:20px;
+  font-weight:bold;
+  position:relative;
+  text-shadow:0 0 5px red,0 0 5px red;
+}
+
+#NavigatorTabs li.TabHasUpdates
+{
+  border-bottom:3px solid #e84141;
+  color:white;
+}
+
+#PostsListModule ul.PostStamps li
+{
+  background:none;
+  border:2px solid #ffc4c4;
+  border-radius:5px;
+  color:white;
+  font-size:10px;
+  font-weight:bold;
+  position:relative;
+  text-shadow:0 0 5px red,0 0 5px red;
+}
+
+#AdStrip,#TopBanner,#FooterBanner
+{
+  display:none;
+}
+
+#CoreStrip
+{
+  background:transparent;
+  margin-top:-40px;
+}
+
+#PostsListModule ul.PostStamps li:hover
+{
+  background:none;
+  border:2px solid #e84141;
+  border-radius:5px;
+  font-size:10px;
+  font-weight:bold;
+  position:relative;
+  text-shadow:0 0 5px red,0 0 5px red;
+}
+
+div.StampsForm label:hover
+{
+  background:none;
+  border:2px solid #e84141;
+  border-radius:5px;
+  color:#e84141!important;
+  font-size:10px;
+  font-weight:bold;
+  position:relative;
+  text-shadow:0 0 5px red,0 0 5px red;
+}
+
+div.StampsForm label
+{
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+  background:none;
+  border:2px solid #ffc4c4;
+  border-radius:5px;
+  color:white;
+  font-size:10px;
+  font-weight:bold;
+  position:relative;
+  text-shadow:0 0 5px red,0 0 5px red;
+}
+
+.Avatar.Offline,.Avatar.Online
+{
+  border-left:none;
+  margin-left:10px;
+}
+
+.Avatar.Online:before,.Avatar.Offline:before
+{
+  content:"";
+  width:12px;
+  height:50px;
+  position:absolute;
+  opacity:0.9;
+  box-shadow:3px 0 5px rgba(0,0,0,0.5);
+  margin-left:-12px;
+}
+
+.Avatar.Online:before
+{
+  background:url(http://i.imgur.com/vY8HSRv.png);
+  border-right:1px solid #6ee16c;
+}
+
+.Avatar.Offline:before
+{
+  background:url(http://i.imgur.com/amDmfLq.png);
+  border-right:1px solid #999999;
+}
+
+html#Club_Profile #TeamMembersListModule thead,html#Club_Profile #TeamMembersListModule td:nth-of-type(2)
+{
+  display:none;
+}
+
+html#Club_Profile #TeamMembersListModule table
+{
+  text-align:center;
+}
+
+html#Club_Profile #TeamMembersListModule table tr
+{
+  display:inline-block;
+  width:20%;
+  height:80px;
+  border:0;
+  margin:10px;
+  vertical-align:middle;
+  padding:0;
+}
+
+html#Club_Profile #TeamMembersListModule td
+{
+  display:block;
+  padding:0;
+  font-size:10px;
+}
+
+#TeamArtModule li
+{
+  list-style-type:none;
+  position:relative;
+  margin-bottom:10px;
+  border:2px solid grey;
+  transition:all .3s;
+  padding:1px;
+}
+
+#TeamArtModule img
+{
+  width:100%;
+  height:100%!important;
+  transition:all .3s;
+  vertical-align:middle;
+}
+
+#TeamArtModule span::before
+{
+  content:"Made By : ";
+}
+
+#TeamArtModule span
+{
+  position:absolute;
+  top:47.5%;
+  width:100%;
+  opacity:0;
+  z-index:1;
+  font:bold 0 Happy Monkey;
+  text-align:center;
+  transition:all .3s;
+}
+
+#TeamArtModule li:hover
+{
+  border-color:white;
+  box-shadow:0 0 5px red,0 0 5px red inset;
+}
+
+#TeamArtModule li:hover span
+{
+  opacity:1;
+  font:bold 20px Happy Monkey;
+  text-shadow:0 0 5px red;
+}
+
+#TeamArtModule li:hover img
+{
+  filter:brightness(0.5);
+  -o-filter:brightness(0.5);
+  -ms-filter:brightness(0.5);
+  -moz-filter:brightness(0.5);
+  -webkit-filter:brightness(0.5);
+}
+
+#SmileysModule table
+{
+  text-align:center;
+}
+
+#SmileysModule tr
+{
+  border:2px solid grey;
+  margin:10px;
+  display:inline-block;
+  width:20%;
+  padding:5px;
+  box-sizing:border-box;
+}
+
+#SmileysModule td
+{
+  font-size:10px;
+  padding:0;
+  display:block;
+}
+
+#SmileysModule img
+{
+  width:20px;
+  margin-top:5px;
+}
+
+#PageTitleWrapper
+{
+  display:none;
+}
+
+#NavigatorTabs li
+{
+  background:transparent;
+  border:2px solid #ffc4c4;
+  box-shadow:0 0 5px red,0 0 5px red inset;
+  border-radius:10px;
+}
+
+#NavigatorTabs li.TabHasUpdates
+{
+  box-shadow:0 0 5px yellow,0 0 5px yellow inset;
+  border:2px solid #ffc4c4;
+}
+
+#NavigatorTabs li:hover,#NavigatorTabs li.ActiveTab
+{
+  background:transparent;
+  border:2px solid red;
+  box-shadow:0 0 5px red,0 0 5px red inset;
+  border-radius:10px;
+}
+
+#PostsListModule .LabelState.IsSubmitter
+{
+  content:url('http://files.gamebanana.com/bitpit/mod.png');
+  color:black;
+  border:0 solid;
+}
+
+.IconSheet.StampIcon.WinIcon
+{
+    background : url('http://i.imgur.com/ppniHqu.png') no-repeat;
+    background-position : 0 0 !important;
+}
+
+.IconSheet.StampIcon.WinIcon + span, .IconSheet.StampIcon.HelpfulIcon + span
+{
+    white-space : pre-wrap;
+    display : inline-block;
+    height : 1.25em;
+    overflow : hidden;
+}
+
+.IconSheet.StampIcon.WinIcon + span::before
+{
+    content : "Wow\A"
+}
+
+.IconSheet.StampIcon.HelpfulIcon + span::before
+{
+    content : "Awesome\A"
+}
+
+.IconSheet.StampIcon.HelpfulIcon
+{
+    background : url('http://i.imgur.com/BZEWOvd.png') no-repeat;
+    background-position : 0 0 !important;
+}

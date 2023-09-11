@@ -1,0 +1,567 @@
+﻿
+
+
+/******************/
+/*** FONT RULES ***/
+/******************/
+
+
+
+/* latin-ext */
+@font-face {
+  font-family: 'Metal Mania';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Metal Mania'), local('MetalMania-Regular'), url(https://fonts.gstatic.com/s/metalmania/v6/_MPduYXiaptg6GQ2M6AHtCYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Metal Mania';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Metal Mania'), local('MetalMania-Regular'), url(https://fonts.gstatic.com/s/metalmania/v6/_MPduYXiaptg6GQ2M6AHtI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'New Rocker';
+  font-style: normal;
+  font-weight: 400;
+  src: local('New Rocker'), local('NewRocker-Regular'), url(https://fonts.gstatic.com/s/newrocker/v5/3tQL6IDxaQ7-ETHHHkqDySEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'New Rocker';
+  font-style: normal;
+  font-weight: 400;
+  src: local('New Rocker'), local('NewRocker-Regular'), url(https://fonts.gstatic.com/s/newrocker/v5/WxdbiEM9pvmAfOzkEv7pc_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+
+/**********************************/
+/*** RESETTING AND HIDING STUFF ***/
+/**********************************/
+
+
+
+#DropdownMenuSubNavigator .sf-menu ul > li,
+#DropdownMenuSubNavigator .sf-menu > li,
+#DropdownMenuSubNavigator li a:hover,
+#PageTitleWrapper,
+#TitleBreadcrumb,
+#DropdownMenuSubNavigator,
+.Modal .Contents,
+.Modal .Toolbar li,
+#NavigatorTabs li,
+#NavigatorTabs li.ActiveTab,
+.Module > .Description
+{
+	background	: transparent;
+}
+
+#AtfLeaderBoard,
+#BtfLeaderBoardRow,
+#OpskinsHeaderLink,
+#AdsByCurseBanner,
+#HeaderWrapper.Fixed,
+#TitleBreadcrumb,
+#NetworkLinks li:not(#GamebananaTab),
+#NavigatorTabs span:nth-of-type(1),
+#ImportantLinks,
+#NavigatorPanes h4,
+#FooterWrapper
+{
+	display		: none !important;
+}
+
+/* remove module tools */
+.ContentColumn > .Module:hover .ModuleTools,#FullscreenModuleWrapper > .Module:hover .ModuleTools,.ModuleTools	{
+    display: none;
+}
+
+
+/**************/
+/*** HEADER ***/
+/**************/
+
+
+#PublicNavigator .NavigatorTabs	{
+	background: none;
+}
+
+#TitleBreadcrumb {
+	display: none;
+	}
+
+#HeaderWrapper.Fixed {
+    background: #131313;
+	width: 100%;
+}
+
+#HeaderWrapper header > div #HomeLink	{
+	background: none;
+	box-shadow: none;
+}
+
+div#HeaderWrapper	{
+	background: none;
+	width: auto;
+}
+
+#SubmissionType	{
+	display:none;
+}
+
+#Wrapper	{
+	width: auto;
+	background: none;
+}
+
+#NetworkLinks #GamebananaTab img
+{
+	display : none;
+}
+
+.IconSheet.Logo {
+background-position: inherit !important;
+background-image: url(http://i.imgur.com/P4CpOYO.png) !important;
+}
+
+#CoreStrip
+{
+	margin-left : 50px;
+	padding : 0;
+}
+
+#NavigatorTabs li
+{
+	font-size	: 9px;
+	text-transform	: uppercase;
+	vertical-align : middle;
+	padding-top : 8px;
+}
+
+#NavigatorTabs li.ActiveTab
+{
+	background : #111;
+	color : #999;
+}
+
+#NavigatorTabs li.TabHasUpdates
+{
+	animation : none;
+}
+
+#NavigatorPanes > li
+{
+	top : -3px !important;
+	border		: 2px solid #111;
+	background	: url('http://files.gamebanana.com/bitpit/bg2_2.jpg');
+}
+
+#MemberNavigator .NavigatorPanes > li {
+	box-shadow: none;
+	background: #232323;
+}
+
+#MemberNavigator {
+	background: #232323;
+}
+
+div#Wrapper
+{
+	width		: auto;
+}
+
+#ColumnGrid
+{
+	margin		: auto;
+}
+
+body
+{
+	background	: url('http://files.gamebanana.com/bitpit/binding_dark.png') !important;
+	cursor		: url('http://sleekupload.com/uploads/5/rockoncursor.png'), default !important;
+	padding		: 0;
+	font-family	: 'New Rocker';
+	color		: rgb(255,32,32);
+	text-shadow : 0 0 10px black, 0 0 10px black;
+}
+
+#PageTitleWrapper,
+#DropdownMenuSubNavigator
+{
+	text-align	: center;
+	border: none;
+}
+
+#PageTitleWrapper h1
+{
+	font		: 60px 'Metal Mania';
+	color		: firebrick;
+	text-shadow	: 0 0 1px rgb(32,0,0), 0 0 1px rgb(32,0,0), 0 0 1px rgb(32,0,0), 0 0 1px rgb(32,0,0), 0 0 1px rgb(32,0,0),
+			  0 0 2px rgb(32,0,0), 0 0 2px rgb(32,0,0), 0 0 2px rgb(32,0,0), 0 0 2px rgb(32,0,0), 0 0 2px rgb(32,0,0),
+			  0 0 5px rgb(32,0,0), 0 0 5px rgb(32,0,0), 0 0 5px rgb(32,0,0), 0 0 10px rgb(32,0,0), 0 0 10px rgb(32,0,0);
+}
+
+#MainContentHeader
+{
+	width		: 75vw;
+	margin		: 10px auto;
+	border-radius	: 99px;
+	border-left	: 1px solid red;
+	border-right	: 1px solid red;
+	box-shadow	: 8px 0 10px -8px red, -8px 0 10px -8px red;
+	background	: linear-gradient(transparent 10%, rgba(255,0,0,0.5), transparent 60%);
+}
+
+#DropdownMenuSubNavigator li.TitleOnly
+{
+	padding		: 0;
+	font-size	: 0;
+	background	: transparent;
+	color		: transparent;
+}
+
+#DropdownMenuSubNavigator ul ul
+{
+	display		: block !important;
+	position	: static;
+	font-size	: 10px;
+	box-shadow	: none;
+	color		: white;
+	opacity		: 1 !important;
+}
+
+.sf-menu li
+{
+	display		: inline-block;
+	margin		: 0 5px;
+}
+
+#DropdownMenuSubNavigator .sf-menu > li 
+{
+	background: transparent;
+	margin		: 0 1px;
+	box-shadow: none;
+}
+
+a[href*='/clubs/join/']:before
+{
+	content		: '';
+	display		: inline-block;
+	width		: 16px;
+	height		: 16px;
+	margin-right	: 2px;
+	vertical-align	: middle;
+	image-rendering	: pixelated;
+	background	: url(http://files.gamebanana.com/static/img/icon_sheet.png) -400px 0px;
+}
+
+#DropdownMenuSubNavigator li a
+{
+    font-size : 15px;
+    transition : all 0.3s linear;
+}
+
+#DropdownMenuSubNavigator li a:hover
+{
+    box-shadow : 0 0 0 15px rgb(96,16,16) inset;
+    color : firebrick;
+}
+
+dt,
+#NavigatorPanes h5
+{
+    color : rgb(255,128,64);
+    border-bottom-color : rgb(192,112,32);
+}
+
+a
+{
+    color : rgb(255,128,64);
+}
+
+a:hover
+{
+    color : rgb(255,128,16);
+}
+
+#PostsListModule article blockquote
+{
+	background	: url('http://files.gamebanana.com/bitpit/bg2_2.jpg');
+	opacity		: 1;
+	border		: 2px solid #0D0C0B;
+	border-radius	: 10px;
+}
+
+#PostsListModule article blockquote p
+{
+	color		: cornflowerblue;
+}
+
+.Module > h3
+{
+	margin		: 5px;
+	background	: linear-gradient(#262321, #0D0C0B);
+	border		: 2px solid #0D0C0B;
+	border-radius	: 99px;
+	box-shadow	: 0 1px red, 0 10px 10px -10px red;
+	font		: normal 18px/18px 'Metal Mania';
+	color		: red;
+	letter-spacing	: 0;
+	text-shadow	: 0px 0px 1px red, 0px 0px 10px red;
+}
+
+.Module .Content,
+#PostsListModule .Content > ul > li
+{
+	margin		: 5px;
+	background	: url('http://sleekupload.com/uploads/5/bg2_10.jpg');
+	border		: 2px solid #0D0C0B;
+	border-radius	: 20px;
+	box-shadow	: 0 7px 10px black;
+}
+
+#PostsListModule .Content > ul > li
+{
+	margin-bottom	: 15px;
+}
+
+#PostsListModule .PostHeader
+{
+	border-bottom	: 2px solid #0D0B0C;
+	padding-bottom	: 10px;
+}
+
+#PostsListModule footer
+{
+	border-top	: 2px solid #0D0C0B;
+	padding-top	: 10px;
+}
+
+.Modal
+{
+	margin		: 20px;
+	padding		: 10px;
+	background	: url('http://files.gamebanana.com/bitpit/bg2_2.jpg');
+	border		: 2px solid #0D0C0B;
+	border-radius	: 10px;
+}
+
+#PostsListModule .Content
+{
+	background	: none;
+	border		: 0;
+	box-shadow	: none;
+}
+
+.Avatar.Offline,
+.Avatar.Online
+{
+	padding-left	: 10px;
+	border		: 0;
+}
+
+.Avatar.Offline
+{
+	background	: url('http://files.gamebanana.com/bitpit/avatar_offline.png') no-repeat top left;
+}
+
+.Avatar.Online
+{
+	background	: url('http://files.gamebanana.com/bitpit/avatar_online.png') no-repeat top left !important;
+}
+
+td, tr
+{
+	padding		: 5px;
+}
+
+table tr
+{
+	border		: 2px solid #0D0C0B;
+	border-left	: 0;
+	border-right	: 0;
+}
+
+td:not(:first-of-type),
+th:not(:first-of-type)
+{
+	border-left	: 2px solid #0D0C0B;
+}
+
+table th
+{
+	background	: linear-gradient(#262321, #0D0C0B);
+	font-family	: Century Gothic;
+	font-size	: 16px;
+	font-variant	: small-caps;
+	color		: red;
+	letter-spacing	: 0;
+	text-transform	: capitalize;
+	text-shadow	: 0 0 1px red, 0 0 10px red;
+}
+
+
+
+/***************/
+/*** Buttons ***/
+/***************/
+
+
+
+button
+{
+	background	: rgb(96,16,16);
+	border		: 0;
+	outline		: 0;
+	box-shadow	: 0px 5px 1px -1px rgb(48,8,8);
+	border-radius	: 10px;
+	font		: 20px 'Metal Mania';
+	color		: firebrick;
+	transition	: all 0.1s linear;
+}
+
+button:hover
+{
+	background	: rgb(96,16,16);
+	border		: 0;
+}
+
+button:active
+{
+	transform	: translateY(3px);
+	box-shadow	: none;
+}
+
+textarea,
+input[type="text"]
+{
+	background	: url('http://files.gamebanana.com/bitpit/binding_dark.png');
+	border		: 0;
+	box-shadow	: 3px 3px 10px 2px black inset;
+	outline		: 0;
+}
+
+textarea:hover,
+input[type="text"]:hover,
+textarea:focus,
+input[type="text"]:focus
+{
+	border		: 0;
+}
+
+#PostsListModule ul.PostStamps li
+{
+	padding		: 2px;
+	padding-right	: 6px;
+	background	: linear-gradient(#262321, #0D0C0B);
+	border		: 2px solid #0D0C0B;
+	font-size	: 10px;
+}
+
+#PostsListModule .PostStamps li span
+{
+	vertical-align	: text-top;
+}
+
+#PostsListModule ul.PostStamps li img
+{
+	height		: 14px;
+}
+
+
+
+/***************************/
+/*** STAMP MODIFICATIONS ***/
+/***************************/
+
+
+
+.IconSheet.StampIcon.WinIcon,
+.IconSheet.StampIcon.HelpfulIcon,
+.IconSheet.StampIcon.InterestingIcon,
+.IconSheet.StampIcon.AgreeIcon,
+.IconSheet.StampIcon.FunnyIcon,
+.IconSheet.StampIcon.ThanksIcon
+{
+	background-position	: 0 0 !important;
+}
+
+.IconSheet.StampIcon.WinIcon
+{
+	background		: url(http://i.imgur.com/Qs08ncs.png) no-repeat;
+}
+
+.IconSheet.StampIcon.HelpfulIcon
+{
+	background		: url(http://i.imgur.com/eFZYnmw.png) no-repeat;
+}
+
+.IconSheet.StampIcon.InterestingIcon
+{
+	background		: url(http://i.imgur.com/1ca2ktr.png) no-repeat;
+}
+
+.IconSheet.StampIcon.AgreeIcon
+{
+	background		: url(http://i.imgur.com/ti5XSUQ.png) no-repeat;
+}
+
+.IconSheet.StampIcon.FunnyIcon
+{
+	background		: url(http://i.imgur.com/DIhhui3.png) no-repeat;
+}
+
+.IconSheet.StampIcon.ThanksIcon
+{
+	background		: url(http://i.imgur.com/rRP16JK.png) no-repeat;
+}
+
+.IconSheet.StampIcon.WinIcon+span,
+.IconSheet.StampIcon.HelpfulIcon+span,
+.IconSheet.StampIcon.InterestingIcon+span,
+.IconSheet.StampIcon.AgreeIcon+span,
+.IconSheet.StampIcon.FunnyIcon+span,
+.IconSheet.StampIcon.ThanksIcon+span
+{
+	white-space	: pre-wrap;
+	display		: inline-block;
+	height		: 1.25em;
+	overflow	: hidden;
+}
+
+.IconSheet.StampIcon.WinIcon+span::before
+{
+	content		: "Epic\A";
+}
+
+.IconSheet.StampIcon.HelpfulIcon+span::before
+{
+	content		: "Badass\A";
+}
+
+.IconSheet.StampIcon.InterestingIcon+span::before
+{
+	content		: "Old School\A";
+}
+
+.IconSheet.StampIcon.AgreeIcon+span::before
+{
+	content		: "Must Buy\A";
+}
+
+.IconSheet.StampIcon.FunnyIcon+span::before
+{
+	content		: "Brutal\A";
+}
+
+.IconSheet.StampIcon.ThanksIcon+span::before
+{
+	content		: "Cool Solo\A";
+}

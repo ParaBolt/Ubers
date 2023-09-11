@@ -1,0 +1,21 @@
+?>
+
+	<div class="ContentColumn FluidColumn" id="Col1">
+
+		<?= $d["_aModules"]["_sIdentity"] ?>
+		<?= $d["_aModules"]["_sStats"] ?>
+		<?= $d["_aModules"]["_sBlurb"] ?>
+		<?= $d["_aModules"]["_sLeadership"] ?>
+		<?= $d["_aModules"]["_sTeamMembersList"] ?>
+	</div>
+
+	<div class="ContentColumn FluidColumn" id="Col2">
+
+		<?= $d["_aModules"]["_sPostAddFormRequester"] ?>
+		<?= $d["_aThirdPartyModules"]["_sShoutbox"] ?>
+		<?= $d["_aModules"]["_sProfileMessages"] ?>
+
+	</div>
+
+
+<?
